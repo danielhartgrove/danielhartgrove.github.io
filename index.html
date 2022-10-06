@@ -20,9 +20,18 @@
             <img src='linkedin_logo.png', width="45", height = "45", alt="look at my linkedin"> 
         </a> 
     
-        <div class="mountains">          
-                <img src='foreground_mountain.png', width="800", height = "800", alt=""> 
-        </div>
+
+        <img id = "mountains" class="mountains" src='foreground_mountain.png', width="800", height = "800", alt="">
+
+        <button class="themeButton" onclick="seasonalMode()">(U+1F383)</button>
+        <script>
+            function seasonalMode() {
+                var element = document.body;
+                var image = document.getElementById('mountains')
+                element.className = "halloween-mode";
+                image.src = "background_mountain.png";
+            }
+        </script>
 
         <div class="footer">
             <p>&copy Daniel Hartgrove 2022, website designed and written by Daniel Hartgrove</p>

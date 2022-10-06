@@ -13,12 +13,20 @@ h2{ text-align: center;
     position: absolute;
     top: 48%;
     left: 34%;
-    color:#fafafa;
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 body {
-    background-image: url('website_background.png');
+    background-color: #4B4C9F;
+    margin: 0; 
+    color: #fafafa;
+    height: 100%; 
+    overflow: hidden
+}
+
+.halloween-mode {
+    background-color: #252525;
+    color: #FF7518;
 }
 
 .instaimg {
@@ -39,7 +47,6 @@ body {
     left: 54%;
 }
 
-
 .mountains{
     position: absolute;
     bottom: -10px;
@@ -48,9 +55,19 @@ body {
 
 .footer{
     float: center;
-    color:#fafafa;
     position: absolute;
     bottom: 0px;
-    left: 47%;
+    left: 38%;
     font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.themeButton{
+    border: none;
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border: none !important;
+    font-size:0;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
 }
