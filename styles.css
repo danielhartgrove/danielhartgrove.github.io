@@ -2,23 +2,26 @@ h1{ text-align: center;
     font-size: 70px;
     margin-top: 17%;
     color:#fafafa;
-    font-family: Verdana, Geneva, Tahoma, sans-serif}
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
 
 h2{ text-align: center; 
     font-size: 20px;
     margin-top: -40px;
     color:#fafafa;
-    font-family: Verdana, Geneva, Tahoma, sans-serif}
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
 
 body {
     background-image: url('website_background.png');
-    }
+}
 
 img {
     display: grid;
     margin: 0 auto;
     margin-top: 30px;
-    }
+}
 
 .column {
     float: left;
@@ -28,5 +31,13 @@ img {
     
 .row { 
     float: left;
-    margin-left: 45%;
+    margin-left: 44%;
+}
+
+.footer{
+    float: center;
+    color:#fafafa;
+    margin-left: 46%;
+    margin-top: 25%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
