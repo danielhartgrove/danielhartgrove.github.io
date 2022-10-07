@@ -36,6 +36,7 @@ body {
   flex-direction: column;
   gap: 15px;
 }
+
 .main_content_container h1 {
   font-size: 70px;
   /*
@@ -56,6 +57,7 @@ body {
 
 .socials_container {
   display: flex;
+  margin-top: 5%;
   align-items: center;
   justify-content: center;
   gap: 50px;
