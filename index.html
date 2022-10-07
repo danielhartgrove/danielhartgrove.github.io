@@ -1,40 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        
-        <h1>Daniel Hartgrove</h1>
-        <h2>Computer Science Student & Amateur Graphic Designer</h2>
 
-        <a class="instaimg" href="https://www.instagram.com/pngrove/">
-            <img src='instagram_logo.png', width="45", height = "45", alt="follow @pngrove on instagram"> 
-        </a> 
-    
-        <a class="gitimg" href="https://github.com/DanHartgrove">
-            <img src='github_logo.png', width="45", height = "45", alt="check out my github"> 
-        </a> 
-    
-        <a class="linkedimg" href="https://www.linkedin.com/in/daniel-hartgrove-9ab56a239/">
-            <img src='linkedin_logo.png', width="45", height = "45", alt="look at my linkedin"> 
-        </a> 
-    
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-        <img id = "mountains" class="mountains" src='foreground_mountain.png', width="800", height = "800", alt="">
+<body class="normal-mode">
+    <div class="main_content_wrapper">
+        <div class="main_content_container">
 
-        <button class="themeButton" onclick="seasonalMode()">(U+1F383)</button>
-        <script>
-            function seasonalMode() {
-                var element = document.body;
-                var image = document.getElementById('mountains')
-                image.src = "background_mountain.png";
-                element.className = "halloween-mode";
-            }
-        </script>
+            <h1>Daniel Hartgrove</h1>
+            <h2>Computer Science Student & Amateur Graphic Designer</h2>
 
-        <div class="footer">
-            <p>&copy Daniel Hartgrove 2022, website written and designed by Daniel Hartgrove</p>
+            <div class="socials_container">
+
+                <a class="instaimg" href="https://www.instagram.com/pngrove/">
+                    <img src='instagram_logo.png' , width="45" , height="45" , alt="follow @pngrove on instagram">
+                </a>
+
+                <a class="gitimg" href="https://github.com/DanHartgrove">
+                    <img src='github_logo.png' , width="45" , height="45" , alt="check out my github">
+                </a>
+
+                <a class="linkedimg" href="https://www.linkedin.com/in/daniel-hartgrove-9ab56a239/">
+                    <img src='linkedin_logo.png' , width="45" , height="45" , alt="look at my linkedin">
+                </a>
+            </div>
         </div>
-    </body>
+    </div>
+
+
+    <img id="mountains" class="mountains" src='foreground_mountain.png' , width="800" , height="800" , alt="">
+
+    <button class="theme_button" onclick="seasonalMode()">&#127875</button>
+    <script>
+
+        var currentSeasonMode = false;
+
+        function seasonalMode() {
+            currentSeasonMode = !currentSeasonMode
+            var element = document.body;
+            if (currentSeasonMode) {
+                var image = document.getElementById('mountains')
+                element.className = "halloween-mode";
+                image.src = "background_mountain.png";
+            }
+            else {
+                var image = document.getElementById('mountains')
+                element.className = "normal-mode";
+                image.src = "foreground_mountain.png";
+
+            }
+
+        }
+    </script>
+
+    <div class="footer_container">
+        <p>&copy Daniel Hartgrove 2022, website written and designed by Daniel Hartgrove</p>
+    </div>
+</body>
+
 </html>
