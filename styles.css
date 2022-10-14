@@ -110,7 +110,7 @@ html, body {
   position: absolute;
   width: 10px;
   height: 10px;
-  background: linear-gradient(white, white); /* Workaround for Chromium's selective color inversion */
+  background: white; /* Workaround for Chromium's selective color inversion */
   border-radius: 50%;
 }
 
