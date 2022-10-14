@@ -3,16 +3,22 @@
 
 <head>
     <title>Daniel Hartgrove</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+
 </head>
 
 <body class="normal-mode">
+
+    <div id="snow"></div>
+
     <div class="main_content_wrapper">
         <div class="main_content_container">
 
             <h1>Daniel Hartgrove</h1>
-            <h2>Computer Science Student & Amateur Graphic Designer</h2>
+            <h2>&#10022 Computer Science Student and Amateur Graphic Designer &#10022</h2>
 
             <div class="socials_container">
 
@@ -31,8 +37,8 @@
         </div>
     </div>
 
-
     <img id="mountains" class="mountains" src='assets/foreground_mountain.png' , width="800" , height="800" , alt="">
+
 
     <button class="theme_button" onclick="seasonalMode()">&#x25CB</button>
     <script>
@@ -51,12 +57,12 @@
                 var image = document.getElementById('mountains')
                 element.className = "normal-mode";
                 image.src = "assets/foreground_mountain.png";
-
             }
 
         }
     </script>
 
+    
     <div class="footer_container">
         <p>&copy Daniel Hartgrove 2022, website written and designed by Daniel Hartgrove</p>
     </div>
