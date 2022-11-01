@@ -9,8 +9,8 @@ if (typeof total !== 'undefined'){
 
 // This function allows you to turn on and off the snow
 function toggle_snow() {
-    let check_box = document.getElementById("toggle_snow");
-    if (check_box.checked == true) {
+    let check_box = document.getElementById("theme_button");
+    if (check_box.click== true) {
         document.getElementById('snow').style.display = "block";
     }
     else {
@@ -100,4 +100,3 @@ window.onload = function() {
     spawnSnowCSS(snowflakes_count);
     spawn_snow(snowflakes_count);
 };
-

@@ -50,13 +50,15 @@
             var element = document.body;
             if (currentSeasonMode) {
                 var image = document.getElementById('mountains')
-                element.className = "halloween-mode";
-                image.src = "assets/background_mountain.png";
+                element.className = "christmas-mode";
+                image.src = "assets/background_mountain_2.png";
+                toggle_snow()
             }
             else {
                 var image = document.getElementById('mountains')
                 element.className = "normal-mode";
                 image.src = "assets/foreground_mountain.png";
+                toggle_snow()
             }
 
         }
