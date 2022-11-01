@@ -12,6 +12,11 @@
   color: #ff7518;
 }
 
+.christmas-mode {
+  background-color: #c30f16;
+  color: #00b32c;
+}
+
 .main_content_wrapper {
   width: 100vw;
   height: 100vh;
@@ -36,6 +41,7 @@
   left: 33%; */
   color: #fafafa;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .main_content_wrapper h2 {
