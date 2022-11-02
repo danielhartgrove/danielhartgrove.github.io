@@ -13,8 +13,8 @@
 }
 
 .christmas-mode {
-  background-color: #c30f16;
-  color: #00b32c;
+  background-color: #c33b40;
+  color: #2ab84e;
 }
 
 .main_content_wrapper {
@@ -29,25 +29,19 @@
   position: relative;
   z-index: 5;
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 20px;
 }
 
 .main_content_container h1 {
   font-size: 70px;
-  /*
-  position: absolute;
-  top: 35%;
-  left: 33%; */
   color: #fafafa;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .main_content_wrapper h2 {
   font-size: 20px;
-  /* position: absolute;
-  top: 48%;
-  left: 34%; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
