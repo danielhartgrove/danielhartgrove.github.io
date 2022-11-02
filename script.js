@@ -78,12 +78,10 @@ function spawnSnowCSS(snow_density = 200){
             transform: translate(${random_x}vw, -10px) scale(${random_scale});
             animation: fall-${i} ${fall_duration}s ${fall_delay}s linear infinite;
         }
-
         @keyframes fall-${i} {
             ${random_yoyo_time*100}% {
                 transform: translate(${random_x_end}vw, ${random_yoyo_y}vh) scale(${random_scale});
             }
-
             to {
                 transform: translate(${random_x_end_yoyo}vw, 100vh) scale(${random_scale});
             }
