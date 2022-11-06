@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Daniel Hartgrove</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+
+</head>
+
+<body class="normal-mode">
+
+    <div id="snow"></div>
+
+    <div class="about_content_wrapper">
+        <div class="about_content_container">
+            <h1>About</h1>
+            <p class="intro"> Hi, my Name is Daniel Hartgrove. Welcome to my website.</p>
+            <p class="para1"> Since I began programming at age 11 making simple games and animations in <a href="https://scratch.mit.edu/">Scratch</a> I have developed a keen interest in the production of videogames and system applications. Throughout secondary school,
+            I programmed for fun in Scratch, Python and Visual Basic and achieved high grades in all of my related school work. By Sixth Form, I had a working knowledge of VB, Java and Python under my belt and was able to produce and design an application
+            to simulate natural selection designed as a teaching tool for biology classes. This was my first experience with simulation and computational autonomy. During this project, I discovered a love for designing and developing user interfaces,
+            starting with paper and TKinter. Now, as a student at the University of Nottingham, I am specialising in Software Development modules with a keen interest in UI/UX design. It was here that I picked up an interest in Web design.</p>
+            <p class="para2"> As a side hobby throughout my time at school, I found graphic design work to be exciting and interesting to learn about. I have since developed my love of Graphic Design into a side project to show off my skills creatively, which can be found 
+            <a href="https://www.instagram.com/pngrove/">here</a>. In the future, I hope to continue to merge my love of design and computing to publish original yet inspired content in the form of web design, software development and graphics</p>
+            
+            <div class = "navbar">
+                <a class="home" href="index.html">home</a>
+                <a class="projects" href="projects.html">projects</a>
+                <a class="about" href="about.html">aboutme</a>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <img id="mountains" class="mountains" src='assets/foreground_mountain.png' , width="800" , height="800" , alt="">
+
+
+    <button class="theme_button" onclick="seasonalMode()">&#x25CB</button>
+    <script>
+
+        var currentSeasonMode = false;
+
+        function seasonalMode() {
+            currentSeasonMode = !currentSeasonMode
+            var element = document.body;
+            if (currentSeasonMode) {
+                var image = document.getElementById('mountains')
+                element.className = "christmas-mode";
+                image.src = "assets/background_mountain_2.png";
+                toggle_snow()
+            }
+            else {
+                var image = document.getElementById('mountains')
+                element.className = "normal-mode";
+                image.src = "assets/foreground_mountain.png";
+                toggle_snow()
+            }
+
+        }
+    </script>
+
+    
+    <div class="footer_container">
+        <p>&copy Daniel Hartgrove 2022, website written and designed by Daniel Hartgrove</p>
+    </div>
+    
+</body>
+
+</html>

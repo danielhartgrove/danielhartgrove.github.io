@@ -113,4 +113,76 @@ html, body {
   border-radius: 50%;
 }
 
+.navbar{
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.projects, .about, .home{
+  color: #fafafa;
+}
+
+a{
+  color: #fafafa;
+}
+
+p{
+  font-size: 15px;
+}
+
+.intro{
+  color: #fafafa;
+  align-self: center;
+  padding-top: 2vh;
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+.para1{
+  color: #fafafa;
+  text-align: center;
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+.para2{
+  color: #fafafa;
+  align-self: center;
+  text-align: center;
+  padding-bottom: 2vh;
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+
+.about_content_wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about_content_container {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about_content_container h1 {
+  font-size: 70px;
+  color: #fafafa;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about_content_wrapper h2 {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .container { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; }
