@@ -115,13 +115,17 @@ html, body {
 }
 
 .navbar{
+  display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
 }
 
 .projects, .about, .home{
   color: #fafafa;
+  margin: 5px;
 }
 
 a{
@@ -198,7 +202,8 @@ img {vertical-align: middle;}
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto;
+  margin: -25px;
+  margin-top: auto;
 }
 
 /* Next & previous buttons */
@@ -255,7 +260,7 @@ img {vertical-align: middle;}
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 0px;
   background-color: #bababa;
   border-radius: 50%;
   display: inline-block;
