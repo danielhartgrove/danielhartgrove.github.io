@@ -119,7 +119,7 @@ html, body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 5%;
+  top: 3%;
   width: 100%;
 }
 
