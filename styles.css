@@ -160,7 +160,6 @@ p{
   padding-right: 15vw;
 }
 
-
 .about_content_wrapper {
   width: 100vw;
   height: 100vh;
@@ -200,7 +199,8 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 60%;
+  width: 50%;
   position: relative;
   margin: -25px;
   margin-top: auto;
