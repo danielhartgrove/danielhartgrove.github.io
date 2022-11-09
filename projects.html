@@ -78,31 +78,6 @@
 
     <img id="mountains" class="mountains" src='assets/foreground_mountain.png' , width="800" , height="800" , alt="">
 
-
-    <button class="theme_button" onclick="seasonalMode()">&#x25CB</button>
-    <script>
-
-        var currentSeasonMode = false;
-
-        function seasonalMode() {
-            currentSeasonMode = !currentSeasonMode
-            var element = document.body;
-            if (currentSeasonMode) {
-                var image = document.getElementById('mountains')
-                element.className = "christmas-mode";
-                image.src = "assets/background_mountain_2.png";
-                toggle_snow()
-            }
-            else {
-                var image = document.getElementById('mountains')
-                element.className = "normal-mode";
-                image.src = "assets/foreground_mountain.png";
-                toggle_snow()
-            }
-
-        }
-    </script>
-
     
     <div class="footer_container">
         <p>&copy Daniel Hartgrove 2022, website written and designed by Daniel Hartgrove</p>
