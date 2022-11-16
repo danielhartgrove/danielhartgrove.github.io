@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Grange Area Trust</title>
+        <link rel="icon" type="image/x-icon" href="/assets/grange_area_trust_logo.ico">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+    </head>
+
+    <body>
+        <div class = "top_section">
+            <div class="top_nav">
+                <div class ="title">
+                    <img src="assets/grange_area_trust_logo.png" alt="logo" width="100%" height="91%" padding-top="5%" padding-right="10vh" padding-bottom="10%">
+                </div>
+                <a class="activebar" href="index.html">Home</a>
+                <p class="div"> | </p>
+                <a  href="visit.html">Visit</a>
+                <p class="div"> | </p>
+                <a  href="fields.html">Our Fields</a>
+                <p class="div"> | </p>
+                <a href="volunteers.html">Volunteers</a>
+                <p class="div"> | </p>
+                <a href="news.html">News</a>
+                <p class="div"> | </p>
+                <a href="events.html">Events</a>
+                <p class="div"> | </p>
+                <a href="about.html">About us</a>
+            </div>
+        </div>
+
+        <div class="slideshow_container">
+
+            <!-- Div for each image in the slideshow -->
+            <div class="mySlides fade">
+                <img id="me" src="assets/1flower_field.png" width = "970px", height = "275px">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="assets/0grass.png" width = "970px", height = "275px">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="assets/0tree_green.png" width = "970px", height = "275px">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="assets/0tree_lens.png" width = "970px", height = "275px">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="assets/0tree_red_sky.png" width = "970px", height = "275px">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="assets/0tree_wheat.png" width = "970px", height = "275px">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+            <!-- Indicators -->
+        <div class="dotcontainer" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+        
+            function plusSlides(n) {
+                document.getElementById("me").src = "assets/0flower_field.png";
+                showSlides(slideIndex += n);
+            }
+        
+            function currentSlide(n) {
+                document.getElementById("me").src = "assets/0flower_field.png";
+                showSlides(slideIndex = n);
+            }
+        
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            }
+        </script>
+
+        <img id="button" class="buttondown" src="assets/down_button.png" onclick="jumpto()" alt="down">
+ 
+
+        <script>
+            function jumpto(){
+                document.querySelector('#here').scrollIntoView({behavior: 'smooth'});
+                document.getElementById("button").style.display = "none";
+            }
+        </script>
+        
+        <!-- wraps main content, each card has its own content -->
+        <div class="main_content_wrapper">
+            <div id="here"></div>
+            <div class="main_content_row">
+                
+                <div class="card">
+                    <div class="a"> 
+                        <img class = "card_img" src="assets/dog.jpg" alt="logo" height="300vh" width="307vw" >
+                        <h4>Visit Widmer Fields</h4>
+                        <p class="card_text">Widmer Fields lies between Widmer end
+                            and Hazlemere, just north of High
+                            Wycombe. There is some local parking if
+                            you arrive by car.</p>
+                        <a class="card_link" href="visit.html">Learn More</a>
+                        <br><br>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="b">
+                        <img class = "card_img" src="assets/footpath.jpg" alt="logo" height="300vh" width="307vw" border-radius="15px">
+                        <h4>Our Fields</h4>
+                        <p class="card_text">Widmer Fields is within the Chilterns Area
+                            of Outstanding Natural Beauty and is
+                            maintained for the quiet enjoyment of the green open space.</p>
+                        <a class="card_link" href="fields.html">Learn More</a>
+                        <br><br>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="c">
+                        <img class = "card_img" src="assets/volunteerontractor.jpg" alt="logo" height="300vh" width="307vw" >
+                        <h4>Volunteers</h4>
+                        <p class="card_text">Widmer Fields is managed by trustees and
+                            volunteers of all ages and abilities. If you
+                            enjoy fresh air and tractors, why not join us?</p>
+                        <a class="card_link" href="volunteers.html">Learn More</a>
+                        <br><br>
+                    </div>
+                </div>
+
+            </div>
+            <br class = "hideable">
+            <div class="main_content_row">
+
+                <div class="card">
+                    <div class = "d">
+                        <img class = "card_img" src="assets/news.jpg" alt="logo" height="300vh" width="307vw" >
+                        <h4>News</h4>
+                        <p class="card_text">Find out about latest activity on the fields,
+                            news of planting, pruning, path building
+                            and more.</p>
+                        <a class="card_link" href="news.html">Learn More</a>
+                        <br><br>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class = "e">
+                        <img class = "card_img" src="assets/widmerxmas.jpg" alt="logo" height="300vh" width="307vw" >
+                        <h4>Events</h4>
+                        <p class="card_text">Whats on in the fields this month? Nature
+                            trails, monster walks, decorated
+                            trees and quiz nights!</p>
+                        <a class="card_link" href="events.html">Learn More</a>
+                        <br><br>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="f">
+                        <img class = "card_img" src="assets/visitwidmer.jpg" alt="logo" height="300vh" width="307vw" >
+                        <h4>About Us</h4>
+                        <p class="card_text">Widmer Fields is managed and maintained
+                            by the Grange Area Trust. This charitable organisation is funded by public donations and grants.</p>
+                        <a class="card_link" href="about.html">Learn More</a>
+                        <br><br>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <br>
+        
+    <div class="footer_container">
+        <p class="footer_text"><a class="footer_link" href="https://www.danielhartgrove.xyz">&copy Daniel Hartgrove 2022</a></p>
+        <p class="footer_div">|</p>
+        <p class="footer_text"><a class="footer_link"  href="url">Contact Us</a></p>
+        <p class="footer_div">|</p>
+        <p class = "footer_text"><a class="footer_link" href="url">T&Cs</a></p>
+        <p class="footer_div">|</p>
+        <p class = "footer_text"><a class="footer_link" href="url">Privacy Policy</a></p>
+        <p class="footer_div">|</p>
+        <p class = "footer_text"><a class="footer_link" href="url">Cookie Policy</a></p>
+        <p class="footer_div">|</p>
+        <p class="footer_text"><a class="footer_link"  href="url">Site Map</a></p>
+    </div>
+
+    </body>
+
+</html>
