@@ -52,9 +52,7 @@ a{
 
 .title{
     background-color: #fafafa;
-    width: 110px;
-    height: 150px; 
-    padding-top: 25px;
+    margin-top: 5px;
 }
 
 .top_nav {
@@ -343,7 +341,6 @@ a{
     }
 
     .title{
-      padding-left: 17px;
     }
 
     .card{
