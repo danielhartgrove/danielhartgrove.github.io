@@ -12,7 +12,7 @@
         <div class = "top_section">
             <div class="top_nav">
                 <div class ="title">
-                    <img src="assets/grange_area_trust_logo.png" alt="logo" width="100%" height="91%" padding-top="5%" padding-right="10vh" padding-bottom="10%">
+                    <img src="assets/grange_area_trust_logo.png">
                 </div>
                 <a class="activebar" href="index.html">Home</a>
                 <p class="div"> | </p>
@@ -34,27 +34,27 @@
 
             <!-- Div for each image in the slideshow -->
             <div class="mySlides fade">
-                <img id="me" src="assets/1flower_field.png" width = "970px", height = "275px">
+                <img id="me" class="slide" src="assets/2flower_field.png">
             </div>
 
             <div class="mySlides fade">
-                <img src="assets/0grass.png" width = "970px", height = "275px">
+                <img class="slide" src="assets/2grass.png">
             </div>
 
             <div class="mySlides fade">
-                <img src="assets/0tree_green.png" width = "970px", height = "275px">
+                <img class="slide" src="assets/2tree_green.png">
             </div>
 
             <div class="mySlides fade">
-                <img src="assets/0tree_lens.png" width = "970px", height = "275px">
+                <img class="slide" src="assets/2tree_lens.png">
             </div>
 
             <div class="mySlides fade">
-                <img src="assets/0tree_red_sky.png" width = "970px", height = "275px">
+                <img class="slide" src="assets/2tree_red_sky.png">
             </div>
 
             <div class="mySlides fade">
-                <img src="assets/0tree_wheat.png" width = "970px", height = "275px">
+                <img class="slide" src="assets/2tree_wheat.png">
             </div>
 
             <!-- Next and previous buttons -->
@@ -75,12 +75,10 @@
             showSlides(slideIndex);
         
             function plusSlides(n) {
-                document.getElementById("me").src = "assets/0flower_field.png";
                 showSlides(slideIndex += n);
             }
         
             function currentSlide(n) {
-                document.getElementById("me").src = "assets/0flower_field.png";
                 showSlides(slideIndex = n);
             }
         
@@ -143,7 +141,7 @@
 
                 <div class="card">
                     <div class="c">
-                        <img class = "card_img" src="assets/volunteerontractor.jpg" alt="logo" height="300vh" width="307vw" >
+                        <img class = "card_img" src="assets/volunteerontractor.JPG" alt="logo" height="300vh" width="307vw" >
                         <h4>Volunteers</h4>
                         <p class="card_text">Widmer Fields is managed by trustees and
                             volunteers of all ages and abilities. If you
@@ -199,6 +197,7 @@
     <br>
         
     <div class="footer_container">
+        <br class="showable">
         <p class="footer_text"><a class="footer_link" href="https://www.danielhartgrove.xyz">&copy Daniel Hartgrove 2022</a></p>
         <p class="footer_div">|</p>
         <p class="footer_text"><a class="footer_link"  href="url">Contact Us</a></p>

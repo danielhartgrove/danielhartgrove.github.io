@@ -22,7 +22,7 @@ h4{
   align-items: center;
   padding-top: 1vh;
   font-weight: bolder;
-  padding-left: 1vw;
+  padding-left: 1.25vw;
   padding-bottom: 1vh;
   font-family:  Merriweather, serif;
   font-size: 1.5rem;
@@ -32,6 +32,9 @@ a{
   color: #fafafa
 }
 
+.showable{
+  display: none;
+}
 /* NAVBAR START */
 .top_section{
     max-width: 100%;
@@ -43,21 +46,15 @@ a{
     flex-direction: column;
     gap: 0px;
     background-color: (#fafafa);
-    padding-bottom: 1vh;
-    margin-bottom: .5vh;
     font-size: 2rem;
   }
 
 
 .title{
-    color: #696969;
-    height: 10vh;
-    overflow: visible;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 10px;
     background-color: #fafafa;
+    width: 110px;
+    height: 150px; 
+    padding-top: 25px;
 }
 
 .top_nav {
@@ -67,7 +64,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom-width: 10px;
+    border-bottom-width: 5px;
   }
   
   .top_nav a {
@@ -104,6 +101,7 @@ a{
     cursor: pointer;
     z-index: 10;
   }
+
 
    /* SLIDESHOW START */
   /* Slideshow container */
@@ -204,6 +202,7 @@ a{
     flex-direction: column;
   }
 
+
   .card{
     color: #fafafa;
     display: flex;
@@ -223,7 +222,7 @@ a{
 
   
   .card_text{
-    padding-left: 1vw;
+    padding-left: 1.25vw;
     padding-right: 1vw;
     padding-bottom: 1vh;
     max-height: 90px;
@@ -233,15 +232,12 @@ a{
   }
 
   .card_link{
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding-left: 65%;
     padding-bottom: 1vh;
     max-height: 90px;
     min-height: 90px;
     max-width:300px;
     min-width: 300px;
-    align-items: right;
-    padding: 2vh;
     margin-bottom: 2vh;
   }
 
@@ -346,8 +342,43 @@ a{
       margin-bottom: -25px;
     }
 
+    .title{
+      padding-left: 17px;
+    }
+
     .card{
-      margin-bottom: 200px;
+      margin-bottom: calc(1vh + 80vw);
+      max-width: 950px;
+      width: 90vw;
+      width: auto;
+    }
+
+    .slide{
+      width: 100vw;
+      height: 25vh;
+      
+    }
+
+    .card_text{
+      font-size: 1.25rem;
+      width: 100vw;
+    }
+    
+    .h4{
+      font-size: 2rem;
+    }
+
+    .card_link{
+      font-size: 1.25rem;
+      width: 80vw;
+      padding-left: 70vw;
+    }
+
+    .card_img{
+      max-width: 950px;
+      width: 90vw;
+      max-height: 950px;
+      height: 90vw;
     }
 
     .footer_container{
@@ -361,6 +392,10 @@ a{
 
     .hideable{
       display: none;
+    }
+
+    .showable{
+      display: block;
     }
 
     .buttondown{
