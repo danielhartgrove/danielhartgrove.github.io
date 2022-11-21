@@ -13,7 +13,7 @@ html, body{
     background-size: cover;
     overflow-x: hidden;
     font-family:  Merriweather, sans-serif;
-    font-size: 1rem;
+    font-size: 13px;
     color: #696969;
 }
 
@@ -25,7 +25,7 @@ h4{
   padding-left: 1.25vw;
   padding-bottom: 1vh;
   font-family:  Merriweather, serif;
-  font-size: 1.5rem;
+  font-size: 22px;
 }
 
 a{
@@ -46,7 +46,7 @@ a{
     flex-direction: column;
     gap: 0px;
     background-color: (#fafafa);
-    font-size: 2rem;
+    font-size: 25px;
   }
 
 
@@ -71,7 +71,7 @@ a{
     text-align: center;
     padding: 10px 20px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 22px;
     z-index: 5;
     border-radius: 15px;
   }
@@ -84,7 +84,7 @@ a{
   
   .top_nav a.activebar {
     color: #207a28;
-    text-shadow: 2px 2px 2px #25ee25;
+    text-shadow: 2px 2px 2px #25cc25;
   }
 
 
@@ -210,7 +210,7 @@ a{
     margin-right: 12px;
     max-height: 300px;
     min-height: 300px;
-    max-width:307px;
+    max-width: 307px;
     min-width: 307px;
   }
 
@@ -221,12 +221,11 @@ a{
   
   .card_text{
     padding-left: 1.25vw;
-    padding-right: 1vw;
     padding-bottom: 1vh;
     max-height: 90px;
     min-height: 90px;
-    max-width:300px;
-    min-width: 300px;
+    max-width:280px;
+    min-width: 280px;
   }
 
   .card_link{
@@ -313,7 +312,7 @@ a{
   }
 
   .div{
-    font-size: 1rem;
+    font-size: 15px;
     font-family:  Merriweather, sans-serif;
   }
 
@@ -340,8 +339,6 @@ a{
       margin-bottom: -25px;
     }
 
-    .title{
-    }
 
     .card{
       margin-bottom: calc(1vh + 80vw);
@@ -357,18 +354,21 @@ a{
     }
 
     .card_text{
-      font-size: 1.25rem;
+      font-size: 18px;
       width: 100vw;
+      max-width: 85vw;
+      min-width: 85vw;
+      padding-left: 3vw;
     }
     
-    .h4{
-      font-size: 2rem;
+    h4{
+      font-size: 30px;
+      padding-left: 2.8vw;
     }
 
     .card_link{
-      font-size: 1.25rem;
-      width: 80vw;
-      padding-left: 70vw;
+      font-size: 18px;
+      padding-left: calc(65vw - 1vh);
     }
 
     .card_img{
