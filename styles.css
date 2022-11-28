@@ -125,9 +125,9 @@ html, body {
 .snowflake {
   position: absolute;
   width: 10px;
-  height: 10px;
-  background: white; /* Workaround for Chromium's selective color inversion */
-  border-radius: 50%;
+	height: 10px;
+	border-radius: 90px;
+  background-color: #fff7f7; /* Workaround for Chromium's selective color inversion */
 }
 
 .navbar{
@@ -213,6 +213,24 @@ p{
 .mySlides {display: none}
 img {vertical-align: middle;}
 
+
+.instaimg :hover{
+  transform: scale(1.1);
+}
+
+.gitimg :hover{
+  transform: scale(1.1);
+}
+
+
+.linkedimg :hover{
+  transform: scale(1.1);
+}
+
+
+.twitterimg :hover{
+  transform: scale(1.1);
+}
 /* Slideshow container */
 .slideshow-container {
   max-width: 60%;

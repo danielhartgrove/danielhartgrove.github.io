@@ -68,7 +68,7 @@ function spawnSnowCSS(snow_density = 200){
     
     for(let i = 1; i < snow_density; i++){
         let random_x = Math.random() * 100; // vw
-        let random_offset = random_range(-100000, 100000) * 0.0001; // vw;
+        let random_offset = random_range(-100000, 100000) * 0.0006; // vw;
         let random_x_end = random_x + random_offset;
         let random_x_end_yoyo = random_x + (random_offset / 2);
         let random_yoyo_time = random_range(30000, 80000) / 100000;
@@ -82,6 +82,7 @@ function spawnSnowCSS(snow_density = 200){
         .${snowflake_name}:nth-child(${i}) {
             opacity: ${opacity_};
             transform: translate(${random_x}vw, -10px) scale(${random_scale});
+            transform: rotate(Math.random() deg);
             animation: fall-${i} ${fall_duration}s ${fall_delay}s linear infinite;
         }
         @keyframes fall-${i} {
