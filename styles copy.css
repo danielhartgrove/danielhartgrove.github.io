@@ -1,0 +1,50 @@
+/* By Boujjou Achraf*/
+
+/*basic reset */
+            
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {background-image: url(assets/matrix.png); color: #fafafa;}
+canvas {display:block; z-index: 0;}
+
+
+.main_content_container h1 {
+  font-size: 5rem;
+  color: #fafafa;
+}
+
+.main_content_wrapper h2 {
+  font-size: 2rem;
+}
+
+.main_content_wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  z-index: 5;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_content_container {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  color: #fafafa;
+}
+
+.socials_container {
+  display: flex;
+  z-index: 30;
+  margin-top: 5%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  color: #fafafa;
+}

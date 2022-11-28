@@ -19,6 +19,7 @@
 
             <h1>Daniel Hartgrove</h1>
             <h2>&#10022 Computer Science Student and Amateur Graphic Designer &#10022</h2>
+            <p class="intro">Hi, I'm Daniel Hartgrove. I'm a Computer Science Student and Graphic Designer studying at the University of Nottingham</p>
 
             <div class="socials_container">
 
@@ -50,29 +51,8 @@
     <img id="mountains" class="mountains" src='assets/foreground_mountain.png' , width="800" , height="800" , alt="">
 
 
-    <button class="theme_button" onclick="seasonalMode()">&#x25CB</button>
-    <script>
-
-        var currentSeasonMode = false;
-
-        function seasonalMode() {
-            currentSeasonMode = !currentSeasonMode
-            var element = document.body;
-            if (currentSeasonMode) {
-                var image = document.getElementById('mountains')
-                element.className = "christmas-mode";
-                image.src = "assets/background_mountain_2.png";
-                toggle_snow()
-            }
-            else {
-                var image = document.getElementById('mountains')
-                element.className = "normal-mode";
-                image.src = "assets/foreground_mountain.png";
-                toggle_snow()
-            }
-
-        }
-    </script>
+    <a class="theme_button" href="inner.html">開</a>
+   
 
     
     <div class="footer_container">
