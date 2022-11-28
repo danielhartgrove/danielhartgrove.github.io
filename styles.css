@@ -34,6 +34,10 @@
   gap: 20px;
 }
 
+.theme_button{
+  font-size: .5rem;
+}
+
 .main_content_container h1 {
   font-size: 5rem;
   color: #fafafa;
@@ -45,10 +49,15 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.projectTitle{
+  font-size: 5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .socials_container {
   display: flex;
   z-index: 30;
-  margin-top: 5%;
+  margin-top: 3%;
   align-items: center;
   justify-content: center;
   gap: 50px;
@@ -69,7 +78,14 @@
   justify-content: center;
   align-items: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
   z-index: 3;
+}
+
+.intro{
+  margin-left: 15vw;
+  margin-right: 15vw;
+  text-align: center;
 }
 
 .theme_button {
@@ -133,7 +149,7 @@ a{
 }
 
 p{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .intro{
@@ -179,7 +195,7 @@ p{
 }
 
 .about_content_container h1 {
-  font-size: 3px;
+  font-size: 5rem;
   color: #fafafa;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
