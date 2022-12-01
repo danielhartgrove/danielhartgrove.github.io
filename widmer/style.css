@@ -349,12 +349,12 @@ a{
 
     .slide{
       width: 100vw;
-      height: 25vh;
+      height: 28vh;
       
     }
 
     .card_text{
-      font-size: 18px;
+      font-size: 15px;
       width: 100vw;
       max-width: 85vw;
       min-width: 85vw;
@@ -368,7 +368,7 @@ a{
 
     .card_link{
       font-size: 18px;
-      padding-left: calc(65vw - 1vh);
+      padding-left: 80%;
     }
 
     .card_img{
