@@ -135,7 +135,7 @@ html, body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 3%;
+  top: 0%;
   width: 100%;
 }
 
@@ -303,6 +303,53 @@ img {vertical-align: middle;}
 
 .active, .dot:hover {
   background-color: #fafafa;
+}
+
+/* card */
+
+.card_content_row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  flex-direction: row;
+}
+
+.card_content_wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card{
+  color: #fafafa;
+  background-color: #4b4c9f;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 12px;
+  margin-right: 12px;
+  max-height: 300px;
+  min-height: 300px;
+  max-width: 307px;
+  min-width: 307px;
+}
+
+.card_img{
+  border-radius: 15px 15px 0px 0px;
+}
+
+
+.card_text{
+  padding-left: 1.25vw;
+  padding-bottom: 1vh;
+  align-items: center;
+  max-height: 90px;
+  min-height: 90px;
+  max-width:280px;
+  min-width: 280px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Fading animation */
