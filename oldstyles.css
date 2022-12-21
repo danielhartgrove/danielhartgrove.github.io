@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.normal-mode {
+  background-color: #4b4c9f;
+  color: #fafafa;
+}
+.halloween-mode {
+  background-color: #252525;
+  color: #ff7518;
+}
+
+.christmas-mode {
+  background-color: #c33b40;
+  color: #2ab84e;
+}
+
+.main_content_wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_content_container {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.theme_button{
+  font-size: .5rem;
+}
+
+.main_content_container h1 {
+  font-size: 5rem;
+  color: #fafafa;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main_content_wrapper h2 {
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.projectTitle{
+  font-size: 5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.socials_container {
+  display: flex;
+  z-index: 30;
+  margin-top: 3%;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-direction: row;
+}
+
+.mountains {
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  z-index: 2;
+}
+
+.footer_container {
+  position: absolute;
+  bottom: 1%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  z-index: 3;
+}
+
+.intro{
+  margin-left: 15vw;
+  margin-right: 15vw;
+  text-align: center;
+}
+
+.theme_button {
+  all: unset;
+  font-size: 3rem;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+  z-index: 4;
+}
+
+.anime_button {
+  all: unset;
+  font-size: .5rem;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+  position: absolute;
+  left: 1.7rem;
+  top: 0.5rem;
+  z-index: 4;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #4b4c9f;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fafafa;
+}
+
+.snowflake {
+  position: absolute;
+  width: 10px;
+	height: 10px;
+	border-radius: 90px;
+  background-color: #fff7f7; /* Workaround for Chromium's selective color inversion */
+}
+
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0%;
+  width: 100%;
+}
+
+.projects, .about, .home{
+  color: #fafafa;
+  margin: 5px;
+}
+
+a{
+  color: #fafafa;
+}
+
+p{
+  font-size: 1.2rem;
+}
+
+.intro{
+  color: #fafafa;
+  align-self: center;
+  padding-top: 2vh;
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+.para1{
+  color: #fafafa;
+  text-align: center;
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+.para2{
+  color: #fafafa;
+  align-self: center;
+  text-align: center;
+  padding-bottom: 2vh;
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+.about_content_wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about_content_container {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about_content_container h1 {
+  font-size: 5rem;
+  color: #fafafa;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about_content_wrapper h2 {
+  font-size: 1.2px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; }
+
+/* Scrolling */
+
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+.instaimg :hover{
+  transform: scale(1.1);
+}
+
+.gitimg :hover{
+  transform: scale(1.1);
+}
+
+
+.linkedimg :hover{
+  transform: scale(1.1);
+}
+
+
+.twitterimg :hover{
+  transform: scale(1.1);
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 60%;
+  width: 50%;
+  position: relative;
+  margin: -25px;
+  margin-top: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #fafafa;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #4b4c9f;
+}
+
+/* Caption text */
+.text {
+  color: #fafafa;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  border-radius: 15px, 15px, 0px, 0px;
+  text-align: center;
+  background-color: rgba(75, 76, 159, .75)
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #fafafa;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0px;
+  background-color: #bababa;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #fafafa;
+}
+
+/* card */
+
+.card_content_row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  flex-direction: row;
+}
+
+.card_content_wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card{
+  color: #fafafa;
+  background-color: #4b4c9f;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 12px;
+  margin-right: 12px;
+  max-height: 300px;
+  min-height: 300px;
+  max-width: 307px;
+  min-width: 307px;
+}
+
+.card_img{
+  border-radius: 15px 15px 0px 0px;
+}
+
+
+.card_text{
+  padding-left: 1.25vw;
+  padding-bottom: 1vh;
+  align-items: center;
+  max-height: 90px;
+  min-height: 90px;
+  max-width:280px;
+  min-width: 280px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
