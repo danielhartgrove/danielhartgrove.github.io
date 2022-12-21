@@ -5,59 +5,71 @@
     <title>Daniel Hartgrove</title>
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Unbounded">
     <script src="script.js"></script>
 
 
 </head>
 
-<body class="normal-mode">
+<body>
+    <div class="background" id="snow"></div>
 
-    <div id="snow"></div>
-
-    <div class="main_content_wrapper">
-        <div class="main_content_container">
-
-            <h1>Daniel Hartgrove</h1>
-            <h2>&#10022 Computer Science Student and Amateur Graphic Designer &#10022</h2>
-            <p class="intro">Hi, I'm Daniel Hartgrove. I'm a Computer Science Student and Graphic Designer studying at the University of Nottingham. Welcome to my website.</p>
-
+    <div class="mainWrapper">
+        <div class="mainContent">
+            <h1 class="name">DANIEL<br/>HARTGROVE</h1>
+            <p class="introText">Hi, I'm Daniel Hartgrove. I'm a Computer Science Student and Graphic Designer studying at the University of Nottingham. Welcome to my website.</p>
             <div class="socials_container">
 
-                <a class="instaimg" href="https://www.instagram.com/pngrove/">
+                <a class="socialimg" href="https://www.instagram.com/pngrove/">
                     <img src='assets/instagram_logo.png' , width="45" , height="45", alt="follow me on instagram!">
                 </a>
-
-                <a class="gitimg" href="https://github.com/DanielHartgrove">
+    
+                <a class="socialimg" href="https://github.com/DanielHartgrove">
                     <img src='assets/github_logo.png' , width="45" , height="45" , alt="checkout (haha) my github!">
                 </a>
-
-                <a class="linkedimg" href="https://www.linkedin.com/in/daniel-hartgrove-9ab56a239/">
+    
+                <a class="socialimg" href="https://www.linkedin.com/in/daniel-hartgrove-9ab56a239/">
                     <img src='assets/linkedin_logo.png' , width="45" , height="45" , alt="look at my linkedin!">
                 </a>
-
-                <a class="twitterimg" href="https://twitter.com/danhartgrovexyz?t=BVEza9550fJUsO8avg2X0g&s=09">
+    
+                <a class="socialimg" href="https://twitter.com/danhartgrovexyz?t=BVEza9550fJUsO8avg2X0g&s=09">
                     <img src='assets/twitter_logo.png' , width="45" , height="45" , alt="follow me on twitter!">
                 </a>
             </div>
+
+            <div class="footerContainer">
+                <p>&copy Daniel Hartgrove 2022, website written and designed by Daniel Hartgrove</p>
+            </div>
+
         </div>
     </div>
 
-    <div class = "navbar">
-        <a class="home" href="index.html">(home)</a>
-                <a class="projects" href="projects.html">projects</a>
-                <a class="portfolio" href="portfolio.html">portfolio</a>
-                <a class="about" href="about.html">aboutme</a>
-    </div>  
+    <div class="tabWrapper">
+        <div class="tabContainer">
 
-    <img id="mountains" class="mountains" src='assets/foreground_mountain.png' , width="800" , height="800" , alt="">
+            <a href="portfolio.html">
+                <div class = "tab">
+                    <h2 class="tabTitle">DESIGNS.</h2>
+                </div>
+            </a>
 
+            <br>
 
-    <a class="theme_button" href="inner.html">開</a>
-   
+            <a href="projects.html">      
+                <div class = "tab">
+                    <h2 class="tabTitle">PROJECTS.</h2>
+                </div>
+            </a>
 
-    
-    <div class="footer_container">
-        <p>&copy Daniel Hartgrove 2022, website written and designed by Daniel Hartgrove</p>
+            <br>
+
+            <a href="about.html">
+                <div class = "tab">
+                    <h2 class="tabTitle">ABOUTME.</h2>
+                </div>
+            </a>
+
+        </div>
     </div>
     
 </body>
