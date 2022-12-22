@@ -98,8 +98,8 @@ a:active { text-decoration: underline; }
   /* FOOTER CONTENT - BOTTOM LEFT */
 
 .footerContainer {
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    bottom: 1%;
     width: 100%;
     display: flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -145,9 +145,9 @@ a:active { text-decoration: underline; }
 
 @keyframes tabHover {
     from{ transform: translateX(0%); text-shadow: 0 0 0px #fafafa; border-radius: 30px 15px 15px 30px; }
-    to{ transform: translateX(-5%); text-shadow: 0 0 20px #fafafa, 0 0 30px #ff4da6, 
-        0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 
-        0 0 80px #ff4da6; border-radius: 30px;}
+    to{ transform: translateX(-5%); text-shadow: 0 0 20px #fafafa, 0 0 30px #bda311, 
+        0 0 40px #bda311, 0 0 50px #bda311, 0 0 60px #bda311, 0 0 70px #bda311, 
+        0 0 80px #bda311; border-radius: 30px;}
 }
 
 .tabTitle{
@@ -158,3 +158,68 @@ a:active { text-decoration: underline; }
     rotate: -90deg;
 }
 
+.cardContentRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    flex-direction: row;
+  }
+  
+  .cardContentWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .card{
+    color: #252525;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 12px;
+    margin-right: 12px;
+    max-height: 300px;
+    min-height: 300px;
+    max-width: 307px;
+    min-width: 307px;
+  }
+  
+  .cardImg{
+    border-radius: 15px 15px 0px 0px;
+  }
+  
+  
+  .cardText{
+    padding-left: 1.25vw;
+    padding-bottom: 1vh;
+    align-items: center;
+    max-height: 90px;
+    min-height: 90px;
+    max-width:280px;
+    min-width: 280px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  .aboutContentWrapper{
+    color: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50vw;
+  }
+
+  .aboutText{
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
