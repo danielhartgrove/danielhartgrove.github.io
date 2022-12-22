@@ -26,6 +26,11 @@ body{
     height: 100%;
 }
 
+.wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
 .snowflake {
     position: absolute;
     width: 10px;
@@ -54,7 +59,7 @@ a:active { text-decoration: underline; }
 .mainWrapper{
     background-color: #252525;
     width: 40vw;
-    height: 100vh; 
+    height: 101vh; 
     padding-top: 0; 
     padding-bottom: 0; 
     padding-left: 5%; 
@@ -65,46 +70,36 @@ a:active { text-decoration: underline; }
 }
 
 .name{
-    position: fixed;
+    position: relative;
     top: 35%;
     left: 5%;
     color: #fafafa;
-    font-size: 5rem;
+    font-size: 4rem;
     margin-right: 50%;
 }
 
 .introText{
-    position: fixed;
-    top: 53%;
+    position: relative;
+    top: 55%;
+    padding-top: 2%;
     left: 5%;
     color: #fafafa;
-    margin-right: 30%;
-    font-size: 1.3rem;
-    width: 30%;
-
+    font-size: 1rem;
+    width: 70%;
 }
-
-.backButton{
-    position: fixed;
-    height: 45; 
-    width: 45;
-    left: 5%;
-    top: 54%;
-}
-
 /* SOCIALS - ON MAIN */
 
 .socials_container {
-    position: fixed;
-    display: flex;
-    z-index: 30;
-    margin-top: 5%;
-    align-items: left;
-    justify-content: left;
-    flex-direction: row;
-    gap: 17%;
-    left: 5%;
-    top: 54%;
+  position: relative;
+  display: flex;
+  z-index: 30;
+  margin-top: 5%;
+  align-items: left;
+  justify-content: left;
+  flex-direction: row;
+  gap: 17%;
+  left: 5%;
+  top: 54%;
 }
 
 .socialimg :hover{
@@ -115,7 +110,7 @@ a:active { text-decoration: underline; }
   /* FOOTER CONTENT - BOTTOM LEFT */
 
 .footerContainer {
-    position: fixed;
+    position: absolute;
     bottom: 1%;
     left: 5%;
     width: 100%;
@@ -207,7 +202,6 @@ a:active { text-decoration: underline; }
   .cardImg{
     border-radius: 15px 15px 0px 0px;
   }
-  
   
   .cardText{
     padding-left: 1.25vw;
@@ -324,5 +318,56 @@ a:active { text-decoration: underline; }
   
   .active, .dot:hover {
     background-color: #252525;
+  }
+
+  /* MOBILE SITE CHANGES START */
+
+  @media only screen and (max-width: 970px) {
+   .wrapper{
+    flex-direction: column; 
+   }
+
+   .name{
+    position: relative;
+    margin-top: 30%;
+   }
+
+   .socials_container{
+    position: relative;
+   }
+
+   .footerContainer{
+    position: relative;
+    color: #252525;
+   }
+
+   .introText{
+    position: relative;
+   }
+
+   .mainWrapper{
+    width: 100vw;
+    height: 60vh;
+    margin-bottom: 1%;
+   }
+
+   .tabWrapper{
+    flex-direction: row;
+    width: 100vw;
+    height: 50vh;
+   }
+
+   .tab{
+    height: 15vh;
+    width: 100vw;
+    margin-left: 0%;
+    margin-right:0%;
+    border-radius: 0px 0px 0px 0px;
+    rotate: 0deg;
+   }
+
+   .footerContainer{
+    color: #252525;
+   }
   }
   
