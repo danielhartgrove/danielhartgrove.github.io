@@ -166,7 +166,7 @@ a:active { text-decoration: underline; }
 .tabTitle{
     color: #fafafa;
     position: relative;
-    font-size: 3rem;
+    font-size: 2.6rem;
     margin-right: -900px;
     rotate: -90deg;
 }
