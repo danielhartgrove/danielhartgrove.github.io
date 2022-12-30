@@ -1,24 +1,24 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html, body {
-    padding: 0;
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-    background-color: #fafafa;
-    font-family: Unbounded, Verdana, Geneva, Tahoma, sans-serif;
-    color: #fafafa;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #fafafa;
+  font-family: Unbounded, Verdana, Geneva, Tahoma, sans-serif;
+  color: #fafafa;
 }
 
 body{
-    display: flex; 
-    flex-direction: row; 
-    align-items: center; 
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
 }
 
 .background{
@@ -47,26 +47,26 @@ a:active { text-decoration: underline; }
 /* MAIN CONTENT - LEFT SIDE */
 
 .mainContent{
-    position: relative; 
-    border-top-right-radius: 30px; 
-    border-bottom-left-radius: 7px; 
-    border-bottom-right-radius: 30px; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: left; 
+  position: relative; 
+  border-top-right-radius: 30px; 
+  border-bottom-left-radius: 7px; 
+  border-bottom-right-radius: 30px; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: left; 
 }
 
 .mainWrapper{
-    background-color: #252525;
-    width: 40vw;
-    height: 101vh; 
-    padding-top: 0; 
-    padding-bottom: 0; 
-    padding-left: 5%; 
-    padding-right: 3%; 
-    align-items: center; 
-    justify-content: right;
-    display: flex; 
+  background-color: #252525;
+  width: 40vw;
+  height: 101vh; 
+  padding-top: 0; 
+  padding-bottom: 0; 
+  padding-left: 5%; 
+  padding-right: 3%; 
+  align-items: center; 
+  justify-content: right;
+  display: flex; 
 }
 
 .name{
@@ -103,7 +103,7 @@ a:active { text-decoration: underline; }
 }
 
 .socialimg :hover{
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 
@@ -167,7 +167,7 @@ a:active { text-decoration: underline; }
     color: #fafafa;
     position: relative;
     font-size: 3rem;
-    margin-right: -75rem;
+    margin-right: -900px;
     rotate: -90deg;
 }
 
@@ -177,6 +177,7 @@ a:active { text-decoration: underline; }
     align-items: center;
     margin-top: 15px;
     flex-direction: row;
+    margin-top: 5%;
   }
   
   .cardContentWrapper{
@@ -184,6 +185,8 @@ a:active { text-decoration: underline; }
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    overflow-x: hidden;
   }
   
   .card{
