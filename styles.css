@@ -58,7 +58,7 @@ a:active { text-decoration: underline; }
 
 .mainWrapper{
   background-color: #252525;
-  width: 40vw;
+  width: 45vw;
   height: 101vh; 
   padding-top: 0; 
   padding-bottom: 0; 
@@ -167,7 +167,7 @@ a:active { text-decoration: underline; }
     color: #fafafa;
     position: relative;
     font-size: 2.6rem;
-    margin-right: -900px;
+    margin-right: -850px;
     rotate: -90deg;
 }
 
@@ -182,12 +182,14 @@ a:active { text-decoration: underline; }
   
   .cardContentWrapper{
     display: flex;
-    height: 110%;
+    height: 120%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    position: relative;
-    overflow-y:scroll;
+    position: center;
+    overflow-y: scroll;
+    margin-left: 5vw;
+    margin-top: 15vh;
   }
   
   .card{
