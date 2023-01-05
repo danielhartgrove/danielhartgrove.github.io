@@ -158,9 +158,9 @@ a:active { text-decoration: underline; }
 
 @keyframes tabHover {
     from{ transform: translateX(0%); text-shadow: 0 0 0px #fafafa; border-radius: 30px 15px 15px 30px; }
-    to{ transform: translateX(-5%); text-shadow: 0 0 20px #fafafa, 0 0 30px #bda311, 
-        0 0 40px #bda311, 0 0 50px #bda311, 0 0 60px #bda311, 0 0 70px #bda311, 
-        0 0 80px #bda311; border-radius: 30px;}
+    to{ transform: translateX(-5%); text-shadow: 0 0 20px #fafafa, 0 0 30px #0ba886, 
+        0 0 40px #0ba886, 0 0 50px #0ba886, 0 0 60px #0ba886, 0 0 70px #0ba886, 
+        0 0 80px #0ba886; border-radius: 30px;}
 }
 
 .tabTitle{
@@ -333,26 +333,23 @@ a:active { text-decoration: underline; }
 
    .name{
     position: relative;
-    margin-top: 30%;
+    font-size: 3rem;
    }
 
    .socials_container{
     position: relative;
-   }
-
-   .footerContainer{
-    position: relative;
-    color: #252525;
+    scale: 80%;
+    margin-left: -10%;
    }
 
    .introText{
     position: relative;
+    font-size: 0.8rem;
    }
 
    .mainWrapper{
     width: 100vw;
-    height: 60vh;
-    margin-bottom: 1%;
+    height: 50vh;
    }
 
    .tabWrapper{
@@ -362,16 +359,33 @@ a:active { text-decoration: underline; }
    }
 
    .tab{
-    height: 15vh;
+    height: 13vh;
     width: 100vw;
     margin-left: 0%;
+    padding-bottom: 1%;
     margin-right:0%;
     border-radius: 0px 0px 0px 0px;
     rotate: 0deg;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
    }
+
+   .tabTitle{
+    color: #fafafa;
+    font-size: 3rem;
+    rotate: 0deg;
+    align-self: center;
+    margin-right: 0px;
+  }
 
    .footerContainer{
     color: #252525;
+    position: absolute;
+    bottom: 5;
+    align-self: center;
+    font-size: 0.7rem;
    }
   }
   
