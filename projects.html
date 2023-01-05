@@ -4,70 +4,69 @@
 <head>
     <title>Daniel Hartgrove</title>
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Unbounded">
     <script src="script.js"></script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
 <body>
     <div class="background" id="snow"></div>
+    <div class="wrapper">
+        <div class="mainWrapper">
+            <div class="mainContent">
+                <h1 class="name"><br>PROJECTS.</h1>
+                <p class="introText">I would like to demonstrate to you some of the projects I am currently working on / have recently completed throughout my career as a programmer/designer.</p>
+                <div class="socials_container">
 
-    <div class="mainWrapper">
-        <div class="mainContent">
-            <h1 class="name"><br>PROJECTS.</h1>
-            <p class="introText">I would like to demonstrate to you some of the projects I am currently working on / have recently completed throughout my career as a programmer/designer.</p>
-            <div class="socials_container">
+                    <a class="socialimg" href="index.html">
+                        <img src='assets/back_button.png' , width="45" , height="45", alt="follow me on instagram!">
+                    </a>
+                </div>
+                </div>
 
-                <a class="socialimg" href="index.html">
-                    <img src='assets/back_button.png' , width="45" , height="45", alt="follow me on instagram!">
-                </a>
-            </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="slideshowWrapper">
-        <div class="slideshowContainer">
-
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="assets/widmer_fields_prototype.png" style="width:100%">
-                <div class="text">Widmer Fields Website: I am currently constructing a website for the Grange Area Trust</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="assets/thomas_stevens_website.png" style="width:100%">
-                <div class="text">Thomas Stevens: I taught a friend of mine how to design his own portfolio website</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="assets/process_simulator.png" style="width:100%">
-                <div class="text">Process Simulator: As part of coursework, I developed a process simulator for an OS</div>
-            </div>
-            
-            
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-            
-            </div>
-            <br>
-            <br> <br>
-            <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
             </div>
         </div>
-    </div>
-    <div class="footerContainer">
-        <p>&copy Daniel Hartgrove 2022, website written and designed by Daniel Hartgrove</p>
-    </div>
+        <div class="slideshowWrapper">
+            <div class="slideshowContainer">
 
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="assets/widmer_fields_prototype.png" style="width:100%">
+                    <div class="text">Widmer Fields Website: I am currently constructing a website for the Grange Area Trust</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="assets/thomas_stevens_website.png" style="width:100%">
+                    <div class="text">Thomas Stevens: I taught a friend of mine how to design his own portfolio website</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="assets/process_simulator.png" style="width:100%">
+                    <div class="text">Process Simulator: As part of coursework, I developed a process simulator for an OS</div>
+                </div>
+                
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                <br> <br>
+                <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                </div>
+            </div>
+        </div>
+        <div class="footerContainer">
+            <p>&copy Daniel Hartgrove 2022, website written and designed by Daniel Hartgrove</p>
+        </div>
+    </div>
     <script>
         let slideIndex = 1;
         showSlides(slideIndex);
