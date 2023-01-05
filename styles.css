@@ -358,6 +358,24 @@ a:active { text-decoration: underline; }
     height: 50vh;
    }
 
+   .slideshowWrapper{
+    flex-direction: row;
+    width: 100vw;
+    height: 50vh;
+   }
+
+   .aboutContentWrapper{
+    flex-direction: row;
+    width: 100vw;
+    height: 50vh;
+   }
+
+   .cardContentWrapper{
+    flex-direction: row;
+    width: 100vw;
+    height: 50vh;
+   }
+
    .tab{
     height: 13vh;
     width: 100vw;
@@ -387,5 +405,12 @@ a:active { text-decoration: underline; }
     align-self: center;
     font-size: 0.7rem;
    }
+
+   .slideshowContainer{
+    width: 100vw;
+    height: 50vh;
+    align-items: center;
+   }
+
   }
   
