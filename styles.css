@@ -31,6 +31,10 @@ body{
   z-index: 10;
 }
 
+.buttonalert:hover{
+  transform: scale(1.1);
+}
+
 .background{
     z-index: 600;
     height: 100%;
