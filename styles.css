@@ -21,6 +21,16 @@ body{
   align-items: center; 
 }
 
+.buttonalert{
+  position:fixed;
+  width: 150%;
+  height: 150%;
+  top:20px;
+  left:20px;
+  cursor: pointer;
+  z-index: 10;
+}
+
 .background{
     z-index: 600;
     height: 100%;
