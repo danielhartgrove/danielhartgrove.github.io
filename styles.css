@@ -417,6 +417,8 @@ a:active { text-decoration: underline; }
    }
 
    .buttonalert{
+    display: flex;
+    flex-direction: column;
     position:fixed;
     width: 40px;
     height: 40px;
@@ -424,11 +426,19 @@ a:active { text-decoration: underline; }
     left: 90%;
     cursor: pointer;
     z-index: 10;
+    color:#252525;
+    text-decoration: none;
   }
   
   .buttonalert:hover{
-    transform: scale(1.1);
+    animation: alertHover;
   }
+
+  @keyframes alertHover{
+    from{ transform: scale(100%);}
+    to{ transform: scale(110%); color: #fafafa; text-decoration: none;}
+  }
+
 
    /* break */
 
