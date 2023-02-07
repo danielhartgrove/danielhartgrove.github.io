@@ -126,9 +126,11 @@ a:active { text-decoration: underline; }
 
 .footerContainer {
     position: absolute;
+    align-self: center;
+    justify-self: center;
+    left: 8%;
     bottom: 1%;
-    left: 5%;
-    width: 100%;
+    width: 50%;
     display: flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
@@ -182,7 +184,7 @@ a:active { text-decoration: underline; }
     color: #fafafa;
     position: relative;
     font-size: 2.6rem;
-    margin-right: -850px;
+    margin-right: -45vw;
     rotate: -90deg;
 }
 
