@@ -326,6 +326,17 @@ a:active { text-decoration: underline; }
     background-color: #252525
   }
 
+  .profileWrapper{
+    display: flex;
+    width: 100%;
+    justify-content: right;
+  }
+
+  .profilePhoto{
+    width: 150px;
+    height: 150px;
+  }
+
   .cardContentRow{
     display: flex;
     justify-content: center;
