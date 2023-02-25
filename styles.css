@@ -128,12 +128,12 @@ a:active { text-decoration: underline; }
     position: absolute;
     align-self: center;
     justify-self: center;
-    left: 8%;
-    bottom: 1%;
+    left: 2%;
+    bottom: 2%;
     width: 50%;
     display: flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1rem;
+    font-size: 0.85rem;
     z-index: 3;
     margin-top: 48%;
 }
@@ -183,7 +183,7 @@ a:active { text-decoration: underline; }
 .tabTitle{
     color: #fafafa;
     position: relative;
-    font-size: 2.6rem;
+    font-size: 2rem;
     margin-right: -45vw;
     rotate: -90deg;
 }
@@ -242,7 +242,7 @@ a:active { text-decoration: underline; }
     margin-top: -22px;
     color: #fafafa;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.2rem;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -263,7 +263,7 @@ a:active { text-decoration: underline; }
   /* Number text (1/3 etc) */
   .numbertext {
     color: #fafafa;
-    font-size: 12px;
+    font-size: 0.9rem;
     padding: 8px 12px;
     position: absolute;
     top: 0;
@@ -316,7 +316,7 @@ a:active { text-decoration: underline; }
 
   .workText {
     color: #fafafa;
-    font-size: 15px;
+    font-size: 1rem;
     padding: 8px 13px;
     position: relative;
     bottom: 3px;
@@ -390,10 +390,10 @@ a:active { text-decoration: underline; }
   .a{
     margin-bottom: 10%;
   }
-  
+
   /* MOBILE SITE CHANGES START */
 
-  @media only screen and (max-width: 970px) {
+  @media only screen and (max-width: 1024px) {
 
 
   .cardSpacer{
@@ -465,7 +465,7 @@ a:active { text-decoration: underline; }
 
    .name{
     position: relative;
-    font-size: 4rem;
+    font-size: auto;
    }
 
    .socials_container{
@@ -476,7 +476,7 @@ a:active { text-decoration: underline; }
 
    .introText{
     position: relative;
-    font-size: 1.2rem;
+    font-size: auto;
    }
 
    .buttonalert{
@@ -543,6 +543,30 @@ a:active { text-decoration: underline; }
     justify-content: center;
     border-radius: 30px 0px 0px 30px;
     margin-left: 6%;
+  }
+
+  .work-item-tags-container {
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+  }
+  
+  .work-item-tag {
+    height: 25px;
+    min-width: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    float: left;
+    background-color: #813772;
+    margin-right: 5px;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 5px;
   }
 
   @keyframes tabHover{
@@ -612,19 +636,38 @@ a:active { text-decoration: underline; }
   color: #fafafa;
   position: absolute;
   top: 4%;
-  left: 6%;
+  left: 0%;
   width: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1rem;
+  font-size: auto;
   z-index: 3;
   margin-top: 48%;
 }
 
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 540px) {
   .photoWrapper{
     display: none;
+  }
+
+  h4{
+    font-size: 0.8rem;
+  }
+
+  .tab{
+    background-color: #252525;
+    height: 13vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px 0px 0px 30px;
+    margin-left: 10%;
+  }
+
+  .tabTitle{
+    font-size: 2rem;
   }
 
   .cardContentWrapper{
@@ -632,7 +675,55 @@ a:active { text-decoration: underline; }
     margin-left: -3vw;
   }
 
+  @keyframes tabHover{
+    from{ transform: translateX(0%); text-shadow: 0 0 0px #fafafa; border-radius: 30px 15px 15px 30px; }
+    to{ transform: translateX(-5%); text-shadow: 0 0 20px #fafafa, 0 0 30px #0ba886, 
+        0 0 40px #0ba886, 0 0 50px #0ba886, 0 0 60px #0ba886, 0 0 70px #0ba886, 
+        0 0 80px #0ba886; border-radius: 30px;}
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .photoWrapper{
+    display: none;
+  }
+
   h4{
-    font-size: 0.8rem;
+    font-size: 2rem;
+  }
+
+  .name{
+    font-size: 2rem;
+  }
+
+  .introtext{
+    font-size: 0.5rem;
+  }
+
+  .tab{
+    background-color: #252525;
+    height: 13vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px 0px 0px 30px;
+    margin-left: 10%;
+  }
+
+  .tabTitle{
+    font-size: 2rem;
+  }
+
+  .cardContentWrapper{
+    margin-top: 190%;
+    margin-left: -3vw;
+  }
+
+  @keyframes tabHover{
+    from{ transform: translateX(0%); text-shadow: 0 0 0px #fafafa; border-radius: 30px 15px 15px 30px; }
+    to{ transform: translateX(-5%); text-shadow: 0 0 20px #fafafa, 0 0 30px #0ba886, 
+        0 0 40px #0ba886, 0 0 50px #0ba886, 0 0 60px #0ba886, 0 0 70px #0ba886, 
+        0 0 80px #0ba886; border-radius: 30px;}
   }
 }
