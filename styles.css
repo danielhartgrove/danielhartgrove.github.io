@@ -455,8 +455,9 @@ a:active { text-decoration: underline; }
       align-items: center;
       flex-direction: column;
       position: center;
-      overflow-y: scroll;
+      overflow: scroll;
       padding-left: 23px;
+      -webkit-overflow-scrolling: touch;
     }
     
     .card{
@@ -529,6 +530,7 @@ a:active { text-decoration: underline; }
     position: relative;
     overflow-x: none;
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     margin-top: 50vh;
   }
   
@@ -713,6 +715,118 @@ a:active { text-decoration: underline; }
     display: none;
   }
 
+  .aboutContentWrapper{
+    color: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 20vw;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .aboutText{
+    font-size: 0.77rem;
+  }
+
+  .cardContentWrapper{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: center;
+    overflow: scroll;
+    padding-left: 23px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  h4{
+    font-size: 0.4rem;
+  }
+
+  .name{
+    font-size: 2rem;
+  }
+
+  .introtext{
+    font-size: 0.5rem;
+  }
+  
+  .cardSpacer{
+    display:none;
+  }
+
+  .tab{
+    background-color: #252525;
+    height: 13vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px 0px 0px 30px;
+    margin-left: 10%;
+  }
+
+  .tabTitle{
+    font-size: 2rem;
+  }
+
+  .cardContentWrapper{
+    padding-bottom: 93vw;
+    height: 115vw;
+    padding-left: 8vw;
+    padding-top: 4%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .cardContentRow{
+    padding-left: 4%;
+    padding-top: 0%;
+    padding-bottom: -1%;
+  }
+
+  .card{
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 110%;
+    height: 110%;
+  }
+
+  .a{
+    width: 110%;
+    height: 110%;
+  }
+
+  .workWrapper{
+    padding-top: 4vw;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .workContainer{
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .workBox{
+    padding-top: -20%;
+  }
+
+  .workImage{
+    width: 102.5%;
+    height: 102.5%;
+  }
+
+  .work-item-tags-container{
+    display: none;
+  }
+  }
+
   h4{
     font-size: 0.5rem;
   }
@@ -749,6 +863,35 @@ a:active { text-decoration: underline; }
   .photoWrapper{
     display: none;
   }
+  
+  .aboutContentWrapper{
+    color: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 54vw;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .aboutText{
+    font-size: 0.7rem;
+  }
+
+  .cardContentWrapper{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: center;
+    overflow: scroll;
+    padding-left: 23px;
+    -webkit-overflow-scrolling: touch;
+  }
 
   h4{
     font-size: 0.4rem;
@@ -760,6 +903,10 @@ a:active { text-decoration: underline; }
 
   .introtext{
     font-size: 0.5rem;
+  }
+  
+  .cardSpacer{
+    display:none;
   }
 
   .tab{
@@ -778,8 +925,31 @@ a:active { text-decoration: underline; }
   }
 
   .cardContentWrapper{
-    margin-top: 190%;
-    margin-left: -3vw;
+    padding-bottom: 90vw;
+  }
+
+  .workWrapper{
+    padding-top: 4vw;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .workContainer{
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .workBox{
+    padding-top: -20%;
+  }
+
+  .workImage{
+    width: 105%;
+    height: 105%;
+  }
+
+  .work-item-tags-container{
+    display: none;
   }
 
   @keyframes tabHover{
