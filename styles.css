@@ -112,7 +112,7 @@ a:active { text-decoration: underline; }
   align-items: left;
   justify-content: left;
   flex-direction: row;
-  gap: 17%;
+  gap: 13%;
   left: 5%;
   top: 54%;
 }
@@ -304,14 +304,22 @@ a:active { text-decoration: underline; }
 
   .workBox{
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 80%;
     padding-left: 13%;
     padding-right: 3%;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
     box-shadow: 0 0 0 0 10px #252525;
+    border-radius: 15px
+  }
+
+  .workImage{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px 0px 0px;
   }
 
   .workText {
@@ -321,9 +329,38 @@ a:active { text-decoration: underline; }
     position: relative;
     bottom: 3px;
     width: 97%;
-    border-radius: 15px, 15px, 0px, 0px;
     text-align: center;
-    background-color: #252525
+    background-color: #252525;
+    border-radius: 0px 0px 15px 15px;
+  }
+
+  .work-item-tags-container {
+    position: relative;
+    display: flex;
+    top: 30px;
+    left: 5px;
+    margin-top: 20px;
+    padding-top: 20px;
+    width: 100%;
+    text-align: left;
+    padding-left: 10px;
+    align-self: left;
+    z-index: 5;
+  }
+  
+  .work-item-tag {
+    height: 20px;
+    min-width: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    font-family: 'unbounded',sans-serif;
+    font-size: 12px;
+    float: left;
+    margin-right: 8px;
+    padding-top: 3px;
+    text-align: center;
+    border-radius: 15px;
   }
 
   .profileWrapper{
@@ -346,7 +383,7 @@ a:active { text-decoration: underline; }
 
   .cardSpacer{
     height: 50%;
-    margin-bottom: 190px;
+    margin-bottom: 215px;
   }
   
   .cardContentWrapper{
@@ -371,6 +408,10 @@ a:active { text-decoration: underline; }
   
   .cardImg{
     border-radius: 15px 15px 0px 0px;
+  }
+
+  .card:hover{
+    transform: scale(1.1);
   }
   
   .cardText{
@@ -589,29 +630,6 @@ a:active { text-decoration: underline; }
     margin-left: 6%;
   }
 
-  .work-item-tags-container {
-    margin-top: 10px;
-    width: 100%;
-    text-align: left;
-    overflow: hidden;
-  }
-  
-  .work-item-tag {
-    height: 25px;
-    min-width: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: white;
-    font-family: 'Raleway',sans-serif;
-    font-weight: 100;
-    font-size: 14px;
-    float: left;
-    background-color: #813772;
-    margin-right: 5px;
-    margin-top: 5px;
-    text-align: center;
-    border-radius: 5px;
-  }
 
   @keyframes tabHover{
     from{ transform: translateX(0%); text-shadow: 0 0 0px #fafafa; border-radius: 30px 15px 15px 30px; }
