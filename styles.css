@@ -217,6 +217,15 @@ a:active { text-decoration: underline; }
     width: 50vw;
   }
 
+  .gameContentWrapper{
+    color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50vw;
+  }
+
 .aboutText{
     justify-content: center;
     align-items: center;
@@ -450,39 +459,9 @@ a:active { text-decoration: underline; }
     height: 100vw;
     width: 60vw;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     position: center;
-  }
-
-  .game{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 500px;
-    width: 500px;
-    box-shadow: #252525;
-    z-index: 999;
-    border: 1px solid black;
-  }
-
-  .gameTitle{
-    color: #252525;
-    margin-bottom: 3%;
-  }
-
-  canvas{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 500px;
-    width: 500px;
-    box-shadow: #252525;
-    z-index: 999;
-    border: 1px solid black;
   }
 
   /* MOBILE SITE CHANGES START */
