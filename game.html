@@ -2,20 +2,21 @@
 <html>
 
 <head>
-    <title>Daniel Hartgrove | Tower Ninja</title>
+    <title>Daniel Hartgrove | Coding Clicker</title>
     <link rel="icon" type="image/x-icon" href="/assets/dhfavicon.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Unbounded">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
     <script src="game.js"></script>
 </head>
-
+<body>
 <div class="background" id="snow"></div>
     <div class="wrapper">
     <div class="mainWrapper">
         <div class="mainContent">
-            <h1 class="name"><br>TOWER NINJA.</h1>
-            <p class="introText">My JavaScript web game, Tower Ninja. Press space to jump between the buildings, and to change direction in the air.</p>
+            <h1 class="name"><br>CODING CLICKER.</h1>
+            <p class="introText">My JavaScript web game, Coding Clicker. Click the coder to write lines of code to the screen!</p>
             
             <div class="socials_container">
                 <a class="socialimg" href="index.html">
@@ -27,14 +28,22 @@
         </div>
     </div>
 
-<body>
+
     
-    <div class = "gameWrapper">
-    <!-- Game container and JavaScript code here...-->
-        <h2 class="gameTitle">Tower Ninja.</h1>
-        <canvas class="game" id="canvas" width="500" height="500">
-            <script></script>
-        </canvas>
+    <div class = "aboutWrapper">
+        <div class="gameContentWrapper">
+            <div id = "cookie" onclick="cookieClick()">
+                <div class="img-wrapper">
+                    <img src="assets/game/programmer_nothover.png" alt="programmer" />
+                  </div>
+            </div>
+            
+            <p>Number of Lines Written:</p>
+            
+            <div id = "numbers"></div>
+    
+            <p>Instructions: Click the programmer to make him write lines of code</p>
+        </div>
     </div>
 
 </body>
