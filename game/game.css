@@ -29,6 +29,19 @@ td {
     height:60px;    
 }
 
+#linesPerSecond {
+  margin: auto;
+  text-align:center;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  border:5px solid;
+  border-radius:10px;
+  background-color:#252525;
+  width:200px;
+  height:60px;    
+}
+
 #upgradeLevel {
     margin: auto;
     text-align:center;
