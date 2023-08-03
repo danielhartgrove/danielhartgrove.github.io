@@ -406,19 +406,20 @@ a:active { text-decoration: underline; }
   }
 
   .cardSpacer{
-    height: 50%;
-    margin-bottom: 215px;
+    height: 100%;
+    margin-bottom: 200px;
   }
   
   .cardContentWrapper{
     display: flex;
-    height: 100vh;
+    height: 65%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: center;
     overflow-y: scroll;
     padding-left: 23px;
+    padding-top: 350px;
   }
   
   .card{
@@ -453,7 +454,7 @@ a:active { text-decoration: underline; }
   }
 
   .a{
-    margin-bottom: 10%;
+    margin-bottom: 8%;
   }
 
   .gameWrapper{
