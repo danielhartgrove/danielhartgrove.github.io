@@ -10,7 +10,7 @@ window.onload = function () {
   linesPerSecond.innerHTML = 0;
 
   setInterval(function() {
-        num += cpc*(lps/5);
+        num += (cpc*lps)/5;
         numbers.innerHTML = num.toFixed(0);
 },200);
 
@@ -50,7 +50,7 @@ function buyAuto(cost, amount){
         lps += amount;
 
         var linesPerSecond = document.getElementById("linesPerSecond");
-        linesPerSecond.innerHTML = lps;
+        linesPerSecond.innerHTML = lps * cpc;
         var numbers = document.getElementById("numbers");
         numbers.innerHTML = num.toFixed(0);
     }else{
