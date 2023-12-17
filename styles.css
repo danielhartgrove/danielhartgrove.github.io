@@ -185,7 +185,7 @@ a:active { text-decoration: none; color:#ffb700; }
 
 .tab:hover{
     animation: tabHover 2s;
-    animation-100%-mode: forwards;
+    animation-fill-mode: forwards;
     text-decoration: none;
 }
 
@@ -704,7 +704,7 @@ a:active { text-decoration: none; color:#ffb700; }
 
   .tab:hover{
       animation: tabHover 3s;
-      animation-100%-mode: forwards;
+      animation-fill-mode: forwards;
       text-decoration: none;
   }
 
