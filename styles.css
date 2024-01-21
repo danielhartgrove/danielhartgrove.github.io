@@ -214,11 +214,21 @@ a:active { text-decoration: none; color:#00f84f; }
   .aboutContentWrapper{
     color: #252525;
     display: flex;
-    justify-content: center;
+    justify-content: top;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    overflow-y: scroll; 
+    margin: 3rem; 
+    display: flex;
+    position: top;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    }
+  
+  .photoWrapper{
+    margin: 2%;
   }
 
   .gameContentWrapper{
@@ -458,6 +468,8 @@ a:active { text-decoration: none; color:#00f84f; }
     animation-fill-mode: forwards;
     text-decoration: none;
   }
+
+
 
   @keyframes cardHover {
     from{ transform: scale(1); text-shadow: 0 0 0px #fafafa; border-radius: 30px 15px 15px 30px; }
@@ -720,6 +732,7 @@ a:active { text-decoration: none; color:#00f84f; }
         align-items: center;
         flex-direction: row;
         height: 100%;
+        
       }
     
       .aboutContentContainer{
@@ -730,7 +743,7 @@ a:active { text-decoration: none; color:#00f84f; }
         align-self: center;
         width: 100%;
         height: auto;
-        padding: auto;
+        margin: 3%;
       }
 
       .gameContentWrapper{
@@ -746,8 +759,7 @@ a:active { text-decoration: none; color:#00f84f; }
     .aboutText{
         justify-content: center;
         align-items: center;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding: 5%;
     }
     
     .mySlides {display: none}
