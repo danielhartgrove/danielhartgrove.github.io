@@ -70,10 +70,10 @@ body{
     background-color: #fff7f7; /* Workaround for Chromium's selective color inversion */
 }
 
-a:link { text-decoration: none; color:#ffb700;}
-a:visited { text-decoration: none; color:#ffb700; }
-a:hover { text-decoration: none; color:#ffb700; }
-a:active { text-decoration: none; color:#ffb700; }
+a:link { text-decoration: none; color:#00f84f;}
+a:visited { text-decoration: none; color:#00f84f; }
+a:hover { text-decoration: none; color:#00f84f; }
+a:active { text-decoration: none; color:#00f84f; }
 
 /* MAIN CONTENT - LEFT SIDE */
 
@@ -192,9 +192,9 @@ a:active { text-decoration: none; color:#ffb700; }
 
 @keyframes tabHover {
     from{ transform: translateX(0%); text-shadow: 0 0 0px #fafafa; border-radius: 30px 15px 15px 30px; }
-    to{ transform: translateX(-5%); text-shadow: 0 0 20px #fafafa, 0 0 30px #ffb700, 
-        0 0 40px #ffb700, 0 0 50px #ffb700, 0 0 60px #ffb700, 0 0 70px #ffb700, 
-        0 0 80px #ffb700; border-radius: 30px;}
+    to{ transform: translateX(-5%); text-shadow: 0 0 20px #fafafa, 0 0 30px #00f84f, 
+        0 0 40px #00f84f, 0 0 50px #00f84f, 0 0 60px #00f84f, 0 0 70px #00f84f, 
+        0 0 80px #00f84f; border-radius: 30px;}
 }
 
 .tabTitle{
@@ -344,6 +344,10 @@ a:active { text-decoration: none; color:#ffb700; }
     -webkit-overflow-scrolling: touch;
   }
 
+  .cardContentContainer{
+    padding-top: 2%;
+  }
+
   .workBox{
     display: flex;
     position: relative;
@@ -450,7 +454,16 @@ a:active { text-decoration: none; color:#ffb700; }
   }
 
   .card:hover{
-    transform: scale(1.05);
+    animation: cardHover 2s;
+    animation-fill-mode: forwards;
+    text-decoration: none;
+  }
+
+  @keyframes cardHover {
+    from{ transform: scale(1); text-shadow: 0 0 0px #fafafa; border-radius: 30px 15px 15px 30px; }
+    to{ transform: scale(1.05); text-shadow: 0 0 20px #fafafa, 0 0 30px #00f84f, 
+        0 0 40px #00f84f, 0 0 50px #00f84f, 0 0 60px #00f84f, 0 0 70px #00f84f, 
+        0 0 80px #00f84f; border-radius: 30px;}
   }
   
   .cardText{
@@ -539,10 +552,10 @@ a:active { text-decoration: none; color:#ffb700; }
         background-color: #fff7f7; /* Workaround for Chromium's selective color inversion */
     }
     
-    a:link { text-decoration: none; color:#ffb700;}
-    a:visited { text-decoration: none; color:#ffb700; }
-    a:hover { text-decoration: none; color:#ffb700; }
-    a:active { text-decoration: none; color:#ffb700; }
+    a:link { text-decoration: none; color:#00f84f;}
+    a:visited { text-decoration: none; color:#00f84f; }
+    a:hover { text-decoration: none; color:#00f84f; }
+    a:active { text-decoration: none; color:#00f84f; }
     
     /* MAIN CONTENT - LEFT SIDE */
     
@@ -678,9 +691,9 @@ a:active { text-decoration: none; color:#ffb700; }
     
     @keyframes tabHover {
         from{ transform: translateX(0%); text-shadow: 0 0 0px #fafafa; border-radius: 30px 15px 15px 30px; }
-        to{ transform: translateX(-5%); text-shadow: 0 0 20px #fafafa, 0 0 30px #ffb700, 
-            0 0 40px #ffb700, 0 0 50px #ffb700, 0 0 60px #ffb700, 0 0 70px #ffb700, 
-            0 0 80px #ffb700; border-radius: 30px;}
+        to{ transform: translateX(-5%); text-shadow: 0 0 20px #fafafa, 0 0 30px #00f84f, 
+            0 0 40px #00f84f, 0 0 50px #00f84f, 0 0 60px #00f84f, 0 0 70px #00f84f, 
+            0 0 80px #00f84f; border-radius: 30px;}
     }
     
     .tabTitle{
@@ -822,7 +835,7 @@ a:active { text-decoration: none; color:#ffb700; }
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
         align-self: center;
-        padding-top: 1px;
+        padding-top: 1%;
       }
     
       .workWrapper{
