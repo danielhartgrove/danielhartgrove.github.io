@@ -21,6 +21,7 @@ p{
 
 header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: 100px;
@@ -30,14 +31,17 @@ header {
     z-index: 100;
     overflow-y: hidden;
 }
+
 header h1 {
     font-size: 2.5vw;
     color: white;
 }
+
 header nav {
     display: flex;
     gap: 1.2rem;
 }
+
 header nav a {
     text-decoration: none;
     font-size: 2vw;
@@ -64,7 +68,6 @@ header nav a:hover {
 .home img {
     position: absolute;
     bottom: 0;
-    transform: translate(0px, 1px);
     width: 100%;
     pointer-events: none;
     background-color: transparent;
@@ -225,4 +228,51 @@ footer nav img {
 li{
   padding: 3px;
   list-style-image:  url('./assets/list-check.svg');
+}
+
+@media only screen and (width < 1024px) and (orientation : portrait) {  
+  
+    .header{
+      flex-direction: column;
+    }
+
+    .header h1{
+      font-size: 2.5em;
+      color: white;
+    }
+
+    .header nav{
+      display: flex;
+      flex-direction: column;
+      font-size: 1.5rem;
+    }
+
+    .home nav{
+      display: none;
+    }
+
+    .home .title{
+      top: 50%;
+      font-size: 1.6em;
+
+    }
+
+    .servicewrapper{
+      flex-direction: column;
+    }
+
+    .servicecard{
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .footer nav{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header nav{
+      flex-direction: column;
+      font-size: 1.5em;
+    }
 }
