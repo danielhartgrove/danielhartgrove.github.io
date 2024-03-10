@@ -1,10 +1,10 @@
-/* Slideshow container */
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-    box-shadow:  0px 0px 4px rgba(0, 0, 0, 0.25);
-  }
+  /* Slideshow container */
+  .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+      box-shadow:  0px 0px 4px rgba(0, 0, 0, 0.25);
+    }
   
   /* Hide the images by default */
   .mySlides {
@@ -85,3 +85,18 @@
     from {opacity: .4}
     to {opacity: 1}
   }
+
+  
+@media only screen and (width < 1024px) and (orientation : portrait) {    
+  .text{
+    display: none;
+  }
+
+  .numbertext{
+    display: none;
+  }
+
+  .slideshow-container{
+    max-width: 100%;
+  }
+}
