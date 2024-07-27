@@ -1,356 +1,265 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900');
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Expanded&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
 }
 
-body{
-  background-size: cover;
-  background-attachment: fixed;
-  background-color: #3B3291;
+.mobile-hide {
+    display: block;
+    padding-right: 10px;
 }
 
-p{
-  font-size: 1em;
-}
-
-header {
-    margin-top: 20px;
+body {
+    font-family: 'Stint Ultra Expanded', cursive;
+    font-weight: 400;
+    background-color: #200000;
+    color: #c1121f;
+    height: 100vh;
+    width: 100vw;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    height: 100px;
-    padding: 0 5%;
-    position: absolute;
+}
+
+hr{
+    width: 98%;
+    margin: 10px 0;
+    border: 1px solid #c1121f50;
+}
+
+h1 {
+    font-family: 'Rock Salt', sans-serif;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 2em;
     width: 100%;
-    z-index: 100;
-    overflow-y: hidden;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-header h1 {
-    font-size: 2.5vw;
-    color: white;
+.header h2 {
+    font-family: 'Stint Ultra Expanded', cursive;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: -20px;
+    width: 100%;
 }
 
-header nav {
-    display: flex;
-    gap: 1.2rem;
-}
-
-header nav a {
-    text-decoration: none;
-    font-size: 1.5vw;
-    font-weight: 600;
-    padding: 0.5vw 1.5vw;
-    border-radius: 99px;
-    transition: 0.3s;
-    color: white;
-}
-
-header nav a:hover {
-    background: #5247B9;
-}
-
-
-.home {
-    display: flex;
-    height: 100dvh;
-    background: linear-gradient(to top, #fbd2f3 30%, #db86bf);
-    position: relative;
-    overflow: hidden;
-}
-
-.home img {
-    position: absolute;
+.footer {
+    position: fixed;
     bottom: 0;
     width: 100%;
-    pointer-events: none;
-    background-color: transparent;
-}
-
-.home .title {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
     text-align: center;
-    font-size: 2.3em;
-    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-}
-
-.home nav{
-  display: flex;
-  gap: 60px;
-  background-color: transparent;
-  align-items: center;
-  position: absolute;
-  width: 100%;
-  justify-content: center;
-  top: 65vh;
-}
-
-.home nav img {
-  position: relative;
-  width: 45px;
-  height: 45px;
-  pointer-events: none;
-}
-
-.home li{
-  padding: 3px;
-  list-style-image:  url('./assets/list-check.svg');
-  line-height: 1.3em;
-}
-
-.about {
-  padding: 100px;
-  background: #3B3291;
-  color: #fafafa;
-  position: relative;
-  z-index: 100;
-}
-.about h1 {
-  font-size: 2rem;
-}
-
-.portfolio {
-  padding: 100px;
-  background-color: #FAFAFA;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #252525;
-  position: relative;
-  z-index: 100;
-}
-
-.portfolio h1 {
-  font-size: 2.5rem;
-}
-
-.dot active{
-  color: #5247B9;
-}
-
-.services {
-  padding: 100px;
-  background: #3B3291;
-  color: white;
-  position: relative;
-  z-index: 100;
-}
-
-.services h1 {
-  font-size: 2.5rem;
-}
-
-.servicewrapper{
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-}
-
-.servicecard{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  background: #5247B9;
-  border-radius: 10px;
-  box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.25);
-  text-align: center;
-  max-width: 25%;
-}
-
-.serviceimg{
-  width: 80%;
-  height: auto;
-  object-fit: fill;
-  background-color: transparent;
-}
-
-.servicecard h1{
-  font-size: 1.3rem;
-  color: #FAFAFA;
-}
-
-.services a{
-  text-decoration: none;
-  color: #FAFAFA;
-  font-size: 1.2rem;
-  padding: 16px 32px;
-  border-radius: 99px;
-  background: #5247B9;
-  align-self: center;
-}
-
-.servicecard p{
-  font-size: 1em;
-  color: #FAFAFA;
-
-}
-
-footer {
+    padding: 10px 0;
     display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #c1121f;
+}
+
+.name-holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.name{
+    font-family: 'Rock Salt', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1em;
+}
+
+.header{
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #c1121f;
+}
+
+.link-bar{
+    display: flex; 
+    width: 50%; 
+    justify-content: space-evenly; 
+    padding: 15px; 
+    text-decoration: none; 
+    color: #c1121f;
+    flex-wrap:wrap;
+}
+
+.link-bar a:hover{
+    color: #ff0000;
+}
+
+a {
+    text-decoration: none;
+    color: #c1121f;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.work {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #c1121f;
+    width: 90%;
+}
+
+.record{
+    width: 100%;
+    margin: 5px 2px;
+    display: flex;
+    flex: 1;
+    text-align: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.record summary {
+    font-size: 1.2em;
+    display: flex;
+    flex: 1;
+    text-align: left;
+    flex-direction: row;
+    text-overflow: ellipsis;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5%;
-    height: 100px;
-    background: #3B3291;
-    color: white;
-    position: relative;
-    z-index: 100;
+    color: #c1121f;
+}
+
+.record summary h2{
+    width: 25%;
+    text-overflow: ellipsis;
+}
+
+.record summary p{
+    position: absolute;
+    left: 30%;
+    font-size: 1.2em;
+    padding: 5px 15px;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    text-overflow: ellipsis;
+    text-align: left;
+    color: #c1121f;
+}
+
+.record summary a{
+    width: auto;
+    text-align: right;
+    text-overflow: ellipsis;
+}
+
+.record details {
+    font-size: 1.2em;
+    padding: 5px 15px;
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-overflow: ellipsis;
+    color: #c1121f;
+}
+
+.record summary a:hover{
+    color: #ff0000;
+}
+
+.record .content{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: left;
+    justify-content: left;
+    margin-top: 5px;
+}
+
+.record .content p{
+    font-size: 1.2rem;
+    margin: 0 10px;
+    font-family: 'montserrat', sans-serif;
+}
+
+.record .content a{
+    font-size: 1.2rem;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #c1121f;
+    font-family: 'Stint Ultra Expanded', cursive;
+    font-weight: bold;
+}
+
+.record .content a:hover{
+    color: #ff0000;
+}
+
+
+.record h2 {
+    font-size: 1.2em;
+    margin: 0 10px;
+}
+
+.record p {
+    font-size: 1.2em;
+    margin: 0 10px;
+    font-family: 'montserrat', sans-serif;
+    padding-bottom: 5px;
+}
+
+.record a {
+    font-size: 1.2em;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #c1121f;
+    font-family: 'Stint Ultra Expanded', cursive;
+}
+
+.tags{
+    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: left;
+    margin: 10px 10px;
+    font-style: italic;
 }
 
-footer p{
-  font-size: 1.3vw;
+.record:hover{
+    background-color: #ff000025;
+    border-radius: 15px;
 }
 
-footer nav{
-  display: flex;
-  gap: 1vw;
-  z-index: 3;
-  background-color: transparent;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row
-}
-
-footer nav img {
-  position: relative;
-  width: 2vw;
-  height: 2vw;
-  pointer-events: none;
-}
-
-.centerer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  font-weight: 400;
-}
-
-.centerer p{
-  font-size: 1em;
-  text-align: center;
-}
-
-li{
-  padding: 3px;
-  list-style-image:  url('./assets/list-check.svg');
-}
-
-@media only screen and (width < 1024px) and (orientation : portrait) {  
-  
-    .header{
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
+/* for mobile */
+@media (max-width: 768px) {
+    .project-container {
+        width: 100%;
     }
 
-    header h1{
-      font-size: 3em;
-      color: white;
-      padding: 5%;
+    .mobile-hide{
+        display: none;
     }
 
-    header nav{
-      display: flex;
-      flex-direction: column;
-      font-size: 25px;
-      padding-right: 5%;
-    }
-
-    header nav a{
-      font-size: 25px;
-    }
-
-    .home nav{
-      display: none;
-    }
-
-    .home .title{
-      top: 50%;
-      font-size: 1.6em;
-
-    }
-
-    .servicewrapper{
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .servicecard{
-      max-width: 100%;
-      margin-bottom: 20px;
-    }
-
-    .servicecard p{
-      font-size: 1em;
-    }
-
-    .centerer p{
-      text-align: center;
-    }
-
-    .centerer a{
-      text-align: center;
-      font-size: 1.5em;
-    }
-
-    footer{
-      flex-direction: column;
-      justify-content: space-evenly;
-      height: 100%;
-
-    }
-
-    footer p{
-      font-size: 0.8em;
-      justify-content: center;
-      gap: auto;
-      padding: 3%;
-      overflow-y: hidden;
-    }
-
-    footer nav{
-      padding: 5%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      width: 60%;
-      height: 150%;
-      overflow-y: hidden;
-    }
-
-    footer nav img{
-      width: 1.5em;
-      height: 1.5em;
-    }
-
-    header{
-      height: auto;
-    }
-
-    header h1{
-      font-size: 2.5em;
-      margin-top: 5%;
-    }
-
-    header nav{
-      flex-direction: column;
-      font-size: 1.5em;
-      margin-top: 5%;
+    .link-bar{
+        width: 100%;
     }
 }
