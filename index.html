@@ -1,175 +1,108 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Daniel Hartgrove | Computer Science Student & Front-End Developer</title>
-    <link rel="icon" type="image/x-icon" href="/assets/dhfavicon.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="carousel.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset=""UTF-8">
-
-
+    <title>Daniel Hartgrove</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Daniel Hartgrove's Development Portfolio">
+    <meta name="keywords" content="Daniel Hartgrove, Development, Portfolio">
+    <meta name="author" content="Daniel Hartgrove">
+    <meta charset="UTF-8">
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
 </head>
-
 <body>
-    <header>
-        <h1>Daniel Hartgrove</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#services">Services</a>
-        </nav>
-    </header>
+<section class="header">
+    <h1>Daniel Hartgrove's</h1>
+    <h2>Development Portfolio</h2>
+    <div class="link-bar">
+        <a href="https://www.linkedin.com/in/daniel-hartgrove-9ab56a239/">LinkedIn</a>
+        <a href="https://github.com/danielhartgrove">GitHub</a>
+        <a href="./assets/cv/DanielHartgrove_CV.pdf">CV</a>
+        <a href="mailto:hartgrovedaniel3@outlook.com">Email</a>
+    </div>
+</section>
+<section class="work">
     
-    <section class="home" id="home">
-        <img src="assets/parallax/mount2.png" class="mount2">
-        <img src="assets/parallax/mount1.png" class="mount1">
-        <img src="assets/parallax/bush2.png" class="bush2">
+    <details class="record">
+        <summary>
+            <h2>NoteMaker</h2>
+            <p>SaaS AI Solution for Note Making</p>
+            <a href="https://notemaker.tech">See More</a>
+        </summary>
+        <div class="content">
+            <p class="tags"> TypeScript, SaaS, React, APIs</p>
+            <p> NoteMaker is an AI-based SaaS solution for standardising notes from university lecture content. Developed as a part of Scorch Software. </p>
+        </div>
+    </details>
 
-        <h1 class="title">Hi👋 I'm Daniel Hartgrove, a web developer based in the midlands. Welcome to my website.</h1>
+    <hr>
 
-        <nav class = "socials">
-            <a href="https://www.instagram.com/canyoubuildasiteforme/">
-                <img class="socialimg" src='assets/instagram_logo.png', alt="follow me on instagram!">
-            </a>
-
-            <a href="https://github.com/DanielHartgrove">
-                <img class="socialimg" src='assets/github_logo.png', alt="checkout (haha) my github!">
-            </a>
-
-            <a href="https://www.linkedin.com/in/daniel-hartgrove-9ab56a239/">
-                <img class="socialimg" src='assets/linkedin_logo.png', alt="look at my linkedin!">
-            </a>
-
-            <a href="mailto:hartgrovedaniel3@outlook.com">
-                <img class="socialimg" src='assets/mailto_logo.png', alt="send me an email!">
-            </a>
-        
-        </nav>
-
-        <img src="assets/parallax/bush1.png" class="bush1">
-        <img src="assets/parallax/leaf2.png" class="leaf2">
-        <img src="assets/parallax/leaf1.png" class="leaf1">
-    </section>
-    
-    <section class="about" id="about">
-        <h1>A bit about me...</h1>
-        <br>
-        <p>I am a web developer from Northampton, having studied computer science at the University of Nottingham. Throughout my studies, I have built all sorts of projects including games and AI tools. It was whilst making these projects that I discovered a love for web development.</p>
-        <br>
-        <p>I have constructed websites for clients across the UK, and have also acted as a design consultant on occasion. I am able to cater to your needs and produce great looking, functional and responsive websites for you or your business, or give you advice on how to step up your social media game.</p>
-        <br>
-        <li>Well Designed Websites</li>
-        <li>Fast & Responsive</li>
-        <li>Social Media Management</li>
-        <br>
-        <p>Check out some of my previous work below:</p>
-        <br>
-    </section>
-
-    <section class="portfolio" id="portfolio">
-
-        <h1>My previous work</h1>
-        <br>
-        <p>I have already produced a variety of websites and webapps during my career. If you need a complicated web app or just a simple landing page, I can help.</p>
-        <p>Here are some of the best examples of my work:</p>
-        <br>
-        <div class="slideshow-container">
-
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-              <div class="numbertext">1 / 2</div>
-              <img src="assets/projects/widmer_fields.jpg" style="width:100%">
-              <div class="text">I created the website for the Widmer Fields for the Grange Area Trust in 2023.</div>
-            </div>
-          
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 2</div>
-              <img src="assets/projects/notemaker.jpg" style="width:100%">
-              <div class="text">NoteMaker is a website for a "Software as a Service" product that I helped to create in 2024.</div>
-            </div>
-          
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
-          <br>
-          
-          <!-- The dots/circles -->
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-          </div>
-    </section>
-
-    <section class="services" id="services">
-        <h1>My Services</h1>
-        <br>
-        <p>I am committed to helping you and your business' online presence. Here are some ways I can help:</p>
-        <br>
-
-        <div class="servicewrapper">
-
-            <div class="servicecard">
-                <h1>Web Development 🧑‍💻</h1>
-                <img class="serviceimg" src='assets/services/developer.svg', alt="developer">
-                <p>From simple landing pages to complex web applications, I can help you with your web development needs.</p>
-            </div>
-
-            <div class="servicecard">
-                <h1>Design Consultation 🎨</h1>
-                <img class="serviceimg" src='assets/services/designer.svg', alt="designer">
-                <p>Need help with the design of your website? I can help you with that too.</p>
-            </div>
-
-            <div class="servicecard">
-                <h1>Social Media Management 📱</h1>
-                <img class="serviceimg" src='assets/services/influencer.svg', alt="management">
-                <p>Want to find ways to increase your following? Let's talk about that.</p>
-            </div>
-
+    <details class="record">
+        <summary>
+            <h2>NottFound</h2>
+            <p>Student Experience App for Nottingham</p>
+            <a href="https://nottfound.benchung.dev/">See More</a>
+        </summary>
+        <div class="content">
+            <p class="tags"> Flutter, App Development</p>
+            <p> NottFound is a student experience application devleoped with sponsor from UNiDAYS, a student experience and marketing company. </p>
         </div>
 
-        <br>
-        <div class="centerer"><p>If you have any further questions or want to discuss a project, please don't hesitate to get in touch with me. I am always happy to help.</p></div>
-        <br>
-        <div class="centerer"><a href="mailto:hartgrovedaniel3@outlook.com">Contact me via Email</a></div>
+    </details>
 
-    </section>
+    <hr>
+
+    <details class="record">
+        <summary>
+            <h2>Freelance Dev Work</h2>
+            <p>Work I have done as a developer</p>
+            <a href="http://www.widmerfields.uk">See More</a>
+        </summary>
+        <div class="content">
+            <p class="tags"> HTML, CSS, JavaScript</p>
+            <p> I have built some See Mores previously as freelance development work. This includes work for informative and personal sites.</p>
+            <div class="display: flex; flex-direction: row; justify-content: space-around; padding: 5px;">
+                <a href="http://www.widmerfields.uk">Widmer Fields</a><a href="https://www.thomasstevens.xyz">Thomas Stevens</a></li>
+            </div>
+        </div>
+    </details>
+
+    <hr>
+
+    <details class="record">
+        <summary>
+            <h2>Farming Frenzy</h2>
+            <p>A cozy resource-management game built in Unity</p>
+            <a href="https://www.youtube.com/watch?v=fWeQ0cCLqvc">See More</a>
+        </summary>
+        <div class="content">
+            <p class="tags"> C#, Unity, Blender</p>
+            <p> NottFound is a student experience application devleoped with sponsor from UNiDAYS, a student experience and marketing company. </p>
+        </div>
+    </details>
+
+    <hr>
+
+    <details class="record">
+        <summary>
+            <h2>MiniTriangle Compiler</h2>
+            <p>MiniTriangle to ARM Compiler</p>
+            <a href="https://github.com/danielhartgrove/minitriangle_compiler">See More</a>
+        </summary>
+        <div class="content">
+            <p class="tags"> Haskell, Machine Code</p>
+            <p> My compiler for MiniTriangle was based on a university project that I extended and expanded upon to compile MiniTriangle down to the ARM instruction set.</p>
+        </div>
+    </details>
 
 
+    <script src="./details_toggle.js"></script>
 
-    <script src="parallax.js"></script>
-    <script src="slideshow.js"></script>
-
-    <footer>
-        <p>© 2024 Daniel Hartgrove</p>
-        
-        <p>© 2024 canyoubuildasiteforme </p>
-
-        <p>All Rights Reserved</p>
-
-        <nav>
-            <a href="https://www.instagram.com/canyoubuildasiteforme/">
-                <img class="socialimg" src='assets/instagram_logo.png', alt="follow me on instagram!">
-            </a>
-
-            <a href="https://github.com/DanielHartgrove">
-                <img class="socialimg" src='assets/github_logo.png', alt="checkout (haha) my github!">
-            </a>
-
-            <a href="https://www.linkedin.com/in/daniel-hartgrove-9ab56a239/">
-                <img class="socialimg" src='assets/linkedin_logo.png', alt="look at my linkedin!">
-            </a>
-
-            <a href="mailto:hartgrovedaniel3@outlook.com">
-                <img class="socialimg" src='assets/mailto_logo.png', alt="send me an email!">
-            </a>
-        
-        </nav>
-    </footer>
+</section>
+<section class="footer">
+    <div class="name-holder"><p>All Rights Reserved</p></div>
+    <div class="name-holder"><p>&copy  <p class="name">Daniel Hartgrove</p>  2024</p><div>
+</section>
 
 </body>
-
 </html>
