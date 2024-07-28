@@ -82,7 +82,7 @@ h1 {
 
 .header{
     display: flex;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     flex-direction: column;
@@ -121,6 +121,8 @@ a {
     display: flex;
     color: #c1121f;
     width: 90%;
+    margin: 0 auto;
+    font-size: 0.9em;
 }
 
 .record{
@@ -251,6 +253,10 @@ a {
 
 /* for mobile */
 @media (max-width: 768px) {
+
+    .body{
+        height: 100vh;
+    }
     .project-container {
         width: 100%;
     }
@@ -287,9 +293,26 @@ a {
         text-align: center;
     }
 
+    details .content{
+        font-size: 0.8vh;
+    }
+
+    .work details .content p{
+        font-size: 1.5vh;
+    }
+
+    .work details .content a{
+        font-size: 1.5vh;
+    }
+
     .name{
         font-size: 0.8em;
         text-wrap: ellipsis;
+    }
+
+    .footer{
+        font-size: 0.8em;
+        flex-direction: column;
     }
 
     h1{
