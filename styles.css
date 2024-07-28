@@ -274,6 +274,7 @@ a {
         justify-content: center;
         align-items: center;
         width: 100%;
+        font-size: 1.6vh;
     }
 
     .record summary h2{
