@@ -262,4 +262,47 @@ a {
     .link-bar{
         width: 100%;
     }
+    
+    .record summary{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .record summary h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    .record summary p{
+        position: relative;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .record summary a{
+        width: 100%;
+        text-align: center;
+    }
+
+    .name{
+        font-size: 0.8em;
+        text-wrap: ellipsis;
+    }
+
+    h1{
+        font-size: 5vw;
+        padding-bottom: 10px;
+    }
+
+    h2{
+        font-size: 4vw;
+    }
+
+    .work{
+        width: 100%;
+        top: 5%;
+    }
 }
