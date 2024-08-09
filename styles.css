@@ -255,7 +255,7 @@ a {
 @media (max-width: 768px) {
 
     .body{
-        height: 100vh;
+        height: 110vh;
     }
     .project-container {
         width: 100%;
