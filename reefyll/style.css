@@ -52,7 +52,6 @@ li{
 
 .navbar{
     position: relative;
-    right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -189,9 +188,34 @@ z-index: 3;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: left;
+}
+
+.--fill-height{
+    min-height: 100vh;
+}
+
+.a_icon{
+    color: #f8f8f8;
+    background-color: #4b644a;
+    border-radius: 32px;
+    border-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.a_icon img{
+    width: 30px;
+    height: 30px;
+    border-style: none;
+}
+
+
+.a_icon:hover{
+border-radius: 32px;;
 }
 
 .banner{
@@ -250,10 +274,6 @@ z-index: 3;
     text-align: center;
 }
 
-.product:hover{
-    transform: scale(1.1);
-    transition: transform 0.5s;
-}
 
 .product p{
     margin: 10px;
@@ -274,7 +294,7 @@ z-index: 3;
 }
 
 .product a:hover{
-    transform: scale(1.1);
+    color:#88b487;
 
 }
 
@@ -314,11 +334,27 @@ z-index: 3;
     width: 66%;
 }
 
+.--onethird-width{
+    width: 33%;
+}
+
 .splitter{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
+    width: 100%;
+}
+
+.--space-between{
+    justify-content: space-between;
+}
+
+.--space-around{
+    justify-content: space-around;
+}
+
+.--space-evenly{
+    justify-content: space-evenly;
 }
 
 .image{
@@ -359,7 +395,7 @@ footer button{
 
 
 /* Responsive */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) and (orientation: portrait){
     header{
         flex-direction: column;
         align-items: center;
@@ -380,6 +416,11 @@ footer button{
     .navbar{
         width: 100%;
         justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .navbar .a_icon{
+        flex-basis: 50%;
     }
 
     .product{
@@ -392,6 +433,10 @@ footer button{
 
     .text-container{
         width: 100%;
+    }
+
+    .splitter{
+        align-items: center;
     }
 
     footer{
@@ -412,7 +457,7 @@ footer button{
         margin-top: 10px;
     }
 
-    .--half-width, .--twothirds-width{
+    .--half-width, .--twothirds-width .--onethird-width{
         width: 100%;
     }
 }
