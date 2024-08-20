@@ -18,8 +18,8 @@
 body {
     font-family: 'Stint Ultra Expanded', cursive;
     font-weight: 400;
-    background-color: #200000;
-    color: #c1121f;
+    background-color: #121212;
+    color: #fafafa;
     height: 100vh;
     width: 100vw;
     min-height: 100vh;
@@ -32,7 +32,7 @@ body {
 hr{
     width: 98%;
     margin: 10px 0;
-    border: 1px solid #c1121f50;
+    border: 1px solid #fafafa50;
 }
 
 h1 {
@@ -64,7 +64,7 @@ h1 {
     flex-direction: row;
     font-size: 1.1rem;
     font-weight: bold;
-    color: #c1121f;
+    color: #fafafa;
 }
 
 .name-holder{
@@ -89,7 +89,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #c1121f;
+    color: #fafafa;
 }
 
 .link-bar{
@@ -98,17 +98,17 @@ h1 {
     justify-content: space-evenly; 
     padding: 15px; 
     text-decoration: none; 
-    color: #c1121f;
+    color: #fafafa;
     flex-wrap:wrap;
 }
 
 .link-bar a:hover{
-    color: #ff0000;
+    color: #ffffff;
 }
 
 a {
     text-decoration: none;
-    color: #c1121f;
+    color: #fafafa;
     font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
 }
@@ -121,7 +121,7 @@ a {
     justify-content: center;
     align-items: center;
     display: flex;
-    color: #c1121f;
+    color: #fafafa;
     width: 90%;
     margin: 0 auto;
     font-size: 0.9em;
@@ -146,7 +146,7 @@ a {
     text-overflow: ellipsis;
     justify-content: space-between;
     align-items: center;
-    color: #c1121f;
+    color: #fafafa;
     list-style: none;
 }
 
@@ -165,7 +165,7 @@ a {
     flex-direction: column;
     text-overflow: ellipsis;
     text-align: left;
-    color: #c1121f;
+    color: #fafafa;
 }
 
 .record summary a{
@@ -183,11 +183,11 @@ a {
     justify-content: left;
     align-items: left;
     text-overflow: ellipsis;
-    color: #c1121f;
+    color: #fafafa;
 }
 
 .record summary a:hover{
-    color: #ff0000;
+    color: #ffffff;
 }
 
 .record .content{
@@ -209,13 +209,13 @@ a {
     font-size: 1.2rem;
     margin: 0 10px;
     text-decoration: none;
-    color: #c1121f;
+    color: #fafafa;
     font-family: 'Stint Ultra Expanded', cursive;
     font-weight: bold;
 }
 
 .record .content a:hover{
-    color: #ff0000;
+    color: #ffffff;
 }
 
 
@@ -235,7 +235,7 @@ a {
     font-size: 1.2em;
     margin: 0 10px;
     text-decoration: none;
-    color: #c1121f;
+    color: #fafafa;
     font-family: 'Stint Ultra Expanded', cursive;
 }
 
@@ -250,7 +250,7 @@ a {
 }
 
 .record:hover{
-    background-color: #ff000025;
+    background-color: #fafafa25;
     border-radius: 15px;
 }
 
