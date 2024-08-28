@@ -16,19 +16,19 @@ detailsElements.forEach(details => {
 
 toggleSwitch.addEventListener('click', () => {
     const allElements = document.querySelectorAll('.-day, .-night');
-
-    const checkbox = document.getElementById('checkbox'); // Replace with your checkbox's ID
-    if (checkbox.checked) {
-        allElements.forEach(element => {
-            element.classList.add('-day');
-            element.classList.remove('-night');
-        });
-    }
-    else{
-        allElements.forEach(element => {
-            element.classList.add('-night');
-            element.classList.remove('-day');
-        });
-    }
-
+    const slider = document.getElementsByClassName('slider')[0];
+    const checkbox = document.getElementById('checkbox');
+  
+    // Set the slider background color using a CSS variable
+    slider.style.setProperty('--slider-background-color', checkbox.checked ? '#fc5' : '#fff');
+  
+    // Toggle the classes using classList.toggle()
+    allElements.forEach(element => {
+      element.classList.toggle('-day', checkbox.checked);
+      element.classList.toggle('-night', !checkbox.checked);
+    });
   });
+
+window.onload = function() {
+    slider.style.setProperty('--slider-background-color', '#fff');
+};

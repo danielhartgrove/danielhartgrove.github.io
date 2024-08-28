@@ -25,6 +25,7 @@
     color: #121212;
 }
 
+
 body {
     font-family: 'Stint Ultra Expanded', cursive;
     font-weight: 400;
@@ -356,7 +357,7 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-image: url(./assets/night.png);
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -373,12 +374,15 @@ a {
     transition: .4s;
   }
   
-  input:checked + .slider {
-    background-color: #2196F3;
+  input + .slider{
+    background-image: url(./assets/night.png);
+    background-size: cover;
   }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+
+  input:checked + .slider {
+    background-image: url(./assets/day.png);
+
+    
   }
   
   input:checked + .slider:before {
@@ -394,4 +398,5 @@ a {
   
   .slider.round:before {
     border-radius: 50%;
+    background-color: var(--slider-background-color, #fff);
   }
