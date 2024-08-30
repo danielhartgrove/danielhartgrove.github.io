@@ -1,0 +1,402 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900');
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Expanded&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mobile-hide {
+    display: block;
+    padding-right: 10px;
+}
+
+.-night{
+    background-color: #121212;
+    color: #fafafa;
+}
+
+.-day{
+    background-color: #fafafa;
+    color: #121212;
+}
+
+
+body {
+    font-family: 'Stint Ultra Expanded', cursive;
+    font-weight: 400;
+    height: 100vh;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+hr{
+    width: 98%;
+    margin: 10px 0;
+}
+
+h1 {
+    font-family: 'Rock Salt', sans-serif;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 2em;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.header h2 {
+    font-family: 'Stint Ultra Expanded', cursive;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: -20px;
+    width: 100%;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.name-holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.name{
+    font-family: 'Rock Salt', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1em;
+}
+
+.header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-bar{
+    display: flex; 
+    width: 50%; 
+    justify-content: space-evenly; 
+    padding: 15px; 
+    text-decoration: none; 
+    flex-wrap:wrap;
+}
+
+.link-bar a:hover{
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #121212;
+}
+
+
+.work {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 0.9em;
+}
+
+.record{
+    width: 100%;
+    margin: 5px 2px;
+    display: flex;
+    flex: 1;
+    text-align: left;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.record summary {
+    font-size: 1.2em;
+    display: flex;
+    flex: 1;
+    text-align: left;
+    flex-direction: row;
+    text-overflow: ellipsis;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.record summary h2{
+    width: 25%;
+    text-overflow: ellipsis;
+}
+
+.record summary p{
+    position: absolute;
+    left: 30%;
+    font-size: 1.2em;
+    padding: 5px 15px;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+.record summary a{
+    width: auto;
+    text-align: right;
+    text-overflow: ellipsis;
+}
+
+.record details {
+    font-size: 1.2em;
+    padding: 5px 15px;
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-overflow: ellipsis;
+}
+
+.record summary a:hover{
+    color: #ffffff;
+}
+
+.record .content{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: left;
+    justify-content: left;
+    margin-top: 5px;
+}
+
+.record .content p{
+    font-size: 1.2rem;
+    margin: 0 10px;
+    font-family: 'montserrat', sans-serif;
+}
+
+.record .content a{
+    font-size: 1.2rem;
+    margin: 0 10px;
+    text-decoration: none;
+    font-family: 'Stint Ultra Expanded', cursive;
+    font-weight: bold;
+}
+
+.record .content a:hover{
+    color: #ffffff;
+}
+
+
+.record h2 {
+    font-size: 1.2em;
+    margin: 0 10px;
+}
+
+.record p {
+    font-size: 1.2em;
+    margin: 0 10px;
+    font-family: 'montserrat', sans-serif;
+    padding-bottom: 5px;
+}
+
+.record a {
+    font-size: 1.2em;
+    margin: 0 10px;
+    text-decoration: none;
+    font-family: 'Stint Ultra Expanded', cursive;
+}
+
+.tags{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: left;
+    margin: 10px 10px;
+    font-style: italic;
+}
+
+.record:hover{
+    background-color: #fafafa25;
+    border-radius: 15px;
+}
+
+/* for mobile */
+@media (max-width: 768px) {
+
+    .body{
+        height: 110vh;
+    }
+    .project-container {
+        width: 100%;
+    }
+
+    .mobile-hide{
+        display: none;
+    }
+
+    .link-bar{
+        width: 100%;
+    }
+    
+    .record summary{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: 1.6vh;
+    }
+
+    .record summary h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    .record summary p{
+        position: relative;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .record summary a{
+        width: 100%;
+        text-align: center;
+    }
+
+    details .content{
+        font-size: 0.8vh;
+    }
+
+    .work details .content p{
+        font-size: 1.5vh;
+    }
+
+    .work details .content a{
+        font-size: 1.5vh;
+    }
+
+    .name{
+        font-size: 0.8em;
+        text-wrap: ellipsis;
+    }
+
+    .footer{
+        font-size: 0.8em;
+        flex-direction: column;
+    }
+
+    h1{
+        font-size: 5vw;
+        padding-bottom: 10px;
+    }
+
+    h2{
+        font-size: 4vw;
+    }
+
+    .work{
+        width: 100%;
+        top: 5%;
+    }
+}
+
+.switch {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(./assets/night.png);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input + .slider{
+    background-image: url(./assets/night.png);
+    background-size: cover;
+  }
+
+  input:checked + .slider {
+    background-image: url(./assets/day.png);
+
+    
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+    background-color: var(--slider-background-color, #fff);
+  }
