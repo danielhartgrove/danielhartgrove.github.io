@@ -357,7 +357,7 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(./assets/night.png);
+    background-image: url(../assets/night.png);
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -375,12 +375,12 @@ a {
   }
   
   input + .slider{
-    background-image: url(./assets/night.png);
+    background-image: url(../assets/night.png);
     background-size: cover;
   }
 
   input:checked + .slider {
-    background-image: url(./assets/day.png);
+    background-image: url(../assets/day.png);
 
     
   }

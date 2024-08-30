@@ -1,1 +1,0 @@
-The shop will pull from the database
