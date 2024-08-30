@@ -174,8 +174,11 @@ a{
     h4{
         font-size: 4vw;
     }
+    p{
+        font-size: 3vw;
+    }
     .container{
-        width: 80%;
+        width: 90%;
     }
 
     .attention{
