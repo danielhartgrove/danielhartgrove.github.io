@@ -149,7 +149,7 @@ a{
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    margin: 0.5rem;
+    margin: 2rem;
   }
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
