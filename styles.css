@@ -38,21 +38,74 @@ h4{
     margin-bottom: 1rem;
 }
 
-.attention{
+.attentioncontainer{
     position: fixed;
-    top: 10px;
-    left: 10px;
+    top: 5px;
+    left: 5px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.attention{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     width: auto;
     height: auto;
     z-index: 1;
     padding: 1rem;
 }
 
-.navlink a{
-    color: #121212;
+.storyelement{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem 1rem 1rem 1rem;
+    text-align: center;
+    transform: translate(-5%, 0);
+    font-size: 0.8em;
+}
+
+.storyelement p{
+    transform: translate(-5%, 0);
+    margin-top: 0.5em;
     font-weight: bold;
+}
+
+.navlink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgb(255,214,0);
+    background: linear-gradient(60deg, rgba(255,214,0,1) 0%, rgba(255,122,0,1) 30%, rgba(255,0,105,1) 90%);
+    text-align: center;
+}
+
+.outer-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fafafa;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+}
+
+.inner-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121212;
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
 }
 
 
