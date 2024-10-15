@@ -30,7 +30,7 @@ h1{
     margin-bottom: 1rem;
 }
 h2{
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 h4{
@@ -47,6 +47,7 @@ h4{
     justify-content: center;
     width: 100%;
     height: auto;
+    z-index: 2;
 }
 
 .attention{
@@ -156,14 +157,19 @@ h4{
 }
 
 .container{
-    width: 50%;
+    width: 40vw;
+    height: 35vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 2rem;
+    z-index: 3;
 }
 
+.servcontinner{
+
+}
 
 a{
     color: #121212;
@@ -211,16 +217,16 @@ a{
 
   @media (max-width: 845px) {
     h1{
-        font-size: 10vw;;
+        font-size: 8vw;
     }
     h2{
-        font-size: 7vw;
+        font-size: 5vw;
     }
     h4{
-        font-size: 3vw;
+        font-size: 4vw;
     }
     p{
-        font-size: 2vw;
+        font-size: 3vw;
     }
 
     .attentioncontainer{
@@ -233,11 +239,11 @@ a{
     }
 
     .storyelement{
-        width: 80px;
-        height: 80px;
+        width: 50px;
+        height: 50px;
     }
 
     .storyelement p{
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 }
