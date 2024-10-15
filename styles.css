@@ -232,6 +232,7 @@ a{
     .attentioncontainer{
         justify-content: center;
         justify-items: space-between;
+        width: 90%;
     }
 
     .container{
