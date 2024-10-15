@@ -222,8 +222,19 @@ a{
     p{
         font-size: 2vw;
     }
+
+    .attentioncontainer{
+        justify-content: center;
+        justify-items: space-between;
+    }
+
     .container{
         width: 90%;
+    }
+
+    .storyelement{
+        width: 80px;
+        height: 80px;
     }
 
     .storyelement p{
