@@ -112,10 +112,15 @@ h4{
 
 .service{
     display: flex;
-    width: 80%;
+    width: 90%;
     justify-content: center;
     flex-direction: column;
-    margin: 2rem;
+    margin: 1rem;
+    text-align: left;
+}
+
+.servcontinner{
+    margin: 0.5rem;
     text-align: left;
 }
 
@@ -159,11 +164,12 @@ h4{
 .container{
     width: 40vw;
     height: 35vw;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 2rem;
+    padding: 4rem;
     z-index: 3;
 }
 
@@ -174,7 +180,7 @@ a{
 
 .glass{
     /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.6);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(9.3px);
@@ -233,6 +239,11 @@ a{
 
     .container{
         width: 90%;
+        height: auto;
+    }
+
+    .logomain{
+        width: 80vw;
         height: auto;
     }
 
