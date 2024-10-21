@@ -110,6 +110,14 @@ h4{
     border-radius: 50%;
 }
 
+.workholder{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem;
+    text-align: left;
+}
 
 .service{
     display: flex;
