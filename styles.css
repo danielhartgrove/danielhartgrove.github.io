@@ -170,6 +170,10 @@ h4{
     background-size: fill;
 }
 
+.dot{
+    width:fit-content;
+    height: same-as-width;
+}
 .container{
     width: 40vw;
     height: 35vw;
