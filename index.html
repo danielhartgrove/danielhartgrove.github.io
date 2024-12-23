@@ -1,98 +1,203 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Daniel Hartgrove Web Services</title>
-    <link rel="stylesheet" type="text/css" href="./styles.css">
-    <link rel="stylesheet" type="text/css" href="./slideshow.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Daniel Hartgrove Web Services">
-    <meta name="keywords" content="Daniel Hartgrove, SEO, Web Development, Social Media, Graphic Design, Northampton Graphic Design, Northampton Web Design, Northampton Websites, Build a Website Northampton">
-    <meta name="author" content="Daniel Hartgrove">
-    <meta charset="UTF-8">
-    <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
-</head>
-<body>
-    <div class="fixedbackground">
-        <img class="logomain" src="./assets/logo2.png" alt="Background Image">
-        <h4>(Please Scroll...)</h4>
-    </div>
-    <section>
-        <!-- Intentionally blank!-->
-    </section>
-    <section id="services">
-        <div class="services container glass">
-            <h2>Services</h2>
-            <div class="servcontinner">
-                <div class="service">
-                    <h3>🔎 SEO</h3>
-                    <p>Using Google-backed techniques, I can help you achieve greater relevancy in searches related to your business.</p>
+    <head>
+        <title>Daniel Hartgrove Web Services</title>
+        <link rel="stylesheet" type="text/css" href="./styles.css">
+        <link rel="stylesheet" type="text/css" href="./slideshow.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Daniel Hartgrove Web Services">
+        <meta name="keywords" content="Daniel Hartgrove, SEO, Web Development, Social Media, Graphic Design, Northampton Graphic Design, Northampton Web Design, Northampton Websites, Build a Website Northampton">
+        <meta name="author" content="Daniel Hartgrove">
+        <meta charset="UTF-8">
+        <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <a class="glass link" href="#bonjour"><p>Home</p></a>
+            <a class="glass link" href="#projects"><p>Projects</p></a>
+            <a class="glass link" href="#work-experience"><p>Work Experience</p></a>
+            <a class="glass link" href="#qualifications"><p>Qualifications</p></a>
+        </header>
+        <section id="bonjour">
+            <div class="div">
+                <img class="background" src="assets/background.png">
+                <div class="title glass"><h2>Hi! I'm Daniel Hartgrove 👋</h2></div>
+                <div class="container glass">
+                    <div class="align-left-override">
+                        <p>I'm a recent Computer Science Graduate from the University of Nottingham.</p>
+                        <p>I've built a strong portfolio over my time at University, aiming to showcase my adaptability
+                            to different software development paradigms. I love to work on a range of projects, but I most frequently create websites,
+                            system tools and games.</p>
+                        <p>If you'd like to view my CV, you can do that <a href="danielhartgrove_cv.pdf">here.</a>
+                    </div>
                 </div>
-                
-                <div class="service">
-                    <h3>🧑‍💻 Web Development</h3>
-                    <p>Need a sleek new website for your business? I've got you covered.</p>
-                </div>
-                
-                <div class="service">
-                    <h3>📱 Social Media</h3>
-                    <p>Looking to grow your following? With proven results, I can help you there too.</p>
-                </div>
-                
-                <div class="service">
-                    <h3>🎨 Graphic Design</h3>
-                    <p>From logos to posters and everything in-between, I can work with you to create something special.</p>
-                </div>
-            </div>  
-        </div>
-    </section>
 
-    <section id="work">
-        <div class="work container glass">        
-            <h2>Work I've Done</h2>
-            <div class="slideshow-container">
-                <div class="workitem mySlides">
-                    <a href="https://www.reefyll.com"><h3>Reefyll ♻️</h3></a>
-                    <p>I worked closely with Antony from Reefyll, a brand that produces eco-friendly personal care products. By redesigning the digital image of the company, I helped Ant and the team drive interest in the products that they were selling. In just a few weeks, I was able to increase the social engagement of the brand by over 300%!</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="div">
+                <img class="background" src="assets/background.png">
+                <div class="title glass"><h2> Projects 👨‍💻</h2></div>
+                <div class="container glass">
+                    <div class="slideshow-container">
+                        <div class="slide">
+                            <div class="content">
+                                <div class="link"><a href="https://github.com/danielhartgrove/NLGlite"></a></div>
+                                <h3>NLGLITE</h3>
+                                <div class="tag-container">
+                                    <div class="tag" style="background-color: #3776ab "><p>Python</p></div>
+                                    <div class="tag" style="background-color: #E7C98E; color: #252525"><p>NLG</p></div>
+                                </div>
+                                <p class="maintext">My dissertation project was based around creating a lightweight solution for NLG that can be implemented in
+                                    role-playing games to make interactions with NPCs more interesting. The idea is based around pre-building sentence
+                                    structures and then populating the structures with words. I borrowed concepts from pre-existing ideas to build this
+                                    project. Ultimately, I was unable to gather a sufficient amount of data due to hardware limitations. <br><br> You can read my
+                                    dissertation <a href="danielhartgrove_dissertation.pdf">here</a>.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="content">
+                                <h3>FARMING FRENZY</h3>
+                                <div class="tag-container">
+                                    <div class="tag" style="background-color: #9B4993"><p>C#</p></div>
+                                    <div class="tag" style="background-color: #CC0000"><p>Game Development</p></div>
+                                </div>
+                                <p class="maintext">Farming Frenzy is a game I created in Unity to demonstrate game design concepts. The gameplay loop revolves around
+                                    careful resource management, with the aim of maintaining a "happiness" value on your farm by ensuring that the animals
+                                    are well looked after and crops are being grown in suitable time. Across five levels, the challenge is increased by 
+                                    introducing new tasks on the farm, and increasing the distance between tasks to increase the player's cognitive load.
+                                    <br><br> 
+                                    A demonstration video is available <a href="https://www.youtube.com/watch?v=fWeQ0cCLqvc">here</a>.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="content">
+                            <h3>MINITRIANGLE COMPILER</h3>
+                            <div class="tag-container">
+                                <div class="tag" style="background-color: 	#453A62"><p>Haskell</p></div>
+                            </div>
+                            <p class="maintext">I produced a compiler for the "minitriangle" language. The compiler took .MT code and converted it to an abstract machine
+                                code implementation that ran in a simulated environment. I then further extended the compiler to increase the instruction
+                                set, and add basic types.
+                            </p>
+                        </div>
+                        </div>
+                        <div class="slide">
+                            <div class="content">
+                            <h3>NOTTFOUND</h3>
+                            <div class="tag-container">
+                                <div class="tag" style="background-color: #3DDC84"><p>App Development</p></div>
+                                <div class="tag" style="background-color: #027DFD"><p>Flutter</p></div>
+                            </div>
+                            <p class="maintext">I worked alongside the software engineers at <a href="www.unidays.com">UNiDAYS</a> to produce a new student experience
+                            application targeted at freshers new to the city of Nottingham. The app leveraged data from Google's Maps API and our own
+                            personal backend to allow users to mark off areas of Nottingham that they had explored, by visiting and taking a photo of
+                            a location. <br><br> Our demo video is available <a href="https://www.youtube.com/watch?v=1HzJbsrw1WI">here</a>. The app can be downloaded <a href="https://nottfound.benchung.dev/"> here</a></p>
+                        </div>
+                        </div>
+                        <div class="slide">
+                            <div class="content">
+                            <h3>AES-GCM</h3>
+                            <div class="tag-container">
+                                <div class="tag" style="background-color: #FFA500"><p>Java</p></div>
+                                <div class="tag" style="background-color: blue"><p>Cryptography</p></div>
+                                <div class="tag" style="background-color: #008F11"><p>Security</p></div>
+                            </div>
+                            <p class="maintext">Extended an AES encryption algorithm to add Galois Counter Mode, to add authentication to the existing AES implementation.</p>
+                        </div>
+                        </div>  
+                        <div class="slide">
+                            <div class="content">
+                            <h3>SECURITY AUDIT</h3>
+                            <div class="tag-container">
+                                <div class="tag" style="background-color: #FFCC33; color: #252525"><p>Linux Systems</p></div>
+                                <div class="tag" style="background-color: #008F11"><p>Security</p></div>
+                            </div>
+                            <p class="maintext" >I have extended an AES encryption algorithm implementation to add Galois Counter Mode, to add authentication to the existing AES implementation.</p>
+                        </div>
+                        </div>
+                        <div class="slide">
+                            <div class="content">
+                            <div class="link"><a href=""></a></div>
+                            <h3>NATURAL SELECTION SIMULATOR</h3>
+                            <div class="tag-container">
+                                <div class="tag" style="background-color:  #3776ab"><p>Python</p></div>
+                            </div>
+                            <p class="maintext"> I built a small simulated environment and created "creatures" with different properties to determine which
+                                traits would become dominant. This was a small project for my A-Level in Computer Science, for which I achieved a grade of A*.
+                            </p>
+                        </div>
+                        </div>
+                        <a class="prev" onclick="prevSlide()">&#10094;</a>
+                        <a class="next" onclick="nextSlide()">&#10095;</a>
+                    </div>
+                <script src="slideshow.js"></script>
                 </div>
-                <div class="workitem mySlides">
-                    <h3>Cherished Lawn Care 🌱</h3>
-                    <p>I worked with Stuart from Cherished Lawn Care to help him build a social media following and revolutionise the way he advertised his business. By upgrading his social media game, I was able to expand Stuart's area of business. I've also worked closely with the team to teach them how to be comfortable on camera.</p>
+
+            </div>
+        </section>
+
+        <section id="work-experience">
+            <div class="div">
+                <img class="background" src="assets/unidays.jpeg">
+                <div class="title glass"><h2> Work Experience 🧑‍💼</h2></div>
+                <div class="container glass">
+                        <div class="align-left-override">
+                            <b> DH WEB SERVICES </b> 
+                            <p> I am an independent web designer and developer for small businesses in the midlands. I collaborate with clients to
+                                create websites based on their specifications and needs. I also offer a branding and online awareness package, where
+                                I act as a social media manager and train the business owners how to be comfortable online. So far, I have successfully
+                                helped "Reefyll" and "Cherished Lawn Care" with a complete digital rebrand, which led to a mass increase of online visibility.
+                            </p>
+                            <br>
+                            <b> UNiDAYS Work </b>
+                            <p> I worked alongside UNiDAYS to produce a student experience application. As a part of this, I was invited to their development
+                                studio to collaborate with their developers. I gained valuable insight from this experience, including how a real software development
+                                team manages their time and resources.
+                            </p>
+                        </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="qualifications">
+            <div class="div">
+                <img class="background" src="assets/background.png">
+                <div class="title glass"><h2>Qualifications 🧑‍🎓</h2></div>
+                <div class="container glass">
+                    <div class="align-left-override">
+                        <b> 1st Class BSc - University of Nottingham</b>
+                        <ul>
+                            <li> I achieved a first class grade in my Computer Science Bachelor's degree from the University of Nottingham</li>
+                        </ul>
+                        <br>
+
+                        <b> FreeCodeCamp Medals</b>
+                        <ul>
+                            <li> I am currently working towards a FreeCodeCamp Medal to showcase my skills in web development and Python programming</li>
+                        </ul>
+                        <br>
+
+                        <b> A Levels - The Duston School </b>
+                        <ul>
+                            <li>Computer Science -<b>A*</b></li>
+                            <li>EPQ (Project regarding AI) -<b>A*</b></li>
+                            <li>Mathematics -<b>A</b></li>
+                            <li>Physics -<b>B</b></li>
+                        </ul>
+                        <p></p>
+                    </div>
                 </div>
             </div>
-            <div style="text-align:center; display:flex; flex-direction: row;">
-                <span class="dot" onclick="currentSlide(1)"><p>♻️</p></span>
-                <span class="dot" onclick="currentSlide(2)"><p>🌱</p></span>
-            </div>
     </section>
 
-    <section id="about">
-        <div class="container glass">
-            <h2>About Me</h2>
-            <img class="profileimage" src="./assets/profilephoto.png" alt="Daniel Hartgrove">
-            <p>Hi! 👋 My name is Daniel Hartgrove and I am a web developer from Northampton. I've found a passion in helping businesses build their brands. With my skills, I want to take your business to the next level.
-            When I'm not working, I enjoy spending time with my family and friends, and I'm a keen photographer. Much like my work, I try to do a little bit of everything in my day to day life.</p>
-        </div>
-    </section>
+    <footer>
+        <p>Daniel Hartgrove 2024, All rights reserved</p>
+    </footer>
 
-    <section id="contact">
-        <div class="container glass">
-            <h2>Contact Me</h2>
-            <a class="contactitem" href="mailto: hartgrovedaniel3@outlook.com">EMAIL</a>
-            <a class="contactitem" href="tel: +447745399448">PHONE</a>
-
-        </div>
-    </section>  
-
-    <div class="attentioncontainer">
-        <div class="attention">
-            <a href="#services"><div class="storyelement"><div class="navlink"><div class="outer-circle"><img class="inner-circle" src="./assets/profilephoto.png"></div></div><p>@Services</p></div></a>
-            <a href="#work"><div class="storyelement"><div class="navlink"><div class="outer-circle"><img class="inner-circle" src="./assets/profilephoto.png"></div></div><p>@Work</p></div></a>
-            <a href="#about"><div class="storyelement"><div class="navlink"><div class="outer-circle"><img class="inner-circle" src="./assets/profilephoto.png"></div></div><p>@About Me</p></div></a>
-            <a href="#contact"><div class="storyelement"><div class="navlink"><div class="outer-circle"><img class="inner-circle" src="./assets/profilephoto.png"></div></div><p>@Contact Me</p></div></a>
-        </div>
-    </div>
-
-    <script src="./slideshow.js"></script>
-
-</body>
+    </body>
 </html>
