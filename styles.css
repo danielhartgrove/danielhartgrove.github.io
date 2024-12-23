@@ -265,6 +265,7 @@ h3{
         bottom: unset;
         color: #121212;
         font-weight: bold;
+        font-size: 0.5em;
         background: rgb(144,144,144);
         background: -moz-linear-gradient(180deg, rgba(144,144,144,1) 0%, rgba(0,0,0,0) 63%);
         background: -webkit-linear-gradient(180deg, rgba(144,144,144,1) 0%, rgba(0,0,0,0) 63%);
