@@ -253,19 +253,18 @@ h3{
 
     header{
         flex-wrap: wrap;
-        flex-basis: 60%;
-        bottom: 0;
+        flex-basis: 50%;
+        bottom: 30px;
+        left: -10px;
         top: unset;
-        background: rgb(144,144,144);
-        background: -moz-linear-gradient(0deg, rgba(144,144,144,1) 0%, rgba(0,0,0,0) 63%);
-        background: -webkit-linear-gradient(0deg, rgba(144,144,144,1) 0%, rgba(0,0,0,0) 63%);
-        background: linear-gradient(0deg, rgba(144,144,144,1) 0%, rgba(0,0,0,0) 63%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#909090",endColorstr="#000000",GradientType=1);
+        background: unset;
     }
 
     footer{
         top: 0;
         bottom: unset;
+        color: #121212;
+        font-weight: bold;
         background: rgb(144,144,144);
         background: -moz-linear-gradient(180deg, rgba(144,144,144,1) 0%, rgba(0,0,0,0) 63%);
         background: -webkit-linear-gradient(180deg, rgba(144,144,144,1) 0%, rgba(0,0,0,0) 63%);
@@ -278,7 +277,8 @@ h3{
         white-space: nowrap;
         padding-top: 8px;
         padding-bottom: 8px;
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: 8px;
+        padding-right: 8px;
+        flex-basis: 10%;
     }
   }
