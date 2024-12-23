@@ -84,4 +84,29 @@
     font-size: 0.7em;
     white-space: nowrap;
   }
+
+  .content{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+  }
+
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -28px;
+    padding: 8px;
+    background-color: #FAFAFA;
+    color: #121212;
+    font-weight: bold;
+    font-size: 0.5em;
+    transition: 0.6s ease;
+    border-radius: 16px 16px 16px 16px;
+    cursor: pointer;
+  }
 }
