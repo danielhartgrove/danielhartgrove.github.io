@@ -1,0 +1,80 @@
+<html lang = 'en'>
+  <head>
+    <title>POKEDEX APP</title>
+    <link rel="stylesheet" href="styles.css">
+  <head>
+  <body>
+    <header>
+      <input id="search-input" required value="BULBASAUR"></input>
+      <button id="search-button" onclick="getSearched()">SEARCH!</button>
+    </header>
+    
+      <div id="pokemon-information">
+        <h2 id="pokemon-name">BULBASAUR</h2>
+        <strong id="pokemon-id">#1</strong>
+      </div>
+
+      <div id="sprite-container">
+        <img id="sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="bulbasaur front default sprite">
+      </div>
+
+      <div id="pokemon-types">
+        <p id="types"> <span class="type grass">Grass</span>  / <span class="type poison">Poison</span> </p> 
+      </div>
+
+      <div id="pokemon-weight-height">
+        <strong id="weight">WEIGHT: 69</strong>
+        <p></p>
+        <strong id="height">HEIGHT: 7</strong>
+      </div>
+
+      <br>
+
+      <table>
+        <caption>
+          Pokemon Base Stats
+        </caption>
+        <tbody>
+          <tr>
+            <th scope="row">HP</th>
+            <td id="hp">45</td>
+          </tr>
+          <tr>
+            <th scope="row">ATK</th>
+            <td id="attack">49</td>
+          </tr>
+          <tr>
+            <th scope="row">DEF</th>
+            <td id="defense">49</td>
+          </tr>
+          <tr>
+            <th scope="row">SPA</th>
+            <td id="special-attack">65</td>
+          </tr>
+          <tr>
+            <th scope="row" >SPD</th>
+            <td id="special-defense">65</td>
+          </tr>
+          <tr>
+            <th scope="row">SPE</th>
+            <td id="speed">45</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+      <div id="prev_next_container">
+      <button id="prev_btn" onclick="getPrev()">Prev</button>
+      <button id="next_btn"
+onclick="getRandom()">Random</button>
+      <button id="next_btn"
+onclick="getNext()">Next</button>
+      </div>
+
+      <footer>
+        <p>Built by Daniel Hartgrove</p>
+        <p>Project spec from <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/build-a-pokemon-search-app-project/build-a-pokemon-search-app">freeCodeCamp.org"</a></p> 
+      </footer>
+      <script src="./script.js"></script>
+  </body>
+</html>
