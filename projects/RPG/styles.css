@@ -1,5 +1,11 @@
 body {
     background-color: #0a0a23;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
   }
   
   #text {
@@ -9,16 +15,17 @@ body {
   }
   
   #game {
-    max-width: 500px;
-    max-height: 400px;
-    background-color: #ffffff;
+    width: 500px;
+    height: 400px;
+    background-color: #0a0a23;
     color: #ffffff;
     margin: 30px auto 0px;
-    padding: 10px;
+    border: solid 10px #ffffff;
   }
   
   #controls,
   #stats {
+    background-color: #ffffff;
     border: 1px solid #0a0a23;
     padding: 5px;
     color: #0a0a23;
