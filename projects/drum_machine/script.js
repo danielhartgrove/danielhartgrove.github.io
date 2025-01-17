@@ -1,8 +1,9 @@
+const display = document.getElementById("display");
+
 function playAudio(audioId) {
   const audio = document.getElementById(audioId);
   if (audio) {
     audio.play();
-   
   } else {
     console.error("ERROR: AUDIO NOT FOUND");
   }
