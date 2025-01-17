@@ -1,0 +1,70 @@
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#drum-machine{
+  background-color: #252525;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  border-radius: 16px;
+}
+audio{
+  display: none;
+}
+
+.drum-pad{
+  height: 25%;
+  width: 25%;
+  margin: 3%;
+  border-radius: 8px;
+  font-size: 4em;
+  font-weight: black;
+}
+
+#drum-pad-1:hover{
+  background-color: red;
+}
+
+#drum-pad-2:hover{
+  background-color: cyan;
+}
+
+#drum-pad-3:hover{
+  background-color: orange;
+}
+
+#drum-pad-4:hover{
+  background-color: cyan;
+}
+
+#drum-pad-5:hover{
+  background-color: MediumSeaGreen;
+}
+
+#drum-pad-6:hover{
+  background-color: magenta;
+}
+
+
+#drum-pad-7:hover{
+  background-color: MediumSeaGreen;
+}
+
+#drum-pad-8:hover{
+  background-color: magenta;
+}
+
+#drum-pad-9:hover{
+  background-color: red;
+}
+
+
