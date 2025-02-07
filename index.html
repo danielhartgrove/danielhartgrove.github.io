@@ -1,203 +1,195 @@
+
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Daniel Hartgrove</title>
-        <link rel="stylesheet" type="text/css" href="./styles.css">
-        <link rel="stylesheet" type="text/css" href="./slideshow.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Daniel Hartgrove">
-        <meta name="keywords" content="Daniel Hartgrove, Web Development, HTML, CSS, JS, React, Sass, SCSS, Bootstrap, Python, C#, Social Media, Graphic Design, Creative">
-        <meta name="author" content="Daniel Hartgrove">
-        <meta charset="UTF-8">
-        <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
-    </head>
-    <body>
-        <header>
-            <a class="glass link" href="#bonjour"><p>Home</p></a>
-            <a class="glass link" href="#projects"><p>Projects</p></a>
-            <a class="glass link" href="#work-experience"><p>Work Experience</p></a>
-            <a class="glass link" href="#qualifications"><p>Qualifications</p></a>
-        </header>
-        <section id="bonjour">
-            <div class="div">
-                <img class="background" src="assets/background.png">
-                <div class="title glass"><h2>Hi! I'm Daniel Hartgrove 👋</h2></div>
-                <div class="container glass">
-                    <div class="align-left-override">
-                        <p>I'm a recent Computer Science Graduate from the University of Nottingham.</p>
-                        <p>I've built a strong portfolio over my time at University, aiming to showcase my adaptability
-                            to different software development paradigms. I love to work on a range of projects, but I most frequently create websites,
-                            system tools and games.</p>
-                        <p>If you'd like to view my CV, you can do that <a href="danielhartgrove_cv.pdf">here.</a>
-                    </div>
-                </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel Hartgrove - Software Engineer & Designer</title>
+    <meta name="description" content="Portfolio showcasing software engineering and design work" />
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
 
+  <body>
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="hero">
+        <div class="hero-content">
+          <span class="badge">Software Engineer & Designer</span>
+          <h1>Hi! I'm Daniel Hartgrove 👋</h1>
+          <h2>Software Engineer and FrontEnd Developer</h2>
+          <br>
+          <p>I craft elegant solutions through code and design, specializing in frontend development and user experience</p>
+        </div>
+        <div class="scroll-indicator">
+          <i data-lucide="chevron-down"></i>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills">
+        <div class="section-header">
+          <h2>Expertise</h2>
+          <p>Combining technical expertise with creative design thinking to deliver comprehensive solutions</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i data-lucide="code"></i>
+            <h3>Software Engineering</h3>
+            <p>Building robust and scalable applications with modern technologies</p>
+            <div class="tags">
+              <span>Java</span>
+              <span>Python</span>
+              <span>C#</span>
+              <span>Unity</span>
+              <span>Git</span>
             </div>
-        </section>
-
-        <section id="projects">
-            <div class="div">
-                <img class="background" src="assets/background.png">
-                <div class="title glass"><h2> Projects <a href="./projects/">👨‍💻</a></h2></div>
-                <div class="container glass">
-                    <div class="slideshow-container">
-                        <div class="slide">
-                            <div class="content">
-                                <div class="link"><a href="https://github.com/danielhartgrove/NLGlite"></a></div>
-                                <h3>NLGLITE</h3>
-                                <div class="tag-container">
-                                    <div class="tag" style="background-color: #3776ab "><p>Python</p></div>
-                                    <div class="tag" style="background-color: #E7C98E; color: #252525"><p>NLG</p></div>
-                                </div>
-                                <p class="maintext">My dissertation project was based around creating a lightweight solution for NLG that can be implemented in
-                                    role-playing games to make interactions with NPCs more interesting. The idea is based around pre-building sentence
-                                    structures and then populating the structures with words. I borrowed concepts from pre-existing ideas to build this
-                                    project. Ultimately, I was unable to gather a sufficient amount of data due to hardware limitations. <br><br> You can read my
-                                    dissertation <a href="danielhartgrove_dissertation.pdf">here</a>.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <div class="content">
-                                <h3>FARMING FRENZY</h3>
-                                <div class="tag-container">
-                                    <div class="tag" style="background-color: #9B4993"><p>C#</p></div>
-                                    <div class="tag" style="background-color: #CC0000"><p>Game Development</p></div>
-                                </div>
-                                <p class="maintext">Farming Frenzy is a game I created in Unity to demonstrate game design concepts. The gameplay loop revolves around
-                                    careful resource management, with the aim of maintaining a "happiness" value on your farm by ensuring that the animals
-                                    are well looked after and crops are being grown in suitable time. Across five levels, the challenge is increased by 
-                                    introducing new tasks on the farm, and increasing the distance between tasks to increase the player's cognitive load.
-                                    <br><br> 
-                                    A demonstration video is available <a href="https://www.youtube.com/watch?v=fWeQ0cCLqvc">here</a>.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <div class="content">
-                            <h3>MINITRIANGLE COMPILER</h3>
-                            <div class="tag-container">
-                                <div class="tag" style="background-color: 	#453A62"><p>Haskell</p></div>
-                            </div>
-                            <p class="maintext">I produced a compiler for the "minitriangle" language. The compiler took .MT code and converted it to an abstract machine
-                                code implementation that ran in a simulated environment. I then further extended the compiler to increase the instruction
-                                set, and add basic types.
-                            </p>
-                        </div>
-                        </div>
-                        <div class="slide">
-                            <div class="content">
-                            <h3>NOTTFOUND</h3>
-                            <div class="tag-container">
-                                <div class="tag" style="background-color: #3DDC84"><p>App Development</p></div>
-                                <div class="tag" style="background-color: #027DFD"><p>Flutter</p></div>
-                            </div>
-                            <p class="maintext">I worked alongside the software engineers at <a href="www.unidays.com">UNiDAYS</a> to produce a new student experience
-                            application targeted at freshers new to the city of Nottingham. The app leveraged data from Google's Maps API and our own
-                            personal backend to allow users to mark off areas of Nottingham that they had explored, by visiting and taking a photo of
-                            a location. <br><br> Our demo video is available <a href="https://www.youtube.com/watch?v=1HzJbsrw1WI">here</a>. The app can be downloaded <a href="https://nottfound.benchung.dev/"> here</a></p>
-                        </div>
-                        </div>
-                        <div class="slide">
-                            <div class="content">
-                            <h3>AES-GCM</h3>
-                            <div class="tag-container">
-                                <div class="tag" style="background-color: #FFA500"><p>Java</p></div>
-                                <div class="tag" style="background-color: blue"><p>Cryptography</p></div>
-                                <div class="tag" style="background-color: #008F11"><p>Security</p></div>
-                            </div>
-                            <p class="maintext">Extended an AES encryption algorithm to add Galois Counter Mode, to add authentication to the existing AES implementation.</p>
-                        </div>
-                        </div>  
-                        <div class="slide">
-                            <div class="content">
-                            <h3>SECURITY AUDIT</h3>
-                            <div class="tag-container">
-                                <div class="tag" style="background-color: #FFCC33; color: #252525"><p>Linux Systems</p></div>
-                                <div class="tag" style="background-color: #008F11"><p>Security</p></div>
-                            </div>
-                            <p class="maintext" >I have extended an AES encryption algorithm implementation to add Galois Counter Mode, to add authentication to the existing AES implementation.</p>
-                        </div>
-                        </div>
-                        <div class="slide">
-                            <div class="content">
-                            <div class="link"><a href=""></a></div>
-                            <h3>NATURAL SELECTION SIMULATOR</h3>
-                            <div class="tag-container">
-                                <div class="tag" style="background-color:  #3776ab"><p>Python</p></div>
-                            </div>
-                            <p class="maintext"> I built a small simulated environment and created "creatures" with different properties to determine which
-                                traits would become dominant. This was a small project for my A-Level in Computer Science, for which I achieved a grade of A*.
-                            </p>
-                        </div>
-                        </div>
-                        <a class="prev" onclick="prevSlide()">&#10094;</a>
-                        <a class="next" onclick="nextSlide()">&#10095;</a>
-                    </div>
-                <script src="slideshow.js"></script>
-                </div>
-
+          </div>
+          <div class="skill-card">
+            <i data-lucide="layout"></i>
+            <h3>Frontend Development</h3>
+            <p>Creating responsive and intuitive user interfaces</p>
+            <div class="tags">
+              <span>HTML/CSS</span>
+              <span>JavaScript</span>
+              <span>React</span>
             </div>
-        </section>
-
-        <section id="work-experience">
-            <div class="div">
-                <img class="background" src="assets/background.png">
-                <div class="title glass"><h2> Work Experience 🧑‍💼</h2></div>
-                <div class="container glass">
-                        <div class="align-left-override">
-                            <b> DH WEB SERVICES </b> 
-                            <p> I am an independent web designer and developer for small businesses in the midlands. I collaborate with clients to
-                                create websites based on their specifications and needs. I also offer a branding and online awareness package, where
-                                I act as a social media manager and train the business owners how to be comfortable online. So far, I have successfully
-                                helped "Reefyll" and "Cherished Lawn Care" with a complete digital rebrand, which led to a mass increase of online visibility.
-                            </p>
-                            <br>
-                            <b> UNiDAYS Work </b>
-                            <p> I worked alongside UNiDAYS to produce a student experience application. As a part of this, I was invited to their development
-                                studio to collaborate with their developers. I gained valuable insight from this experience, including how a real software development
-                                team manages their time and resources.
-                            </p>
-                        </div>
-                </div>
-
+          </div>
+          <div class="skill-card">
+            <i data-lucide="palette"></i>
+            <h3>Graphic Design</h3>
+            <p>Designing beautiful and functional visual experiences</p>
+            <div class="tags">
+              <span>Figma</span>
+              <span>UI/UX</span>
+              <span>Typography</span>
+              <span>Brand Design</span>
+              <span>Adobe Photoshop</span>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section id="qualifications">
-            <div class="div">
-                <img class="background" src="assets/background.png">
-                <div class="title glass"><h2>Qualifications 🧑‍🎓</h2></div>
-                <div class="container glass">
-                    <div class="align-left-override">
-                        <b> 1st Class BSc - University of Nottingham</b>
-                        <ul>
-                            <li> I achieved a first class grade in my Computer Science Bachelor's degree from the University of Nottingham</li>
-                        </ul>
-                        <br>
-
-                        <b> FreeCodeCamp Medals</b>
-                        <ul>
-                            <li> I am currently working towards a FreeCodeCamp Medal to showcase my skills in web development and Python programming</li>
-                        </ul>
-                        <br>
-
-                        <b> A Levels - The Duston School </b>
-                        <ul>
-                            <li>Computer Science -<b>A*</b></li>
-                            <li>EPQ (Project regarding AI) -<b>A*</b></li>
-                            <li>Mathematics -<b>A</b></li>
-                            <li>Physics -<b>B</b></li>
-                        </ul>
-                        <p></p>
-                    </div>
-                </div>
+      <!-- Projects Section -->
+      <section id="projects" class="projects">
+        <div class="section-header">
+          <h2>Featured Projects</h2>
+          <p>A selection of my recent work in software development and design</p>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80" alt="Project One">
             </div>
-    </section>
+            <div class="project-content">
+              <h3>NottFound</h3>
+              <p>A student experience application for the city of Nottingham, build with guidance from the software engineering team at UNiDAYS</p>
+              <div class="tags">
+                <span>Flutter</span>
+                <span>Python</span>
+                <span>Docker</span>
+              </div>
+              <div class="project-links">
+                <a href="https://nottfound.benchung.dev/" class="project-link"><i data-lucide="external-link"></i> Project Site</a>
+                <a href="https://youtu.be/1HzJbsrw1WI" class="project-link"><i data-lucide="youtube"></i> Demo</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80" alt="Project One">
+            </div>
+            <div class="project-content">
+              <h3>NLGLite</h3>
+              <p>Prototype lightweight NLG solution built in Python, targeted at running efficiently on consumer machines.</p>
+              <div class="tags">
+                <span>Python</span>
+                <span>NLTK</span>
+              </div>
+              <div class="project-links">
+                <a href="./danielhartgrove_dissertation.pdf" class="project-link"><i data-lucide="external-link"></i> Dissertation</a>
+                <a href="https://github.com/danielhartgrove/NLGlite" class="project-link"><i data-lucide="github"></i> Source</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80" alt="Project One">
+            </div>
+            <div class="project-content">
+              <h3>NoteMaker</h3>
+              <p>SaaS application that can convert PDFs and slideshows into formatted Note documents. Still under development.</p>
+              <div class="tags">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Supabase</span>
+              </div>
+              <div class="project-links">
+                <a href="https://www.notemaker.tech/" class="project-link"><i data-lucide="external-link"></i> Live Demo</a>
+              
+              </div>
+            </div>
+          </div>
+          <!-- ... Additional project cards with the same structure -->
+        </div>
+        <div class="section-header">
+          <br>
+          <p>More of my projects are available <a href="./projects/">here</a>.</p>
+        </div>
+      </section>
 
-    <footer>
-        <p>Daniel Hartgrove 2024, All rights reserved</p>
-    </footer>
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <div class="section-header">
+          <h2>Get in Touch</h2>
+          <p>Let's discuss how we can work together to bring your ideas to life</p>
+        </div>
+        <div class="social-links">
+          <a href="mailto:hartgrovedaniel3@icloud.com" class="social-link">
+            <i data-lucide="mail"></i>
+            <span>Email</span>
+          </a>
+          <a href="https://www.linkedin.com/in/danielhartgrove/" class="social-link">
+            <i data-lucide="linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/danielhartgrove" class="social-link">
+            <i data-lucide="github"></i>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </section>
+    </main>
+    <script>
+      // Initialize Lucide icons
+      lucide.createIcons();
 
-    </body>
+      // Smooth scroll for navigation
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+
+      // Add fade-in animation on scroll
+      const observerOptions = {
+        threshold: 0.1
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('section').forEach(section => {
+        observer.observe(section);
+      });
+    </script>
+  </body>
 </html>
