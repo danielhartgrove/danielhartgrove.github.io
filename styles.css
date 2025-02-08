@@ -60,6 +60,7 @@
   /* Hero Section */
   .hero {
     position: relative;
+    background-image: url("./assets/background.png");
     text-align: center;
   }
   
@@ -77,6 +78,11 @@
     font-size: 0.875rem;
     font-weight: 500;
     margin-bottom: 1.5rem;
+  }
+
+  .badge a{
+    text-decoration: none;
+    color: var(--primary);
   }
   
   .scroll-indicator {
