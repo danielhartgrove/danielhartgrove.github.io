@@ -1,29 +1,138 @@
+
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="./styles.css">
-        <link rel="stylesheet" type="text/css" href="./slideshow.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Daniel Hartgrove">
-        <meta name="keywords" content="Daniel Hartgrove, Web Development, HTML, CSS, JS, React, Sass, SCSS, Bootstrap, Python, C#, Social Media, Graphic Design, Creative">
-        <meta name="author" content="Daniel Hartgrove">
-        <meta charset="UTF-8">
-        <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
-        <link rel="stylesheet" href="./styles.css" />
-        <title>Projects Gallery</title>
-    </head>
-    <body>
-        <main>
-        <h1>Projects</h1>
-        <li><a href="./platformer">Platformer</a></li>
-        <br>
-        <li><a href="./RPG">RPG</a></li>
-        <br>
-        <li><a href="./NIN">Nine Inch Nails Jukebox</a></li>
-        <br>
-        <li><a href="./pokedex">Pokedex</a></li>
-        <br>
-        <li><a href="./drum_machine">Drum Machine</a></li>
-        </main>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel Hartgrove - Projects Gallery</title>
+    <meta name="description" content="Portfolio showcasing software engineering and design work" />
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+
+  <body>
+    <main>
+      <!-- Projects Section -->
+      <section id="projects" class="projects">
+        <div class="section-header">
+            <span class="badge"><a href="../">Back to Home</a></span>
+            <h2>Projects Gallery</h2>
+            <p>A collection of my projects.</p>
+        </div>
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="../assets/projects/drum_machine.jpg" alt="Drum Machine">
+                </div>
+                <div class="project-content">
+                    <h3>Drum Machine</h3>
+                    <p>An interactive 9-key drum machine that can be played via keyboard or clicking on screen.</p>
+                    <div class="tags">
+                    <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                    <a href="./drum_machine/" class="project-link"><i data-lucide="external-link"></i> Try Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="../assets/projects/NIN.jpg" alt="NIN Jukebox">
+                </div>
+                <div class="project-content">
+                    <h3>NIN Jukebox</h3>
+                    <p>A webapp that allows you to stream the music of Nine Inch Nails via the Spotify API.</p>
+                    <div class="tags">
+                        <span>JavaScript</span>
+                        <span>Spotify API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="./NIN/" class="project-link"><i data-lucide="external-link"></i> Try Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="../assets/projects/boxjumps.jpg" alt="boxjumps">
+                </div>
+                <div class="project-content">
+                    <h3>BOXJUMPS!</h3>
+                    <p>A platformer game that can be played in the browser. Pass all of the gates to win.</p>
+                    <div class="tags">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="./platformer/" class="project-link"><i data-lucide="external-link"></i> Try Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="../assets/projects/pokedex.jpg" alt="Pokedex">
+                </div>
+                <div class="project-content">
+                    <h3>Pokedex</h3>
+                    <p>An interactive Pokedex app that allows for searching of the Pokedex via an API.</p>
+                    <div class="tags">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                    <a href="./pokedex/" class="project-link"><i data-lucide="external-link"></i> Try Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="../assets/projects/RPG.jpg" alt="RPG">
+                </div>
+                <div class="project-content">
+                    <h3>RPG</h3>
+                    <p>A text based adventure game built in JavaScript using OOP Principles</p>
+                    <div class="tags">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                    <a href="./RPG/" class="project-link"><i data-lucide="external-link"></i> Try Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ... Additional project cards with the same structure -->
+        </div>
+      </section>
+    </main>
+    <script>
+      // Initialize Lucide icons
+      lucide.createIcons();
+
+      // Smooth scroll for navigation
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+
+      // Add fade-in animation on scroll
+      const observerOptions = {
+        threshold: 0.1
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('section').forEach(section => {
+        observer.observe(section);
+      });
+    </script>
+  </body>
 </html>
