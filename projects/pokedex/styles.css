@@ -6,18 +6,18 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: "Lexend", sans-serif;
   min-height: 100vh;
   background: linear-gradient(180deg, #f0f0f0 0%, #e0e0e0 100%);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .container {
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -42,8 +42,7 @@ body {
 .led {
   border-radius: 50%;
   box-shadow: 
-      0 0 10px rgba(0, 0, 0, 0.2),
-      inset 0 2px 4px rgba(255, 255, 255, 0.3);
+      inset 0 2px 4px rgba(255, 255, 255, 0.5);
 }
 
 .led.large {
@@ -57,7 +56,7 @@ body {
   margin-top: 0.5rem;
 }
 
-.led.blue { background: #4da6ff; }
+.led.blue { background: #4da6ff; outline: 3px white solid; }
 .led.red { background: #ff4d4d; }
 .led.yellow { background: #ffeb3b; }
 .led.green { background: #4caf50; }
@@ -67,8 +66,8 @@ body {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 15px;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
   box-shadow: 
       inset 0 2px 10px rgba(0, 0, 0, 0.2),
       0 2px 5px rgba(255, 255, 255, 0.1);
@@ -133,7 +132,7 @@ body {
 .sprite-container {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
-  padding: 1rem;
+  padding: 0.3rem;
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -247,6 +246,8 @@ body {
 
 /* Navigation buttons */
 .nav-buttons {
+  position: absolute;
+  right: 4rem;
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -308,92 +309,37 @@ footer a:hover {
   }
 }
   
-  .grass{
-    background-color: LawnGreen;
-    color: black;
-  }
-  
-  .fire{
-    background-color: Tomato;
-    color: white;
-  }
-  
-  .water{
-    background-color: MediumBlue;
-    color: white
-  }
-  
-  .ice{
-    background-color: PowderBlue;
-    color: white;
-  }
-  
-  .bug{
-    background-color: OliveDrab;
-    color: black;
-  }
-  
-  .normal{
-    background-color: AliceBlue;
-    color: black;
-  }
-  
-  .dragon{
-    background-color: SlateBlue;
-    color: white;
-  }
-  
-  .flying{
-    background-color: lightgrey;
-    color: white
-  }
-  
-  .dark{
-    background-color: black;
-    color: white;
-  }
-  
-  .fighting{
-    background-color: sienna;
-    color: white;
-  }
-  
-  .electric{
-    background-color: yellow;
-    color: black;
-  }
-  
-  .psychic{
-    background-color: purple;
-    color: white;
-  }
-  
-  .ghost{
-    background-color: RebeccaPurple;
-    color: white;
-  }
-  
-  .poison{
-    background-color: MediumPurple;
-    color: white;
-  }
-  
-  .fairy{background-color: violet;
-    color: black;}
-  
-  .steel{
-    background-color:
-    silver;
-    color: black;
-  }
-  
-  .rock{
-    background-color: SaddleBrown;
-    color: white;
-  }
-  
-  .ground{
-    background-color:
-    SandyBrown;
-    color: brown;
-  }
+/* Pokemon type colors */
+.type {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  color: white;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.type.normal { background: #A8A878; }
+.type.fire { background: #F08030; }
+.type.water { background: #6890F0; }
+.type.electric { background: #F8D030; }
+.type.grass { background: #78C850; }
+.type.ice { background: #98D8D8; }
+.type.fighting { background: #C03028; }
+.type.poison { background: #A040A0; }
+.type.ground { background: #E0C068; }
+.type.flying { background: #A890F0; }
+.type.psychic { background: #F85888; }
+.type.bug { background: #A8B820; }
+.type.rock { background: #B8A038; }
+.type.ghost { background: #705898; }
+.type.dragon { background: #7038F8; }
+.type.dark { background: #705848; }
+.type.steel { background: #B8B8D0; }
+.type.fairy { background: #EE99AC; }
+.type.bird { background: #7C7C7C; }
+
+/* Update stat bar animations */
+.stat-bar {
+  height: 100%;
+  transition: width 0.5s ease-out;
+}
