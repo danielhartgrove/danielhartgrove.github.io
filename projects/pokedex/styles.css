@@ -8,7 +8,7 @@
 body {
   font-family: "Lexend", sans-serif;
   min-height: 100vh;
-  background: linear-gradient(180deg, #f0f0f0 0%, #e0e0e0 100%);
+  background-image: url(./assets/background.png);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -305,7 +305,7 @@ footer a:hover {
   }
 
   .nav-buttons {
-      flex-direction: column;
+      right: 1rem;
   }
 }
   

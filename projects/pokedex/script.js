@@ -93,7 +93,9 @@ const setInfo = (data) => {
 
     // Set types
     types.innerHTML = data.types
-        .map(obj => `<span class="type ${obj.type.name.toLowerCase()}">${capitalizeFirstLetter(obj.type.name)}</span>`).join("")
+        .map(obj => `<span class="type ${obj.type.name.toLowerCase()}">${capitalizeFirstLetter(obj.type.name)}</span>`).join("");
+
+    searchInput.value = "";
 }
 
 const nonExistent = () => {
@@ -124,4 +126,4 @@ const nonExistent = () => {
 
 // Load initial Pokemon
 getPokemon(1);
-searchInput.value = "";
+
