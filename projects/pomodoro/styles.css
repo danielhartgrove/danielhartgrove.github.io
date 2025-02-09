@@ -1,0 +1,47 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    border-radius: 32px;
+  }
+  
+  #timer-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Center the content */
+  }
+  
+  .label {
+    margin-bottom: 5px;
+  }
+  
+  .length-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  
+  #time-left {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  #start_stop, #reset {
+    padding: 10px 20px;
+    font-size: 1.2em;
+  }

@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Daniel Hartgrove - Software Engineer & Designer</title>
+        <meta name="description" content="Portfolio showcasing software engineering and design work" />
+        <link rel="stylesheet" href="/styles.css">
+        <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+        <script src="https://unpkg.com/lucide@latest"></script>
+    </head>
+    <body>
+        <div id="timer-container">
+            <div class="label" id="break-label">Break Length</div>
+            <div class="length-control">
+            <button id="break-decrement">-</button>
+            <span id="break-length">5</span>
+            <button id="break-increment">+</button>
+            </div>
+        
+            <div class="label" id="session-label">Session Length</div>
+            <div class="length-control">
+            <button id="session-decrement">-</button>
+            <span id="session-length">25</span>
+            <button id="session-increment">+</button>
+            </div>
+        
+            <div class="label" id="timer-label">Session</div>
+            <div id="time-left">25:00</div>
+        
+            <button id="start_stop">Start</button>
+            <button id="reset">Reset</button>
+        
+            <audio id="beep" src="https://assets.mixkit.co/sfx/preview/mixkit-alarm-clock-beep-992.mp3"></audio> </div>
+        
+        <script src="script.js"></script>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> 
+    </body>
+</html>
