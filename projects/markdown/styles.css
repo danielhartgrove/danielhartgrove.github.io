@@ -1,0 +1,48 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  width: 100vw;
+  height: auto;
+  overflow-y: scroll;
+  padding: 16px;
+}
+
+#xacdh5{
+  width: 100%;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  background-color: #eee;
+  flex-direction: row;
+  border-radius: 16px;
+  justify-content: center;
+}
+
+#editor,
+#preview {
+  width: 500px;
+  margin: 10px;
+  min-height: 200px;
+  max-height: 100%;
+  border: 1px solid #ccc;
+}
+
+#preview {
+  text-align: left;
+  overflow-wrap: break-word;
+  background-color: white;
+  color: black;
+}
+
+#preview img{
+  width: 100%;
+}
+
+#editor {
+  background-color: #252525;
+  color: white;
+}
