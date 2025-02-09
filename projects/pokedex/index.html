@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokédex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,18 +18,22 @@
                 <div class="led small red"></div>
                 <div class="led small yellow"></div>
                 <div class="led small green"></div>
+                <!-- Navigation Buttons -->
+                <div class="nav-buttons">
+                  <button onclick="getPrev()" id="prev_btn">Prev</button>
+                  <button onclick="getRandom()" id="random_btn">Random</button>
+                  <button onclick="getNext()" id="next_btn">Next</button>
+              </div>
             </div>
 
             <!-- Main Screen -->
             <div class="main-screen">
-              
                 <!-- Search Section -->
                 <div class="search-section">
-                    <input type="text" id="search-input" value="BULBASAUR" placeholder="Enter Pokémon name...">
-                    <button id="search-button">Search</button>
+                    <input type="text" id="search-input" placeholder="Enter Pokémon name...">
+                    <button onclick="getSearched()" id="search-button">Search</button>
                 </div>
 
-                
                 <!-- Pokemon Display -->
                 <div class="pokemon-display">
                     <div class="pokemon-info">
@@ -34,24 +41,22 @@
                         <span id="pokemon-id">#1</span>
                     </div>
                     
-                    <div class="sprite-container">
+                    <div id="sprite-container" class="sprite-container">
                         <img id="sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" 
                              alt="bulbasaur front default sprite">
                     </div>
 
-                    <div class="pokemon-types">
+                    <div id="types" class="pokemon-types">
                         <span class="type grass">Grass</span>
                         <span class="type poison">Poison</span>
                     </div>
 
                     <div class="pokemon-metrics">
                         <div class="metric">
-                            <span class="label">Weight</span>
-                            <span id="weight" class="value">69</span>
+                            <span id="weight" class="value">WEIGHT: 69</span>
                         </div>
                         <div class="metric">
-                            <span class="label">Height</span>
-                            <span id="height" class="value">7</span>
+                            <span id="height" class="value">HEIGHT: 7</span>
                         </div>
                     </div>
                 </div>
@@ -65,52 +70,45 @@
                             <div class="stat-bar-bg">
                                 <div class="stat-bar hp" style="width: calc(45 / 255 * 100%)"></div>
                             </div>
-                            <span class="stat-value">45</span>
+                            <span id="hp" class="stat-value">45</span>
                         </div>
                         <div class="stat-row">
                             <span class="stat-label">ATK</span>
                             <div class="stat-bar-bg">
                                 <div class="stat-bar atk" style="width: calc(49 / 255 * 100%)"></div>
                             </div>
-                            <span class="stat-value">49</span>
+                            <span id="attack" class="stat-value">49</span>
                         </div>
                         <div class="stat-row">
                             <span class="stat-label">DEF</span>
                             <div class="stat-bar-bg">
                                 <div class="stat-bar def" style="width: calc(49 / 255 * 100%)"></div>
                             </div>
-                            <span class="stat-value">49</span>
+                            <span id="defense" class="stat-value">49</span>
                         </div>
                         <div class="stat-row">
                             <span class="stat-label">SPA</span>
                             <div class="stat-bar-bg">
                                 <div class="stat-bar spa" style="width: calc(65 / 255 * 100%)"></div>
                             </div>
-                            <span class="stat-value">65</span>
+                            <span id="special-attack" class="stat-value">65</span>
                         </div>
                         <div class="stat-row">
                             <span class="stat-label">SPD</span>
                             <div class="stat-bar-bg">
                                 <div class="stat-bar spd" style="width: calc(65 / 255 * 100%)"></div>
                             </div>
-                            <span class="stat-value">65</span>
+                            <span id="special-defense" class="stat-value">65</span>
                         </div>
                         <div class="stat-row">
                             <span class="stat-label">SPE</span>
                             <div class="stat-bar-bg">
                                 <div class="stat-bar spe" style="width: calc(45 / 255 * 100%)"></div>
                             </div>
-                            <span class="stat-value">45</span>
+                            <span id="speed" class="stat-value">45</span>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Navigation Buttons -->
-            <div class="nav-buttons">
-                <button id="prev_btn">Prev</button>
-                <button id="random_btn">Random</button>
-                <button id="next_btn">Next</button>
             </div>
         </div>
 
@@ -120,5 +118,7 @@
             <p>Project spec from <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/build-a-pokemon-search-app-project/build-a-pokemon-search-app">freeCodeCamp.org</a></p>
         </footer>
     </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
