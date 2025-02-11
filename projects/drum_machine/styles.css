@@ -1,71 +1,132 @@
-body{
+:root {
+  --primary-bg: #1A1F2C;
+  --button-bg: #2A2F3C;
+  --button-hover: #3A3F4C;
+  --text-color: #FFFFFF;
+  --accent-1: #8B5CF6;
+  --accent-2: #D946EF;
+  --accent-3: #F97316;
+  --accent-4: #0EA5E9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   width: 100vw;
   height: 100vh;
-  background-color: #eee;
+  background-color: var(--primary-bg);
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: var(--text-color);
 }
 
-#drum-machine{
-  background-color: #252525;
-  width: 500px;
-  height: 500px;
+.container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  border-radius: 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
-audio{
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  background: linear-gradient(to right, var(--accent-1), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+#drum-machine {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.drum-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: min(500px, 90vw);
+}
+
+.drum-pad {
+  aspect-ratio: 1;
+  border: none;
+  border-radius: 12px;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: var(--button-bg);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.drum-pad:hover {
+  transform: translateY(-2px);
+}
+
+.drum-pad:active {
+  transform: translateY(1px);
+}
+
+#drum-pad-1 { --color: var(--accent-1); }
+#drum-pad-2 { --color: var(--accent-2); }
+#drum-pad-3 { --color: var(--accent-3); }
+#drum-pad-4 { --color: var(--accent-4); }
+#drum-pad-5 { --color: var(--accent-1); }
+#drum-pad-6 { --color: var(--accent-2); }
+#drum-pad-7 { --color: var(--accent-3); }
+#drum-pad-8 { --color: var(--accent-4); }
+#drum-pad-9 { --color: var(--accent-1); }
+
+.drum-pad:hover {
+  background-color: var(--color);
+  box-shadow: 0 0 20px var(--color);
+}
+
+.drum-pad.active {
+  background-color: var(--color);
+  transform: scale(0.95);
+}
+
+#display {
+  text-align: center;
+  margin-top: 1rem;
+  height: 2rem;
+  font-size: 1.2rem;
+}
+
+.instructions {
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  font-size: 1rem;
+}
+
+audio {
   display: none;
 }
 
-.drum-pad{
-  height: 25%;
-  width: 25%;
-  margin: 3%;
-  border-radius: 8px;
-  font-size: 4em;
-  font-weight: black;
+@media (max-width: 500px) {
+  .drum-grid {
+      gap: 0.5rem;
+  }
+  
+  .drum-pad {
+      font-size: 1.5rem;
+  }
+  
+  h1 {
+      font-size: 2rem;
+  }
 }
-
-#drum-pad-1:hover{
-  background-color: red;
-}
-
-#drum-pad-2:hover{
-  background-color: cyan;
-}
-
-#drum-pad-3:hover{
-  background-color: orange;
-}
-
-#drum-pad-4:hover{
-  background-color: cyan;
-}
-
-#drum-pad-5:hover{
-  background-color: MediumSeaGreen;
-}
-
-#drum-pad-6:hover{
-  background-color: magenta;
-}
-
-
-#drum-pad-7:hover{
-  background-color: MediumSeaGreen;
-}
-
-#drum-pad-8:hover{
-  background-color: magenta;
-}
-
-#drum-pad-9:hover{
-  background-color: red;
-}
-
-
