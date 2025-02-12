@@ -15,6 +15,7 @@
 
 html{
     background-color: var(--primary);
+    overflow-x: hidden;
 }
 
 * {
@@ -32,9 +33,20 @@ body {
     font-size: 1.1rem;
 }
 
+ul{
+    margin-left: 1.5rem;
+}
+
 
 .column {
     flex-direction: column;
+}
+
+.center{
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
 }
 
 .row {
@@ -191,7 +203,7 @@ header img{
     color: var(--background);
 }
 
-.stat_container {
+.value_container {
     width: var(--container-width);
     margin: 0 auto;
     display: flex;
@@ -199,20 +211,21 @@ header img{
     align-items: center;
 }
 
-.stat {
+.value {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
 }
 
-.stat img {
+.value img {
     width: 80px;
     height: 80px;
 }
 
 .value_text {
-    font-family: 'Tourney', sans-serif;
+    font-family: var(--header-font);
+    font-weight: bold;
     font-size: 1.5rem;
 }
 
@@ -244,7 +257,8 @@ header img{
 }
 
 #signature {
-    width: 60%;
+    width: 50%;
+    border-radius: 0;
 }
 
 /* Testimonials */
@@ -388,6 +402,7 @@ footer a {
     display: inline-flex;
     align-items: center;
     margin-top: 0.5rem;
+    margin-bottom: 2rem;
     gap: 0.5rem;
     padding: 0.75rem 1.5rem;
     background-color: var(--primary);
@@ -442,6 +457,7 @@ footer a {
 .form-group textarea {
     width: 100%;
     padding: 0.75rem;
+
     border: 1px solid #ddd;
     border-radius: var(--border-radius);
     font-family: var(--body-font);
@@ -512,6 +528,19 @@ footer a {
         z-index: 100;
     }
 
+    .value_container {
+        width: var(--container-width);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .value{
+        margin: 1rem;
+    }
+
     .split_container {
         flex-direction: column;
     }
@@ -557,6 +586,10 @@ footer a {
         display: flex;
         flex-direction: column;
         width: 90%;
+    }
+
+    footer{
+        flex-direction: column;
     }
     
 }
