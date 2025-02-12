@@ -249,6 +249,10 @@
     section {
       padding: 3rem 1rem;
     }
+
+    .project-card {
+      min-height: 50vh;
+    }
   
     .skills-grid,
     .projects-grid {
