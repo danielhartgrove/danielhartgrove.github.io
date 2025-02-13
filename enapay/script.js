@@ -1,4 +1,3 @@
-
 // Image Slider
 function setupImageSlider() {
   const slides = document.querySelectorAll('.headerslide');

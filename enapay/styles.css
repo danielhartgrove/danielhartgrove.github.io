@@ -16,6 +16,7 @@
 html{
     background-color: var(--primary);
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -128,6 +129,28 @@ header img{
     display: flex;
     gap: 2rem;
 }
+
+#jump_links{
+    gap: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.jump_link {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 800;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    scroll-behavior: smooth;
+}
+
+.jump_link:hover {
+    background-color: var(--secondary);
+    color: var(--background);
+}
+
 
 .header_link {
     color: var(--text);
@@ -327,6 +350,15 @@ header img{
     border-radius: 0;
 }
 
+#guides_and_toolkits,
+#expert_articles,
+#video_insights,
+#reccomended_reads,
+#interactive_tools {
+    scroll-behavior: smooth;
+}
+
+
 /* Footer */
 footer {
     background-color: var(--primary);
@@ -346,13 +378,21 @@ footer a {
 
 #downloads{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.downloads-header {
+    display: flex;
+    width: 85%;
+    text-align: left;
+    flex-direction: column;
+}
+
 .downloads-grid {
     display: grid;
-    width: 90%;
+    width: 80%;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     padding: 2rem 0;
@@ -360,6 +400,7 @@ footer a {
 
 .download-card {
     background: var(--background);
+    max-width: 100%;
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

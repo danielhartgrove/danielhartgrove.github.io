@@ -3,86 +3,87 @@
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
+        <title>Nine Inch Nails Jukebox</title>
+        <meta name="description" content="An interactive Jukebox that plays songs by NINE INCH NAILS using your spotify login">
+        <meta name="keywords" content="NIN, Nine Inch Nails, Spotify API">
         <meta name="author" content="Daniel Hartgrove">
-        <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+        <link rel="icon" type="image/x-icon" href="./assets/withteeth.jpg">
         <meta charset="UTF-8">
     </head>
-<body>
-    <section class="landing">
-        <img class="parallaximg top"    src="./assets/top.png"     alt="/">
-        <img class="parallaximg left"   src="./assets/left.png"    alt="N">
-        <img class="parallaximg middle" src="./assets/middle.png"  alt="|">
-        <img class="parallaximg right"  src="./assets/right.png"   alt="N">
-        <img class="parallaximg bottom" src="./assets/bottom.png"  alt="/">
+    <body>
+        <section class="landing">
+            <img class="parallaximg top"    src="./assets/top.png"     alt="/">
+            <img class="parallaximg left"   src="./assets/left.png"    alt="N">
+            <img class="parallaximg middle" src="./assets/middle.png"  alt="|">
+            <img class="parallaximg right"  src="./assets/right.png"   alt="N">
+            <img class="parallaximg bottom" src="./assets/bottom.png"  alt="/">
 
-        <h2 class="alert">SCROLL TO ACCESS SPOTIFY PLAYER</h2>
-    </section>
+            <h2 class="alert">SCROLL TO ACCESS SPOTIFY PLAYER</h2>
+        </section>
 
-    <section class="albums">
-        <h2 class="h2">PLAY</h2>
-        <div class="albumholder">
-            <button class="album" data-spotify-id="spotify:album:3umFHeEpc4yLXtrRcv9gLN">
-                <img src="./assets/prettyhatemachine.jpg" alt="Pretty Hate Machine">
-                <h2> Pretty Hate Machine (1989)</h2>
-            </button>
-            <button class="album" data-spotify-id="spotify:album:4jyWDa1yM9ul7zgUdR80hw">
-                <img src="./assets/broken.jpg" alt="Broken">
-                <h2> Broken (1992)</h2>
-            </button> 
-            <button class="album" data-spotify-id="spotify:album:6v4pXGNQv0Xc81H3iYdybc">
-                <img src="./assets/furtherdownthespiral.jpg" alt="Further Down The Sprial">
-                <h2> Further Down The Spiral (1994)</h2>
-            </button> 
-            <button class="album" data-spotify-id="spotify:album:5I7lLu8xXJfGRdFUqHaLQU">
-                <img src="./assets/thedownwardspiral.jpg" alt="The Downward Spiral">
-                <h2> The Downward Spiral (1994)</h2>
-            </button> 
-            <button class="album" data-spotify-id="spotify:album:4uiVwLbTzE6VMkXpaDAwB8">
-                <img src="./assets/thefragile.jpg" alt="The Fragile">
-                <h2> The Fragile (1999)</h2>
-                
-            </button> 
-            <button class="album" data-spotify-id="spotify:album:1PuCoaLQNyCeaLBgGtNyW3">
-                <img src="./assets/withteeth.jpg" alt="With Teeth">
-                <h2> With Teeth (2005) </h2>
-            </button>  
-        </div>
+        <section class="albums">
+            <h2 class="h2">PLAY</h2>
+            <div class="albumholder">
+                <button class="album" data-spotify-id="spotify:album:3umFHeEpc4yLXtrRcv9gLN">
+                    <img src="./assets/prettyhatemachine.jpg" alt="Pretty Hate Machine">
+                    <h2> Pretty Hate Machine (1989)</h2>
+                </button>
+                <button class="album" data-spotify-id="spotify:album:4jyWDa1yM9ul7zgUdR80hw">
+                    <img src="./assets/broken.jpg" alt="Broken">
+                    <h2> Broken (1992)</h2>
+                </button> 
+                <button class="album" data-spotify-id="spotify:album:6v4pXGNQv0Xc81H3iYdybc">
+                    <img src="./assets/furtherdownthespiral.jpg" alt="Further Down The Sprial">
+                    <h2> Further Down The Spiral (1994)</h2>
+                </button> 
+                <button class="album" data-spotify-id="spotify:album:5I7lLu8xXJfGRdFUqHaLQU">
+                    <img src="./assets/thedownwardspiral.jpg" alt="The Downward Spiral">
+                    <h2> The Downward Spiral (1994)</h2>
+                </button> 
+                <button class="album" data-spotify-id="spotify:album:4uiVwLbTzE6VMkXpaDAwB8">
+                    <img src="./assets/thefragile.jpg" alt="The Fragile">
+                    <h2> The Fragile (1999)</h2>
+                    
+                </button> 
+                <button class="album" data-spotify-id="spotify:album:1PuCoaLQNyCeaLBgGtNyW3">
+                    <img src="./assets/withteeth.jpg" alt="With Teeth">
+                    <h2> With Teeth (2005) </h2>
+                </button>  
+            </div>
 
-        <iframe id="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/0X380XXQSNBYuleKzav5UO?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="""></iframe>
-    </section>
+            <iframe id="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/0X380XXQSNBYuleKzav5UO?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="""></iframe>
+        </section>
 
-    <footer>
-        <p>BY DANIEL HARTGROVE</p>
-        <p>2024</p>
-        <p>THIS SITE INTEGRATES WITH THE SPOTIFY IFRAME API TO BRING YOU THE VERY BEST OF NINE INCH NAILS</p>
-    </footer>
+        <footer>
+            <p>BY DANIEL HARTGROVE</p>
+            <p>2024</p>
+            <p>THIS SITE INTEGRATES WITH THE SPOTIFY IFRAME API TO BRING YOU THE VERY BEST OF NINE INCH NAILS</p>
+        </footer>
 
-    
+        
 
-    <script src="./script/parallax.js"></script>
-    <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
-    <script>
-        window.onSpotifyIframeApiReady = (IFrameAPI) => {
-            const element = document.getElementById('embed-iframe');
-            const options = {
-                width: '80%',
-                height: '320',
-                uri: 'spotify:artist:0X380XXQSNBYuleKzav5UO'
+        <script src="./script/parallax.js"></script>
+        <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
+        <script>
+            window.onSpotifyIframeApiReady = (IFrameAPI) => {
+                const element = document.getElementById('embed-iframe');
+                const options = {
+                    width: '80%',
+                    height: '320',
+                    uri: 'spotify:artist:0X380XXQSNBYuleKzav5UO'
+                };
+                const callback = (EmbedController) => {
+                    document.querySelectorAll('.album').forEach(
+                        episode => {
+                            episode.addEventListener('click', () => {
+                                EmbedController.loadUri(episode.dataset.spotifyId)
+                            })
+                        }
+                    );
+                };
+                IFrameAPI.createController(element, options, callback);
             };
-            const callback = (EmbedController) => {
-                document.querySelectorAll('.album').forEach(
-                    episode => {
-                        episode.addEventListener('click', () => {
-                            EmbedController.loadUri(episode.dataset.spotifyId)
-                        })
-                    }
-                );
-            };
-            IFrameAPI.createController(element, options, callback);
-        };
-    </script>
+        </script>
 
-</body>
+    </body>
 </html>
