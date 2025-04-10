@@ -120,6 +120,7 @@ body.blurred .footer {
 
 .item:hover{
   box-shadow: 0 0 20px rgba(0,0,0, 0.2);
+  transform: scale(1.02);
 }
 
 .item-preview{
@@ -294,8 +295,8 @@ body.blurred .footer {
 
 
 .item.item.fullscreen.expanded .item-background img{
-  -webkit-mask-image: -webkit-linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(0,0,0,0.7) 100%);
-  mask-image: linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(0,0,0,0.7) 100%);
+  -webkit-mask-image: -webkit-linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 100%);
+  mask-image: linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 100%);
 }
 /* Assign z-index to the background container */
 .item-background {
@@ -314,8 +315,8 @@ body.blurred .footer {
   object-fit: cover;
   border-radius: 16px;
   z-index: 1;
-  -webkit-mask-image: -webkit-linear-gradient(80deg, rgba(255,255,255,0) 20%, rgba(0,0,0,0.7) 100%);
-  mask-image: linear-gradient(80deg, rgba(255,255,255,0) 20%, rgba(0,0,0,0.7) 100%);
+  -webkit-mask-image: -webkit-linear-gradient(90deg, rgba(255,255,255,0) 20%, rgba(0,0,0,1) 75%);
+  mask-image: linear-gradient(90deg, rgba(255,255,255,0) 20%, rgba(0,0,0,1) 75%);
 }
 
 .item-skills-container{
@@ -398,6 +399,16 @@ body.blurred .footer {
   opacity: 0;
   transition: opacity 0.1s ease-in-out;
   pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.glass p{
+  color: #666;
+  font-size: 14px;
+  margin-top: 15px;
+  text-align: center;
 }
 
 .stopscroll{
@@ -613,4 +624,17 @@ body.blurred .footer {
 ::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 10px;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.pulse {
+  animation: pulse 2s infinite ease-in-out;
 }

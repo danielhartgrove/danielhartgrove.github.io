@@ -4,26 +4,24 @@
     justify-content: center; /* centers the slideshow horizontally */
     align-items: center; /* centers the slideshow vertically */
     width: 100%;
-    height: 300px;
-    width: 550px;
+    height: 330px;
+    max-width: 550px;
     overflow: hidden;
     border-radius: 12px;
-    background-color: rgba(0, 0, 0, 0.4);
-    text-align: center; /* ensures images are horizontally centered if small */
+    background-color: rgba(0, 0, 0, 0.2);
+    align-content: center; /* ensures images are horizontally centered if small */
     padding: 0; /* no extra spacing */
   }
 
   .slideshow-display {
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    width: auto;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
-    display: inline-block;
+    object-position: center;
+    display: block;
     margin: auto;
   }
 
-  
   .slideshow-btn {
     position: absolute;
     top: 50%;
@@ -50,3 +48,18 @@
     right: 10px;
   }
   
+  @media screen and (max-width: 600px) {
+    .slideshow {
+      width: 100%;
+      height: 200px; /* Adjust height for smaller screens */
+    }
+    .slideshow-display {
+      width: 100%;
+      height: 100%;
+    }
+    .slideshow-btn {
+      font-size: 18px; /* Smaller button size for mobile */
+      padding: 6px 10px;
+    }
+    
+  }
