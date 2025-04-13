@@ -269,11 +269,9 @@ body.blurred .footer {
 .item-images {
   display: flex;
   width: 80%;
-  object-fit: cover;
   height: auto;
   flex-direction: column;
   justify-content: start;
-  align-items: center;
   overflow-x: hidden;
   gap: 20px;
   padding: 10px 10px 30px 10px;
