@@ -14,7 +14,14 @@ async function fetchWeather() {
     console.log(data); // for debugging
 
     const planetData = determineStarWarsPlanet(data);
-    output.innerHTML = `🌍 Location: ${planetData.earthLocation}<br>🪐 You're most likely on: <strong>${planetData.starWarsPlanet}</strong>`;
+    output.innerHTML = `🌍 Location: ${planetData.earthLocation}<br>🪐 You're most likely on: <strong>${planetData.starWarsPlanet}</strong>;
+    <p>🪐 is currently like being on <strong>${planetData.starWarsPlanet}</strong></p> 
+    <p>🌡️ Temperature: ${planetData.details.temperature}°C (Feels like: ${planetData.details.feelsLike}°C)</p> 
+    <p>💨 Wind: ${planetData.details.wind} kph</p>
+    <p>💧 Humidity: ${planetData.details.humidity}%</p>
+    <p>⏰ Last Updated: ${planetData.details.lastUpdated}</p>`;
+
+    document.body.style.backgroundImage = url("./assets/${planetData.starWarsPlanet.toLowerCase()}.jpg");
     
   } catch (err) {
     alert('These are not the droids you are looking for... Weather data not found');
