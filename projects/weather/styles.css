@@ -150,7 +150,7 @@ footer a{
 
  @media screen and (max-width: 768px) {
     .logo{
-      width: 90%;
+      width: 100%;
       margin-bottom: 1rem;
     }
 
