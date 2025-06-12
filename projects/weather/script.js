@@ -11,11 +11,12 @@ async function fetchWeather() {
     }
 
     output.innerHTML = "<p>Fetching weather data...</p>";
-    
+
     const response = await fetch(`/.netlify/functions/weather?q=${encodeURIComponent(query)}`);
     const data = await response.json();
    
     if (data.error) {
+      output.innerHTML = "<p>Oh R2! Where are you? Master Skywalker has requested information not in my memory banks!</p>";
       throw new Error(data.error.message);
     }
 
