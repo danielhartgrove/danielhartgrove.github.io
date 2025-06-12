@@ -3,11 +3,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: black;
 }
 
 body {
   font-family: "Lexend", sans-serif;
   min-height: 100vh;
+  background-color: black;
   background-image: url(./assets/standard.jpg);
   background-position: center;
   background-size: cover;
