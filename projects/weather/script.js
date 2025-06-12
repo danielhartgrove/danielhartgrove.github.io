@@ -16,7 +16,6 @@ async function fetchWeather() {
     const data = await response.json();
    
     if (data.error) {
-      output.innerHTML = "<p>Oh R2! Where are you? Master Skywalker has requested information not in my memory banks!</p>";
       throw new Error(data.error.message);
     }
 
@@ -35,6 +34,7 @@ async function fetchWeather() {
     
   } catch (err) {
     alert('These are not the droids you are looking for... Weather data not found');
+    output.innerHTML = "<p>Oh R2! Where are you? Master Skywalker has requested information not in my memory banks!</p>";
     console.error(`Weather data not found: ${err}`);
   }
 }
