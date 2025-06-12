@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // netlify/functions/weather.js
 
 const fetch = require('node-fetch'); // required for Netlify Node environment
