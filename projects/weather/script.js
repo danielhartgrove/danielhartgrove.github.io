@@ -4,6 +4,14 @@ const output = document.getElementById('output');
 async function fetchWeather() {
   try {
     const query = searchInput.value.trim();
+  
+    if (!query) {
+      alert("Please enter a location");
+      return;
+    }
+
+    output.innerHTML = "<p>Fetching weather data...</p>";
+    
     const response = await fetch(`/.netlify/functions/weather?q=${encodeURIComponent(query)}`);
     const data = await response.json();
    
