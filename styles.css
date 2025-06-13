@@ -93,6 +93,19 @@
     animation: bounce 2s infinite;
   }
   
+
+  h2 a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .skill-card a{
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
+  }
+
   /* Skills Section */
   .skills-grid {
     display: grid;
