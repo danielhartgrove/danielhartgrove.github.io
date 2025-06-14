@@ -7,17 +7,18 @@
 
 html{
   background-color: black;
+  background-image: url(./assets/standard.jpg);
+  background-position: center;
+  height: 100%;
 } 
 
 body {
   font-family: "Lexend", sans-serif;
-  min-height: 100vh;
-  background-image: url(./assets/standard.jpg);
-  background-position: center;
-  background-size: cover;
+  height: 100%;
+  background-size: fill;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   align-items: center;
   padding: 1.5rem;
 }
@@ -30,18 +31,24 @@ footer{
   padding: 0.5rem;
   color: white;
   z-index: 0;
+  padding: 1.5rem;
 }
 
 .container {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   justify-items: center;
   width: 100%;
   max-width: 900px;
-  margin: 0 auto;
   z-index: 1;
 }
 
 /* Pokedex styling */
 .searchbox {
+  justify-self: center;
   /* From https://css.glass */
 background: rgba(75, 218, 243, 0.2);
 border-radius: 16px;
@@ -75,22 +82,21 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   justify-content: center;
   align-items: center;
   margin-bottom: 1.5rem;
-  width: 30%;
+  width: 50%;
 }
 
  .badge {
-    display: inline-block;
-    position: absolute;
-    top: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 0.5rem 1rem;
+    position: relative;
+    top: -1.5rem;
+    left: 0;
+    padding: 0.75rem 1.5rem;
     background-color: rgba(255,255,255, 0.5);
     color: var(--primary);
     border-radius: 9999px;
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-weight: 500;
     margin-bottom: 1.5rem;
+    text-align: center;
   }
 
   .badge a{
@@ -153,7 +159,7 @@ footer a{
 
  @media screen and (max-width: 768px) {
     .logo{
-      width: 100%;
+      width: 50vw;
       margin-bottom: 1rem;
     }
 
@@ -177,10 +183,26 @@ footer a{
       padding: 0.5rem 0;
     }
 
- .badge {
-    display: inline-block;
-    position: relative;
-}
+    .badge {
+      position: relative;
+      top: none;
+      left: none;
+      transform: none;
+      padding: 0.5rem 1rem;
+      background-color: rgba(255,255,255, 0.5);
+      color: var(--primary);
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+    }
+
+    footer{
+      position: absolute;
+      width: 100%;
+      padding: 1.5rem;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
 
     #search-input {
       width: 67%;
@@ -188,6 +210,7 @@ footer a{
       height:100%;
       padding: none;
     }
+
     #search-button {
       width: 33%;
       margin-top: 1rem;
