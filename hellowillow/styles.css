@@ -114,7 +114,7 @@ h1{
 /* Hover effect */
 .card:hover {
   box-shadow: 0 15px 35px rgba(0,0,0,0.12);
-  transform: scale(1.05);
+  transform: scale(1.02);
   transition: all 0.3s ease-in-out; 
 }
 
