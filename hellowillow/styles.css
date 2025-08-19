@@ -139,33 +139,3 @@ h1{
 .links a:hover {
   background: var(--primary-light);
 }
-
-/* Expanded fullscreen state */
-.card-toggle:checked + .card {
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  z-index: 1000;
-  border-radius: 0;
-  overflow-y: auto;
-  box-shadow: none;
-  transform: none;
-  transition: all 1s ease-in-out;
-}
-
-.card-toggle:checked + .card img {
-  height: 300px;
-  object-fit: cover;
-}
-
-.card-toggle:checked + .card .card-content {
-  padding: 2rem;
-}
-
-.card-toggle:checked + .card .summary {
-  font-size: 1.05rem;
-  margin-top: 1rem;
-  line-height: 1.6;
-}
