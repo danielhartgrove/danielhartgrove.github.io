@@ -61,13 +61,7 @@
         <div class="hs-apps">
 
           <button class="app-icon" data-action="content" aria-label="Portfolio">
-            <div class="app-icon__bg" style="background:#0A84FF">
-              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"/>
-                <line x1="2" y1="12" x2="22" y2="12"/>
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-              </svg>
-            </div>
+            <div class="app-icon__bg app-icon__bg--photo" role="img" aria-label="Daniel Hartgrove"></div>
             <span class="app-icon__label">Portfolio</span>
           </button>
 
@@ -80,51 +74,24 @@
             <span class="app-icon__label">YouTube</span>
           </button>
 
-          <button class="app-icon" data-action="iframe" data-url="./projects/platformer/" data-name="BOXJUMPS!" aria-label="BOXJUMPS!">
-            <div class="app-icon__bg" style="background:#FF6B2B">
-              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="5" y="13" width="14" height="8" rx="1.5"/>
-                <line x1="12" y1="13" x2="12" y2="5"/>
-                <polyline points="8,9 12,5 16,9"/>
-              </svg>
-            </div>
-            <span class="app-icon__label">BOXJUMPS!</span>
-          </button>
-
-          <button class="app-icon" data-action="iframe" data-url="./projects/NIN/" data-name="NIN Jukebox" aria-label="NIN Jukebox">
-            <div class="app-icon__bg" style="background:#1A1A1A">
-              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M9 18V5l12-2v13"/>
-                <circle cx="6" cy="18" r="3"/>
-                <circle cx="18" cy="16" r="3"/>
-              </svg>
-            </div>
-            <span class="app-icon__label">NIN Jukebox</span>
-          </button>
-
-          <button class="app-icon" data-action="external" data-url="https://www.notemaker.tech/" aria-label="NoteMaker">
-            <div class="app-icon__bg" style="background:#0D9488">
-              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                <polyline points="14,2 14,8 20,8"/>
-                <line x1="16" y1="13" x2="8" y2="13"/>
-                <line x1="16" y1="17" x2="8" y2="17"/>
-              </svg>
-            </div>
-            <span class="app-icon__label">NoteMaker</span>
-          </button>
-
           <button class="app-icon" data-action="external" data-url="https://nottfound.benchung.dev/" aria-label="NottFound">
-            <div class="app-icon__bg" style="background:#059669">
-              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                <circle cx="12" cy="10" r="3"/>
-              </svg>
-            </div>
+            <div class="app-icon__bg app-icon__bg--nott"></div>
             <span class="app-icon__label">NottFound</span>
           </button>
 
-          <button class="app-icon" data-action="iframe" data-url="./projects/pokedex/" data-name="Pokédex" aria-label="Pokedex">
+          <button class="app-icon" data-action="iframe" data-url="./projects/drumpad/" data-name="Drum Machine" aria-label="Drum Machine">
+            <div class="app-icon__bg" style="background:#8B5CF6">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="6" rx="8" ry="3.2"/>
+                <path d="M4 6v8c0 1.8 3.6 3.2 8 3.2s8-1.4 8-3.2V6"/>
+                <line x1="7" y1="2.5" x2="5" y2="6"/>
+                <line x1="17" y1="2.5" x2="19" y2="6"/>
+              </svg>
+            </div>
+            <span class="app-icon__label">Drum Machine</span>
+          </button>
+
+          <button class="app-icon" data-action="iframe" data-url="./projects/pokedex/" data-name="Pokédex" data-width="480" aria-label="Pokedex">
             <div class="app-icon__bg" style="background:#DC2626">
               <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
                 <circle cx="12" cy="12" r="10"/>
@@ -135,24 +102,19 @@
             <span class="app-icon__label">Pokédex</span>
           </button>
 
-          <button class="app-icon" data-action="external" data-url="https://www.gazellewebstudios.co.uk" aria-label="Gazelle Studios">
-            <div class="app-icon__bg" style="background:#7C3AED">
-              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-              </svg>
+          <button class="app-icon" data-action="iframe" data-url="./projects/weather/" data-name="Galactic Weather" aria-label="Star Wars Weather">
+            <div class="app-icon__bg" style="background:#0a0a12">
+              <img class="app-icon__img app-icon__img--contain" src="./projects/weather/assets/weatherapplogo.png" alt="Star Wars">
             </div>
-            <span class="app-icon__label">Gazelle</span>
+            <span class="app-icon__label">Weather</span>
           </button>
 
         </div><!-- /.hs-apps -->
 
         <div class="hs-dock">
           <button class="app-icon app-icon--dock" data-action="external" data-url="https://github.com/danielhartgrove" aria-label="GitHub">
-            <div class="app-icon__bg" style="background:#24292e">
-              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="16,18 22,12 16,6"/>
-                <polyline points="8,6 2,12 8,18"/>
-              </svg>
+            <div class="app-icon__bg" style="background:#fff">
+              <img class="app-icon__img app-icon__img--contain" src="./assets/github_logo.png" alt="GitHub">
             </div>
           </button>
 
@@ -200,7 +162,9 @@
           <span class="app-name" id="app-name"></span>
           <div class="app-bar__spacer"></div>
         </div>
-        <iframe class="app-frame" id="app-frame" src="about:blank" title="App"></iframe>
+        <div class="app-body" id="app-body">
+          <iframe class="app-frame" id="app-frame" src="about:blank" title="App" allow="geolocation"></iframe>
+        </div>
       </div>
 
       <!-- ═══════════════════════════════════════
@@ -395,16 +359,47 @@
   });
 
   // ── Open in-phone iframe ───────────────────────────────────
-  function openApp(url, name) {
+  var appBody = document.getElementById('app-body');
+  var currentLogicalWidth = 0; // 0 = native (no scaling)
+
+  // Scale the iframe: render at a logical width, shrink to fit the phone.
+  function fitFrame() {
+    if (!currentLogicalWidth) {
+      // Native: iframe simply fills the body
+      af.style.width = '';
+      af.style.height = '';
+      af.style.transform = '';
+      return;
+    }
+    var availW = appBody.clientWidth;
+    var availH = appBody.clientHeight;
+    var scale  = availW / currentLogicalWidth;
+    af.style.width     = currentLogicalWidth + 'px';
+    af.style.height    = (availH / scale) + 'px';
+    af.style.transform = 'scale(' + scale + ')';
+  }
+
+  function openApp(url, name, logicalWidth) {
+    currentLogicalWidth = logicalWidth || 0;
     document.getElementById('app-name').textContent = name;
     af.src = url;
+    fitFrame();
     av.classList.add('av-open');
     setTimeout(function() { try { af.focus(); } catch(e) {} }, 500);
   }
 
+  // Re-fit when the phone/viewport size changes
+  window.addEventListener('resize', function() {
+    if (av.classList.contains('av-open')) fitFrame();
+  });
+
   document.getElementById('app-back').addEventListener('click', function() {
     av.classList.remove('av-open');
-    setTimeout(function() { af.src = 'about:blank'; }, 420);
+    setTimeout(function() {
+      af.src = 'about:blank';
+      currentLogicalWidth = 0;
+      af.style.width = ''; af.style.height = ''; af.style.transform = '';
+    }, 420);
   });
 
   // ── Home screen app taps ───────────────────────────────────
@@ -412,8 +407,9 @@
     var icon = e.target.closest('[data-action]');
     if (!icon) return;
     var action = icon.dataset.action, url = icon.dataset.url, name = icon.dataset.name || '';
+    var width  = parseInt(icon.dataset.width, 10) || 0;
     if      (action === 'content')  openPortfolio();
-    else if (action === 'iframe')   openApp(url, name);
+    else if (action === 'iframe')   openApp(url, name, width);
     else if (action === 'external') window.open(url, '_blank');
     else if (action === 'mailto')   { window.location.href = url; }
   });

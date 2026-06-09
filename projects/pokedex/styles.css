@@ -5,9 +5,21 @@
   box-sizing: border-box;
 }
 
+/* Prevent horizontal overflow and hide scrollbar tracks */
+html {
+  overflow-x: hidden;
+  scrollbar-width: none;          /* Firefox */
+  -ms-overflow-style: none;       /* old Edge */
+}
+
+html::-webkit-scrollbar {
+  display: none;                  /* Chrome / Safari */
+}
+
 body {
   font-family: "Lexend", sans-serif;
   min-height: 100vh;
+  overflow-x: hidden;
   background-image: url(./assets/background.png);
   display: flex;
   justify-content: center;

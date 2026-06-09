@@ -15,9 +15,18 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow: hidden;               /* no scrollbars */
+  scrollbar-width: none;          /* Firefox */
+  -ms-overflow-style: none;       /* old Edge */
+}
+
+html::-webkit-scrollbar { display: none; } /* Chrome / Safari */
+
 body {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
+  overflow: hidden;
   background-color: var(--primary-bg);
   display: flex;
   justify-content: center;
@@ -135,15 +144,35 @@ audio {
 }
 
 @media (max-width: 500px) {
+  body {
+      padding: 1rem;
+  }
+
+  .container {
+      gap: 1rem;
+      width: 100%;
+  }
+
+  #drum-machine {
+      padding: 1rem;
+      width: 100%;
+  }
+
   .drum-grid {
       gap: 0.5rem;
+      width: 100%;
   }
-  
+
   .drum-pad {
       font-size: 1.5rem;
   }
-  
+
   h1 {
       font-size: 2rem;
+      margin-bottom: 0;
+  }
+
+  #display {
+      margin-top: 0.5rem;
   }
 }

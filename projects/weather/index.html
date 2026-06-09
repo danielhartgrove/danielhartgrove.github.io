@@ -7,20 +7,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/x-icon" href="../assets/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
    
     <div class="container">
-         <span class="badge"><a href="../">Back to Home</a></span>
         <img src="./assets/weatherapplogo.png" alt="Logo" class="logo">
         <div class="searchbox">
             <div id="search">
                 <input id="search-input" type="text" placeholder="Enter your location"/>
                 <button id="search-button">Go!</button>
             </div>
-            <p id="output">Enter your location to find out which planet you're on based on the weather in your area!</p>
+            <button id="locate-button" type="button">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="10" r="3"/>
+                    <path d="M12 2a8 8 0 0 0-8 8c0 5.4 8 12 8 12s8-6.6 8-12a8 8 0 0 0-8-8z"/>
+                </svg>
+                Use my location
+            </button>
+            <div id="output">Enter your location to find out which planet you're on based on the weather in your area!</div>
         </div>
     </div>
 
