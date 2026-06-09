@@ -1,206 +1,425 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daniel Hartgrove - Software Engineer & Designer</title>
-    <meta name="description" content="Portfolio showcasing software engineering and design work. Daniel Hartgrove, CEO and Founder of Gazelle Web Studios UK" />
-    <meta name="author" content="Daniel Hartgrove" />
-    <meta name="keywords" content="software engineer, front-end developer, designer, portfolio, daniel hartgrove, gazelle studios uk, gazelle, gazelle software, gazelle web development" />
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
-    <script src="https://unpkg.com/lucide@latest"></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel Hartgrove</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-  <body>
-    <main>
-      <!-- Hero Section -->
-      <section id="hero" class="hero">
-        <div class="hero-content">
-          <span class="badge">Software Engineer & Designer</span>
-          <h1>Hi! I'm Daniel Hartgrove 👋</h1>
-          <h2>Software Engineer and Front-End Developer. Director of <a href="https://www.gazellewebstudios.co.uk">Gazelle Web Studios</a></h2>
-          <br>
-          <p>I craft elegant solutions through code and design, specializing in front-end development and user experience</p>
-        </div>
-        <div class="scroll-indicator">
-          <i data-lucide="chevron-down"></i>
-        </div>
-      </section>
+<div class="scene">
+  <div class="phone">
+    <div class="chrome-island" aria-hidden="true"></div>
+    <div class="chrome-btn chrome-vol-1" aria-hidden="true"></div>
+    <div class="chrome-btn chrome-vol-2" aria-hidden="true"></div>
+    <div class="chrome-btn chrome-power" aria-hidden="true"></div>
 
-      <!-- Skills Section -->
-      <section id="skills" class="skills">
-        <div class="section-header">
-          <h2>Expertise</h2>
-          <p>Combining technical expertise with creative design thinking to deliver comprehensive solutions</p>
-        </div>
-        <div class="skills-grid">
-          <div class="skill-card" id="softweng">
-            <i data-lucide="code"></i>
-            <h3>Software Engineering</h3>
-            <p>Building robust and scalable applications with modern technologies</p>
-            <div class="tags">
-              <span>HTML/CSS</span>
-              <span>JavaScript</span>
-              <span>PHP</span>
-              <span>Java</span>
-              <span>Python</span>
-              <span>C/C++</span>
-              <span>Unity</span>
-              <span>Git</span>
-            </div>
+    <div class="phone-screen">
+
+      <!-- ═══════════════════════════════════════
+           LOCK SCREEN
+      ═══════════════════════════════════════ -->
+      <div class="lockscreen" id="lockscreen" role="button" tabindex="0" aria-label="Tap to unlock">
+        <div class="ls-body">
+          <div class="ls-clock">
+            <div class="ls-time" id="ls-time">9:41</div>
+            <div class="ls-date" id="ls-date">Monday, 2 June</div>
           </div>
-          <div class="skill-card" id="frontend">
-            <i data-lucide="layout"></i>
-            <h3>Front-End Development</h3>
-            <p>Creating responsive and intuitive user interfaces for apps or web</p>
-            <div class="tags">
-              <span>HTML/CSS</span>
-              <span>JavaScript</span>
-              <span>React</span>
-              <span>PHP</span>
-            </div>
-          </div>
-          <div class="skill-card" id="graphicdes">
-            <i data-lucide="palette"></i>
-            <h3>Graphic and Brand Design</h3>
-            <p>My business, <a href="https://www.gazellewebstudios.co.uk">Gazelle Web Studios</a>, focuses on designing beautiful and functional visual experiences for your business and social media platforms. </p>
-            <div class="tags">
-              <span>Figma</span>
-              <span>UI/UX</span>
-              <span>Typography</span>
-              <span>Brand Design</span>
-              <span>Adobe Photoshop</span>
-            </div>
+          <div class="ls-hint">
+            <div class="ls-hint-arrow">↑</div>
+            <div class="ls-hint-label">Tap to unlock</div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <!-- Projects Section -->
-      <section id="projects" class="projects">
-        <div class="section-header">
-          <h2>Featured Projects</h2>
-          <p>A selection of my recent work in software development and design</p>
-        </div>
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-image">
-              <img src="./assets/projects/NottFound.png" alt="NottFound">
-            </div>
-            <div class="project-content">
-              <h3>NottFound</h3>
-              <p>A student experience application for the city of Nottingham, build with guidance from the software engineering team at UNiDAYS</p>
-              <div class="tags">
-                <span>Flutter</span>
-                <span>Python</span>
-                <span>Docker</span>
-              </div>
-              <div class="project-links">
-                <a href="https://nottfound.benchung.dev/" class="project-link"><i data-lucide="external-link"></i> Project Site</a>
-                <a href="https://youtu.be/1HzJbsrw1WI" class="project-link"><i data-lucide="youtube"></i> Demo</a>
-              </div>
-            </div>
+      <!-- ═══════════════════════════════════════
+           HOME SCREEN
+      ═══════════════════════════════════════ -->
+      <div class="homescreen" id="homescreen">
+
+        <div class="hs-bar" aria-hidden="true">
+          <span class="hs-time" id="hs-time">9:41</span>
+          <div class="hs-icons">
+            <svg class="si" viewBox="0 0 17 12" fill="currentColor">
+              <rect x="0" y="5" width="3" height="7" rx="1" opacity="0.35"/>
+              <rect x="4.5" y="3.5" width="3" height="8.5" rx="1" opacity="0.55"/>
+              <rect x="9" y="1.5" width="3" height="10.5" rx="1" opacity="0.75"/>
+              <rect x="13.5" y="0" width="3" height="12" rx="1"/>
+            </svg>
+            <svg class="si" viewBox="0 0 25 12" fill="currentColor">
+              <rect x="0" y="1" width="21" height="10" rx="2.5" stroke="currentColor" stroke-width="1.3" fill="none" opacity="0.6"/>
+              <rect x="22" y="4" width="2.5" height="4" rx="1" opacity="0.4"/>
+              <rect x="1.5" y="2.5" width="16" height="7" rx="1.5"/>
+            </svg>
           </div>
-          <div class="project-card">
-            <div class="project-image">
-              <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80" alt="NLGLite">
+        </div>
+
+        <div class="hs-apps">
+
+          <button class="app-icon" data-action="content" aria-label="Portfolio">
+            <div class="app-icon__bg" style="background:#0A84FF">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
             </div>
-            <div class="project-content">
-              <h3>NLGLite</h3>
-              <p>Prototype lightweight NLG solution built in Python, targeted at running efficiently on consumer machines.</p>
-              <div class="tags">
-                <span>Python</span>
-                <span>NLTK</span>
-              </div>
-              <div class="project-links">
-                <a href="./danielhartgrove_dissertation.pdf" class="project-link"><i data-lucide="external-link"></i> Dissertation</a>
-                <a href="https://github.com/danielhartgrove/NLGlite" class="project-link"><i data-lucide="github"></i> Source</a>
-              </div>
+            <span class="app-icon__label">Portfolio</span>
+          </button>
+
+          <button class="app-icon" data-action="external" data-url="https://www.youtube.com/@danielhartgrove" aria-label="YouTube">
+            <div class="app-icon__bg" style="background:#FF0000">
+              <svg viewBox="0 0 24 24" fill="white">
+                <polygon points="6,3 20,12 6,21"/>
+              </svg>
             </div>
+            <span class="app-icon__label">YouTube</span>
+          </button>
+
+          <button class="app-icon" data-action="iframe" data-url="./projects/platformer/" data-name="BOXJUMPS!" aria-label="BOXJUMPS!">
+            <div class="app-icon__bg" style="background:#FF6B2B">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="13" width="14" height="8" rx="1.5"/>
+                <line x1="12" y1="13" x2="12" y2="5"/>
+                <polyline points="8,9 12,5 16,9"/>
+              </svg>
+            </div>
+            <span class="app-icon__label">BOXJUMPS!</span>
+          </button>
+
+          <button class="app-icon" data-action="iframe" data-url="./projects/NIN/" data-name="NIN Jukebox" aria-label="NIN Jukebox">
+            <div class="app-icon__bg" style="background:#1A1A1A">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18V5l12-2v13"/>
+                <circle cx="6" cy="18" r="3"/>
+                <circle cx="18" cy="16" r="3"/>
+              </svg>
+            </div>
+            <span class="app-icon__label">NIN Jukebox</span>
+          </button>
+
+          <button class="app-icon" data-action="external" data-url="https://www.notemaker.tech/" aria-label="NoteMaker">
+            <div class="app-icon__bg" style="background:#0D9488">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14,2 14,8 20,8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+              </svg>
+            </div>
+            <span class="app-icon__label">NoteMaker</span>
+          </button>
+
+          <button class="app-icon" data-action="external" data-url="https://nottfound.benchung.dev/" aria-label="NottFound">
+            <div class="app-icon__bg" style="background:#059669">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <span class="app-icon__label">NottFound</span>
+          </button>
+
+          <button class="app-icon" data-action="iframe" data-url="./projects/pokedex/" data-name="Pokédex" aria-label="Pokedex">
+            <div class="app-icon__bg" style="background:#DC2626">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <circle cx="12" cy="12" r="3" fill="white" stroke="none"/>
+              </svg>
+            </div>
+            <span class="app-icon__label">Pokédex</span>
+          </button>
+
+          <button class="app-icon" data-action="external" data-url="https://www.gazellewebstudios.co.uk" aria-label="Gazelle Studios">
+            <div class="app-icon__bg" style="background:#7C3AED">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+              </svg>
+            </div>
+            <span class="app-icon__label">Gazelle</span>
+          </button>
+
+        </div><!-- /.hs-apps -->
+
+        <div class="hs-dock">
+          <button class="app-icon app-icon--dock" data-action="external" data-url="https://github.com/danielhartgrove" aria-label="GitHub">
+            <div class="app-icon__bg" style="background:#24292e">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16,18 22,12 16,6"/>
+                <polyline points="8,6 2,12 8,18"/>
+              </svg>
+            </div>
+          </button>
+
+          <button class="app-icon app-icon--dock" data-action="external" data-url="https://www.linkedin.com/in/danielhartgrove/" aria-label="LinkedIn">
+            <div class="app-icon__bg" style="background:#0077B5">
+              <span class="app-icon__text">in</span>
+            </div>
+          </button>
+
+          <button class="app-icon app-icon--dock" data-action="mailto" data-url="mailto:hartgrovedaniel3@icloud.com" aria-label="Mail">
+            <div class="app-icon__bg" style="background:#34AADC">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+          </button>
+
+          <button class="app-icon app-icon--dock" data-action="external" data-url="./danielhartgrove_cv.pdf" aria-label="CV">
+            <div class="app-icon__bg" style="background:#6B7280">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14,2 14,8 20,8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+              </svg>
+            </div>
+          </button>
+        </div><!-- /.hs-dock -->
+
+        <div class="hs-home-bar" aria-hidden="true"></div>
+
+      </div><!-- /.homescreen -->
+
+      <!-- ═══════════════════════════════════════
+           APP VIEW (iframe)
+      ═══════════════════════════════════════ -->
+      <div class="app-view" id="app-view">
+        <div class="app-bar">
+          <button class="app-back" id="app-back" aria-label="Back to home">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+              <polyline points="15,18 9,12 15,6"/>
+            </svg>
+            Home
+          </button>
+          <span class="app-name" id="app-name"></span>
+          <div class="app-bar__spacer"></div>
+        </div>
+        <iframe class="app-frame" id="app-frame" src="about:blank" title="App"></iframe>
+      </div>
+
+      <!-- ═══════════════════════════════════════
+           PORTFOLIO CONTENT
+      ═══════════════════════════════════════ -->
+      <div class="status-bar" aria-hidden="true">
+        <span class="status-time" id="status-time">9:41</span>
+        <div class="status-icons">
+          <svg class="si" viewBox="0 0 17 12" fill="currentColor">
+            <rect x="0" y="5" width="3" height="7" rx="1" opacity="0.35"/>
+            <rect x="4.5" y="3.5" width="3" height="8.5" rx="1" opacity="0.55"/>
+            <rect x="9" y="1.5" width="3" height="10.5" rx="1" opacity="0.75"/>
+            <rect x="13.5" y="0" width="3" height="12" rx="1"/>
+          </svg>
+          <svg class="si" viewBox="0 0 25 12" fill="currentColor">
+            <rect x="0" y="1" width="21" height="10" rx="2.5" stroke="currentColor" stroke-width="1.3" fill="none" opacity="0.6"/>
+            <rect x="22" y="4" width="2.5" height="4" rx="1" opacity="0.4"/>
+            <rect x="1.5" y="2.5" width="16" height="7" rx="1.5"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="content">
+        <section class="hero">
+          <div class="hero-meta">
+            <span class="tag">Portfolio</span>
+            <span class="dim">2025</span>
           </div>
-          <div class="project-card">
-            <div class="project-image">
-              <img src="./assets/projects/notemaker.png" alt="NoteMaker">
-            </div>
-            <div class="project-content">
-              <h3>NoteMaker</h3>
-              <p>SaaS application that can convert PDFs and slideshows into formatted Note documents. Still under development.</p>
-              <div class="tags">
-                <span>React</span>
-                <span>Node.js</span>
-                <span>Supabase</span>
-              </div>
-              <div class="project-links">
-                <a href="https://www.notemaker.tech/" class="project-link"><i data-lucide="external-link"></i> Live Demo</a>
-              
-              </div>
-            </div>
+          <h1 class="name">Daniel<br>Hartgrove</h1>
+          <p class="role">Software Engineer &amp;<br>Front-End Developer</p>
+        </section>
+
+        <nav class="links-grid" aria-label="Links">
+          <a href="https://github.com/danielhartgrove" class="link-chip" target="_blank" rel="noopener noreferrer"><span class="chip-arrow">↗</span>GitHub</a>
+          <a href="https://www.linkedin.com/in/danielhartgrove/" class="link-chip" target="_blank" rel="noopener noreferrer"><span class="chip-arrow">↗</span>LinkedIn</a>
+          <a href="https://www.gazellewebstudios.co.uk" class="link-chip" target="_blank" rel="noopener noreferrer"><span class="chip-arrow">↗</span>Gazelle Studios</a>
+          <a href="mailto:hartgrovedaniel3@icloud.com" class="link-chip"><span class="chip-arrow">@</span>Email</a>
+        </nav>
+
+        <section class="section">
+          <div class="section-top">
+            <span class="tag">Selected Work</span>
+            <span class="dim">04</span>
           </div>
-          <!-- ... Additional project cards with the same structure -->
-        </div>
-        <div class="section-header">
-          <br>
-          <p>More of my projects are available <a href="./projects/">here</a>.</p>
-        </div>
-      </section>
 
-      <!-- Contact Section -->
-      <section id="contact" class="contact">
-        <div class="section-header">
-          <h2>Contact Me</h2>
-          <p>I'm always looking forward to the next challenge. If that could be with your company, then please don't hesitate to contact me.</p>
-        </div>
-        <div class="social-links">
-          <a href="mailto:hartgrovedaniel3@icloud.com" class="social-link">
-            <i data-lucide="mail"></i>
-            <span>Email</span>
-          </a>
-          <a href="https://www.linkedin.com/in/danielhartgrove/" class="social-link">
-            <i data-lucide="linkedin"></i>
-            <span>LinkedIn</span>
-          </a>
-          <a href="https://github.com/danielhartgrove" class="social-link">
-            <i data-lucide="github"></i>
-            <span>GitHub</span>
-          </a>
-          <a href="danielhartgrove_cv.pdf" class="social-link">
-            <i data-lucide="notepad-text"></i>
-            <span>CV</span>
-          </a>
-        </div>
-      </section>
-    </main>
-    <script>
-      // Initialize Lucide icons
-      lucide.createIcons();
+          <article class="project">
+            <div class="proj-img-wrap"><img src="./assets/projects/NottFound.png" alt="NottFound" loading="lazy"></div>
+            <div class="proj-meta"><span class="proj-num">01</span><span class="proj-cat">Flutter · Python · Docker</span></div>
+            <h2 class="proj-title">NottFound</h2>
+            <p class="proj-desc">Student experience app for Nottingham, built with guidance from the software engineering team at UNiDAYS.</p>
+            <div class="proj-actions">
+              <a href="https://nottfound.benchung.dev/" class="btn-play" target="_blank" rel="noopener noreferrer">Visit ↗</a>
+              <a href="https://youtu.be/1HzJbsrw1WI" class="btn-ghost" target="_blank" rel="noopener noreferrer">Demo</a>
+            </div>
+          </article>
 
-      // Smooth scroll for navigation
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-          document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-          });
-        });
-      });
+          <article class="project">
+            <div class="proj-img-wrap"><img src="./assets/projects/notemaker.png" alt="NoteMaker" loading="lazy"></div>
+            <div class="proj-meta"><span class="proj-num">02</span><span class="proj-cat">React · Node.js · Supabase</span></div>
+            <h2 class="proj-title">NoteMaker</h2>
+            <p class="proj-desc">SaaS application that converts PDFs and slideshows into formatted note documents. In active development.</p>
+            <div class="proj-actions">
+              <a href="https://www.notemaker.tech/" class="btn-play" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+            </div>
+          </article>
 
-      // Add fade-in animation on scroll
-      const observerOptions = {
-        threshold: 0.1
-      };
+          <article class="project">
+            <div class="proj-img-wrap"><img src="./assets/projects/boxjumps.jpg" alt="BOXJUMPS!" loading="lazy"></div>
+            <div class="proj-meta"><span class="proj-num">03</span><span class="proj-cat">JavaScript · Canvas</span></div>
+            <h2 class="proj-title">BOXJUMPS!</h2>
+            <p class="proj-desc">A platformer game playable in the browser — pass all the gates to win.</p>
+            <div class="proj-actions">
+              <a href="./projects/platformer/" class="btn-play">Play ↗</a>
+            </div>
+          </article>
 
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('fade-in');
-          }
-        });
-      }, observerOptions);
+          <article class="project">
+            <div class="proj-img-wrap"><img src="./assets/projects/NIN.jpg" alt="NIN Jukebox" loading="lazy"></div>
+            <div class="proj-meta"><span class="proj-num">04</span><span class="proj-cat">JavaScript · Spotify API</span></div>
+            <h2 class="proj-title">NIN Jukebox</h2>
+            <p class="proj-desc">Stream the full discography of Nine Inch Nails directly in the browser via the Spotify API.</p>
+            <div class="proj-actions">
+              <a href="./projects/NIN/" class="btn-play">Open ↗</a>
+            </div>
+          </article>
+        </section>
 
-      document.querySelectorAll('section').forEach(section => {
-        observer.observe(section);
-      });
-    </script>
-  </body>
+        <footer class="about-section">
+          <div class="section-top"><span class="tag">About</span></div>
+          <p class="about-text">
+            Software engineer and front-end developer. Director of
+            <a href="https://www.gazellewebstudios.co.uk" class="inline-link" target="_blank" rel="noopener noreferrer">Gazelle Web Studios</a>.
+            Specialising in front-end development, UX, and brand design.
+            <br><br>
+            More projects at <a href="./projects/" class="inline-link">projects gallery ↗</a>
+          </p>
+          <a href="./danielhartgrove_cv.pdf" class="btn-cv">Download CV ↓</a>
+        </footer>
+      </div><!-- /.content -->
+
+      <!-- Home bar — tap to return home when viewing portfolio -->
+      <div class="home-indicator" id="home-indicator" aria-hidden="true"></div>
+
+    </div><!-- /.phone-screen -->
+  </div><!-- /.phone -->
+</div><!-- /.scene -->
+
+<script>
+(function () {
+  'use strict';
+
+  var ls      = document.getElementById('lockscreen');
+  var hs      = document.getElementById('homescreen');
+  var av      = document.getElementById('app-view');
+  var af      = document.getElementById('app-frame');
+  var homeBar = document.getElementById('home-indicator');
+
+  // ── Clock ──────────────────────────────────────────────────
+  function pad(n) { return String(n).padStart(2, '0'); }
+
+  function tick() {
+    var now = new Date();
+    var h24 = now.getHours(), m = pad(now.getMinutes());
+    var h12 = h24 % 12 || 12;
+    var s24 = h24 + ':' + m, s12 = h12 + ':' + m;
+    var els = {
+      'status-time': s24,
+      'hs-time':     s12,
+      'ls-time':     s12
+    };
+    Object.keys(els).forEach(function(id) {
+      var el = document.getElementById(id);
+      if (el) el.textContent = els[id];
+    });
+  }
+
+  function setDate() {
+    var d = new Date();
+    var days   = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+    var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+    var el = document.getElementById('ls-date');
+    if (el) el.textContent = days[d.getDay()] + ', ' + d.getDate() + ' ' + months[d.getMonth()];
+  }
+
+  tick(); setDate();
+  setInterval(tick, 10000);
+
+  // ── Lock screen ────────────────────────────────────────────
+  function unlock() {
+    ls.classList.add('ls-unlocking');
+    ls.addEventListener('animationend', function () { ls.remove(); }, { once: true });
+  }
+  ls.addEventListener('click', unlock);
+  ls.addEventListener('keydown', function(e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); unlock(); } });
+  var lsY = 0;
+  ls.addEventListener('touchstart', function(e) { lsY = e.changedTouches[0].clientY; }, { passive: true });
+  ls.addEventListener('touchend',   function(e) { if (lsY - e.changedTouches[0].clientY > 40) unlock(); }, { passive: true });
+
+  // ── Open Portfolio (hide home screen) ─────────────────────
+  function openPortfolio() {
+    hs.classList.add('hs-out');
+    hs.addEventListener('animationend', function() {
+      hs.style.display = 'none';
+      hs.classList.remove('hs-out');
+      // Make home bar a back button
+      homeBar.setAttribute('role', 'button');
+      homeBar.setAttribute('tabindex', '0');
+      homeBar.setAttribute('aria-label', 'Back to home screen');
+      homeBar.classList.add('home-indicator--active');
+    }, { once: true });
+  }
+
+  // ── Return to home screen ──────────────────────────────────
+  function returnHome() {
+    homeBar.removeAttribute('role');
+    homeBar.removeAttribute('tabindex');
+    homeBar.removeAttribute('aria-label');
+    homeBar.classList.remove('home-indicator--active');
+    var content = document.querySelector('.content');
+    if (content) content.scrollTop = 0;
+    hs.style.display = '';
+    void hs.offsetWidth; // reflow
+    hs.classList.add('hs-in');
+    hs.addEventListener('animationend', function() { hs.classList.remove('hs-in'); }, { once: true });
+  }
+
+  homeBar.addEventListener('click', function() {
+    if (homeBar.classList.contains('home-indicator--active')) returnHome();
+  });
+  homeBar.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' && homeBar.classList.contains('home-indicator--active')) returnHome();
+  });
+
+  // ── Open in-phone iframe ───────────────────────────────────
+  function openApp(url, name) {
+    document.getElementById('app-name').textContent = name;
+    af.src = url;
+    av.classList.add('av-open');
+    setTimeout(function() { try { af.focus(); } catch(e) {} }, 500);
+  }
+
+  document.getElementById('app-back').addEventListener('click', function() {
+    av.classList.remove('av-open');
+    setTimeout(function() { af.src = 'about:blank'; }, 420);
+  });
+
+  // ── Home screen app taps ───────────────────────────────────
+  hs.addEventListener('click', function(e) {
+    var icon = e.target.closest('[data-action]');
+    if (!icon) return;
+    var action = icon.dataset.action, url = icon.dataset.url, name = icon.dataset.name || '';
+    if      (action === 'content')  openPortfolio();
+    else if (action === 'iframe')   openApp(url, name);
+    else if (action === 'external') window.open(url, '_blank');
+    else if (action === 'mailto')   { window.location.href = url; }
+  });
+
+}());
+</script>
+
+</body>
 </html>
